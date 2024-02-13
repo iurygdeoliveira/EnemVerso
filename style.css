@@ -1,0 +1,110 @@
+/* Redefinindo as margens e paddings padrão */ 
+html, body {
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
+    height: 100%;
+    /* Define a altura para cobrir totalmente a viewport verticalmente */
+    width: 100%;
+    /* Define a largura para cobrir totalmente a viewport horizontalmente */
+    box-sizing: border-box;
+    /* Faz com que padding e border sejam incluídos no cálculo da largura/altura */
+}
+
+
+.grid-container {
+    display: grid;
+    /* Define o container como um grid layout */
+    grid-template-columns: 20% 1fr 20%;
+    /* Exemplo: primeira e última coluna com 20% cada, e a do meio flexível */
+    /* A soma das larguras percentuais das colunas com largura fixa não deve ultrapassar 100% para evitar overflow */
+    grid-template-rows: 10% 1fr 10%;
+    /* Exemplo: primeira e última linha com 10% da altura total, e a do meio flexível */
+    /* A soma das alturas percentuais das linhas não precisa ser 100%, pois '1fr' se ajustará ao espaço restante */
+    grid-template-areas:
+        /* Define a área de cada item no grid */
+        "sidebar header header"
+        "sidebar article ads"
+        "sidebar footer footer";
+    gap: 0;
+    /* Define o espaçamento entre os itens da grid para 0, se necessário */
+    height: 100vh;
+    /* Mantém a altura do container do grid para ocupar 100% da altura da viewport */
+    width: 100vw;
+    /* Mantém a largura do container do grid para ocupar 100% da largura da viewport */
+    overflow-x: hidden;
+    /* Previne a rolagem horizontal se houver overflow */
+}
+
+.header {
+    grid-area: header;
+    /* Atribui a área 'header' para o elemento */
+    background-color: #ff6666;
+    /* Define a cor de fundo do cabeçalho */
+}
+
+.sidebar {
+    grid-area: sidebar;
+    /* Atribui a área 'sidebar' para o elemento */
+    position: sticky;
+    /* Faz com que a sidebar fique fixa durante a rolagem */
+    top: 0;
+    /* Define a posição superior da sidebar para que ela "grude" no topo */
+    background-color: #66ccff;
+    /* Define a cor de fundo da sidebar */
+}
+
+.article {
+    grid-area: article;
+    /* Atribui a área 'article' para o elemento */
+    background-color: #ffffff;
+    /* Define a cor de fundo do artigo */
+}
+
+.ads {
+    grid-area: ads;
+    /* Atribui a área 'ads' para o elemento */
+    background-color: #ffd966;
+    /* Define a cor de fundo da área de anúncios */
+}
+
+.footer {
+    grid-area: footer;
+    /* Atribui a área 'footer' para o elemento */
+    background-color: #99cc99;
+    /* Define a cor de fundo do rodapé */
+}
+
+/* Responsividade para viewport menor que 1140px */
+@media (max-width: 1140px) {
+    .grid-container {
+        grid-template-columns: 5% 1fr 20%;
+        /* Reduz a largura da sidebar para 5% */
+    }
+}
+
+/* Responsividade para viewport menor que 768px */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Usa uma única coluna */
+        grid-template-areas:
+            /* Redefine as áreas para empilhá-las verticalmente */
+            "header"
+            "article"
+            "ads"
+            "footer";
+    }
+
+    .sidebar {
+        display: none;
+        /* Oculta a sidebar */
+    }
+}
+
+/* Esconder sidebar */
+.hide-sidebar {
+    display: none;
+    /* Esconde a sidebar */
+}
