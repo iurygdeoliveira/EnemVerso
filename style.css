@@ -5,31 +5,35 @@ body {
 }
 
 #head {
-  background-color: #836FFF;
+  background-color: #211951;
   text-align: center;
-  height: 4rem;
-  top: 
+  height: 4rem; 
 }
 
 #navbar {
-  background-color: #FF6B6B;
+  background-color: #836FFF;
   float: left;
+  width: 25%;
+  height: 34rem;
+}
+
+#article {
+  display: inline-block;
+  width: 50%;
+  height: 30rem;
+}
+
+#ads {
+  background-color: #F0F3FF;
+  float: right;
   width: 25%;
   height: 30rem;
 }
 
-#article {
-  background-color: #A0A0A0;
-  display: inline-block;
-}
-
-#ads {
-  background-color: #6BFFB8;
-  float: right;
-}
-
 #footer {
-  background-color: #FFD166;
-  clear: both;
+  background-color: #15F5BA;
   text-align: center;
+  float: right;
+  width: 75%;
+  height: 4rem;
 }
