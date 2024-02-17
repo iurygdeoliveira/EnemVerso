@@ -1,8 +1,25 @@
-#navbar {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
-  
-  
+#head {
+  background-color: #836FFF;
+  text-align: center;
 }
 
+#navbar {
+  background-color: #FF6B6B;
+  float: left;
+}
+
+#article {
+  background-color: #A0A0A0;
+  display: inline-block;
+}
+
+#ads {
+  background-color: #6BFFB8;
+  float: right;
+}
+
+#footer {
+  background-color: #FFD166;
+  clear: both;
+  text-align: center;
+}
