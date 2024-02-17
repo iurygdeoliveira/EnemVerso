@@ -9,6 +9,12 @@ body {
   text-align: center;
   height: 4rem; 
 }
+.img1 {
+  width: 165px;
+  margin: auto;
+  vertical-align: middle;
+  padding: .7rem;
+}
 
 #navbar {
   background-color: #836FFF;
