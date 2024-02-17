@@ -43,3 +43,10 @@ body {
   width: 75%;
   height: 4rem;
 }
+
+.foo1, .name {
+  color: #1c1c1c;
+  font-size: 10px;
+  position: relative;
+  top: 10px;
+}
