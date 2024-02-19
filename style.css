@@ -2,3 +2,61 @@ html {
   height: 100%;
   width: 100%;
 }
+/* main.conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+  
+div#head{
+  background-color: #ff7bab;
+  grid-area: 1 / 1 / 2 / 4;
+}
+div#navbar{
+  background-color: #7dcfff;
+  grid-area: 2 / 1 / 4 / 2;
+}
+div#article{
+  background-color: whitesmoke;
+  
+}
+div#ads{
+  background-color: #ffd179;
+  grid-area: 2 / 3 / 3 / 4;
+}
+div#footer{
+  background-color: #89dcb2;
+  grid-area: 3 / 2 / 4 / 4;
+} */
+
+main.conteiner{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "navbar content aside"
+  "navbar footer footer";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto 1fr auto;
+}
+div#head{
+  background-color: #ff7bab;
+  grid-area: header;
+}
+div#navbar{
+  background-color: #7dcfff;
+  grid-area: navbar;
+}
+div#article{
+  background-color: whitesmoke;
+  grid-area: content;
+}
+div#ads{
+  background-color: #ffd179;
+  grid-area: aside;
+}
+div#footer{
+  background-color: #89dcb2;
+  grid-area: footer;
+}
