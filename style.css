@@ -2,61 +2,71 @@ html {
   height: 100%;
   width: 100%;
 }
-/* main.conteiner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-}
-  
-div#head{
-  background-color: #ff7bab;
-  grid-area: 1 / 1 / 2 / 4;
-}
-div#navbar{
-  background-color: #7dcfff;
-  grid-area: 2 / 1 / 4 / 2;
-}
-div#article{
-  background-color: whitesmoke;
-  
-}
-div#ads{
-  background-color: #ffd179;
-  grid-area: 2 / 3 / 3 / 4;
-}
-div#footer{
-  background-color: #89dcb2;
-  grid-area: 3 / 2 / 4 / 4;
-} */
 
+/* Grid template area */
 main.conteiner{
+  box-sizing: border-box;
   display: grid;
   grid-template-areas: 
   "header header header"
   "navbar content aside"
   "navbar footer footer";
   grid-template-rows: auto auto auto;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
 }
-div#head{
+@media (max-width: 300px) {
+  main.conteiner{
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "content"
+    "aside"
+    "footer";
+  }
+}
+#head{
   background-color: #ff7bab;
   grid-area: header;
+  height: auto;
+  width: auto;
+  padding: 10px;
 }
-div#navbar{
+#navbar{
   background-color: #7dcfff;
   grid-area: navbar;
+  height: auto;
+  width: auto;
 }
-div#article{
+#article{
   background-color: whitesmoke;
   grid-area: content;
+  height: auto;
+  width: auto;
+  padding: 10px;
 }
-div#ads{
+#ads{
   background-color: #ffd179;
   grid-area: aside;
+  height: 500px;
+  width: auto;
+  padding: 10px;
 }
-div#footer{
+#footer{
   background-color: #89dcb2;
   grid-area: footer;
+  height: 50px;
+  width: auto;
+  padding: 10px;
+}
+/* ============== */
+/* Navbar CSS Area */
+#navbar ul{
+  display: block;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+}
+li a{
+  display: block;
+  width: 100px;
 }
