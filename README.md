@@ -42,6 +42,8 @@ Insira um gif ou um link de alguma demonstração
 ## Autores
 
 - [@iurygdeoliveira](https://www.github.com/iurygdeoliveira)
+- [@SavioVitorAlves](https://github.com/SavioVitorAlves/SavioVitorAlves)
+- [@victorferrazms]((https://github.com/victorferrazms))
 
 
 ## Suporte
