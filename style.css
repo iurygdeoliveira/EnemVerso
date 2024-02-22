@@ -1,11 +1,13 @@
-html {
-  height: 100%;
-  width: 100%;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Grid template area */
 main.conteiner{
-  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 18px;
   display: grid;
   grid-template-areas: 
   "header header header"
@@ -27,28 +29,22 @@ main.conteiner{
 #head{
   background-color: #ff7bab;
   grid-area: header;
-  height: auto;
-  width: auto;
   padding: 10px;
 }
 #navbar{
   background-color: #7dcfff;
   grid-area: navbar;
-  height: auto;
-  width: auto;
 }
 #article{
   background-color: whitesmoke;
   grid-area: content;
-  height: auto;
-  width: auto;
+  width: 100%;
+  height: 500px;
   padding: 10px;
 }
 #ads{
   background-color: #ffd179;
   grid-area: aside;
-  height: 500px;
-  width: auto;
   padding: 10px;
 }
 #footer{
@@ -58,6 +54,7 @@ main.conteiner{
   width: auto;
   padding: 10px;
 }
+
 /* ============== */
 /* Navbar CSS Area */
 #navbar ul{
@@ -68,5 +65,6 @@ main.conteiner{
 }
 li a{
   display: block;
-  width: 100px;
+  text-decoration: none;
+  color: lightslategrey;
 }
