@@ -6,6 +6,8 @@
 
 Este repositório contém a base de dados utilizada no projeto EnemVerso
 
+Anna C e Mikaelly - corinthiana e flamenguista de paixão
+
 
 ## Documentação da API
 
