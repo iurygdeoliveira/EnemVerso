@@ -2,3 +2,64 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 5px solid black;
+  min-height: 100vh;
+}
+
+.container div {
+  flex-grow: 1;
+}
+
+.container section {
+  flex-grow: 4;
+}
+
+.sidebar{
+  background-color: #ff6161;
+}
+
+.header{
+  background-color: #77d5fd;
+}
+
+.main{
+  background-color: white;
+}
+
+.extra{
+  background-color: #fdff8a;
+}
+
+.footer{
+  background-color: #a6ff8a;
+}
+
+.container section{
+  display: flex;
+  flex-direction: column;
+}
+
+.container section .header{
+  flex-grow: 1;
+}
+
+.container section .conteúdo{
+  flex-grow: 5;
+}
+
+.container section .footer{
+  flex-grow: 1;
+}
+
+.conteúdo{
+  display: flex;
+  flex-direction: row;
+}
+
+.conteúdo .main{
+  flex-grow: 4;
+}
