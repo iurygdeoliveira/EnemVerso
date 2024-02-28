@@ -1,96 +1,45 @@
 <!DOCTYPE html>
-<html lang="br">
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imgs/favicon/enemverso_v1-rbg.png" type="image/x-icon">
   <title>EnemVerso</title>
 </head>
+<body>
+  <!-- Navbar com script para aparecer apos clicar no botão -->
+  <div id="left-navbar" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Sobre</a>
+    <a href="#">Materias</a>
+    <a href="#">Provas</a>
+    <a href="#">Contato</a>
+  </div>
 
-<body class="conteiner">
-  <!-- <div id="head" role="heading"> -->
-  <header id="head" role="heading">Header</header>
-  <!-- </div> -->
+  <script src="script.js"></script>
+  <div class="conteiner">
+    <header class="header">
+      <!-- Botão para abrir a navbar -->
+      <span style="cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      Header
+    </header>
 
-  <!-- <div id="navbar"> -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#">Filosofia</a></li>
-      <li><a href="#">Fisica</a></li>
-      <li><a href="#">Geografia</a></li>
-      <li><a href="#">Ingles</a></li>
-      <li><a href="#">Artes</a></li>
-      <li><a href="#">Espanhol</a></li>
-      <li><a href="#">Historia</a></li>
-      <li><a href="#">Lingua Portuguesa</a></li>
-      <li><a href="#">Literatura</a></li>
-      <li><a href="#">Quimica</a></li>
-      <li><a href="#">Sociologia</a></li>
-    </ul>
-  </nav>
-  <!-- </div> -->
+    <main id="main" class="main-content">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      Qui molestias est iusto vero dolores, dicta natus vel culpa eos nesciunt nam consequatur 
+      debitis magni provident voluptate quisquam? Soluta, modi accusamus.
+    </main>
 
-  <!-- <div id="content"> -->
-  <main id="article">
-    <section>
-      <h2>Welcome!</h2>
-      <p>This is the main content area of my website. I'm excited to share some information with you. Whether you're
-        here to learn something new, explore different perspectives, or simply be entertained, I hope you find something
-        valuable here.</p>
-    </section>
+    <aside class="right-sidebar">
+      Right Sidebar
+    </aside>
 
-    <section>
-      <h2>About Me</h2>
-      <p>My name is [Your Name], and I'm a passionate individual with a strong interest in [Your Interests]. I'm always
-        eager to learn and grow, and I believe in the power of sharing knowledge and experiences. Through this website,
-        I aim to [Your Goals with the Website].</p>
-      <p>In my free time, I enjoy [Your Hobbies]. I also find inspiration in [Your Sources of Inspiration]. These
-        experiences shape my perspective and contribute to the content you'll find on this website.</p>
-    </section>
+    <footer class="footer">
+      Footer
+    </footer>
+    
+  </div>
 
-    <section>
-      <h2>Recent Articles</h2>
-      <article>
-        <h3>Title of your first article</h3>
-        <p>A brief summary of your first article, highlighting its key points and engaging the reader to explore
-          further.</p>
-        <a href="#">Read More</a>
-      </article>
-      <article>
-        <h3>Title of your second article</h3>
-        <p>A brief summary of your second article, following the same format as the first.</p>
-        <a href="#">Read More</a>
-      </article>
-    </section>
-
-    <section>
-      <h2>Additional Resources</h2>
-      <p>Here are some additional resources you might find helpful:</p>
-      <ul>
-        <li><a href="#">Link to a relevant website</a></li>
-        <li><a href="#">Link to another interesting resource</a></li>
-        <li><a href="#">Link to an inspiring article</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Get in Touch</h2>
-      <p>I'm always interested in connecting with readers and hearing their feedback. Feel free to reach out to me
-        through the following channels:</p>
-      <ul>
-        <li>Email: [Your Email Address]</li>
-        <li>Social media: [Link to your social media profiles]</li>
-      </ul>
-    </section>
-  </main>
-  <!-- </div> -->
-
-  <!-- <div id="ads"> -->
-  <aside id="ads" role="none">Ads/Extra</aside>
-  <!-- </div> -->
-
-  <!-- <div id="footer"> -->
-  <footer id="footer" role="doc-footnote">&copy; Footer</footer>
-  <!-- </div> -->
 </body>
-
 </html>
