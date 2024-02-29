@@ -3,26 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Chamando o CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Favicon - o ícone que fica na aba do site -->
   <link rel="shortcut icon" href="imgs/favicon/enemverso_v1-rbg.png" type="image/x-icon">
+  <!-- Font Awesone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>EnemVerso</title>
 </head>
 <body>
   <!-- Navbar com script para aparecer apos clicar no botão -->
   <div id="left-navbar" class="sidenav">
+    <!-- javascript:void(0) é para o Html interpretar o "link" como um script, neste caso o void(0), ou seja
+    ao clicar o link, a pagina não ira fazer nada, não irá recarregar -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">Sobre</a>
     <a href="#">Materias</a>
     <a href="#">Provas</a>
     <a href="#">Contato</a>
   </div>
-
+  <!-- Linkando o script do JavaScript -->
   <script src="script.js"></script>
   <div class="conteiner">
     <header class="header">
       <!-- Botão para abrir a navbar -->
-      <span style="cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-      Header
+      <span style="cursor:pointer" onclick="openNav()" class="btn-menu">
+        &#9776; <span class="hidde-in-mobile">Menu</span>
+      </span>
+      <div class="header-logo"> 
+        <a href="index.html"><img src="imgs/logo/enemverso_v1-rbg.png" alt="EnemVerso Logo"></a>
+      </div>
     </header>
 
     <main id="main" class="main-content">
@@ -36,7 +46,23 @@
     </aside>
 
     <footer class="footer">
-      Footer
+      <div class="footer">
+        <div class="icons-row">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="info-row">
+          <ul>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Matérias</a></li>
+          </ul>
+        </div>
+        <div class="copy-row">
+          EnemVerso Copyright &copy; 2024 - Todos os direitos reservados || Designed By: EnemVerso
+        </div>
+      </div>
     </footer>
     
   </div>
