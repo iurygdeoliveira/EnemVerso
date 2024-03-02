@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -18,48 +24,48 @@ html {
   flex-grow: 4;
 }
 
-.sidebar{
+.sidebar {
   background-color: #ff6161;
 }
 
-.header{
+.header {
   background-color: #77d5fd;
 }
 
-.main{
+.main {
   background-color: white;
 }
 
-.extra{
+.extra {
   background-color: #fdff8a;
 }
 
-.footer{
+.footer {
   background-color: #a6ff8a;
 }
 
-.container section{
+.container section {
   display: flex;
   flex-direction: column;
 }
 
-.container section .header{
+.container section .header {
   flex-grow: 1;
 }
 
-.container section .conteúdo{
+.container section .conteúdo {
   flex-grow: 5;
 }
 
-.container section .footer{
+.container section .footer {
   flex-grow: 1;
 }
 
-.conteúdo{
+.conteúdo {
   display: flex;
   flex-direction: row;
 }
 
-.conteúdo .main{
+.conteúdo .main {
   flex-grow: 4;
 }
