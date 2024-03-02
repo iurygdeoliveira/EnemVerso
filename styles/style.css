@@ -1,0 +1,98 @@
+/* Resetar CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pagina {
+    display: grid;
+
+    width: 100%;
+    height: 100%;
+
+    grid-template-columns: 15% 75% 10%;
+    grid-template-rows: 10% 80% 10%;
+}
+
+/* Header */
+
+#pagina > header {
+    display: flex;
+
+    grid-area: header;
+    background-color: #7DCFFF;
+    
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row: 1;
+
+    align-items: center;
+}
+
+.tituloSite {
+    color: white;
+    font-weight: bold;
+    
+    padding-left: 2.5%;
+}
+
+#pagina > nav {
+    grid-area: nav;
+    background-color: #FF7BAB;
+    overflow-y: auto;
+
+    grid-column: 1;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#pagina > main {
+    grid-area: main;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+
+    grid-column: 2;
+
+    grid-row: 2;
+}
+
+.adsExtra {
+    grid-area: adsExtra;
+    background-color: #FFD179;
+
+    grid-column: 3;
+
+    grid-row: 2;
+}
+
+#pagina > footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #89DCB2;
+    justify-content: flex-end;
+    align-items: center;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row: 3;
+}
+
+.texto {
+    font-size: xx-large;
+    padding-left: 1.5%;
+}
+
+.footer_text{
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    #pagina {
+        grid-template-columns: 0% 90% 10%;
+        grid-template-rows: 10% 80% 10%;
+    }
+}
