@@ -5,37 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Chamando o CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Script do Font Awesome -->
+  <script src="https://kit.fontawesome.com/244fbbdc84.js" crossorigin="anonymous"></script>
   <!-- Favicon - o ícone que fica na aba do site -->
   <link rel="shortcut icon" href="imgs/favicon/enemverso_v1-rbg.png" type="image/x-icon">
-  <!-- Font Awesone -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>EnemVerso</title>
 </head>
 <body>
   <!-- Navbar com script para aparecer apos clicar no botão -->
-  <div id="left-navbar" class="sidenav">
+  <div id="left-navbar" class="sidenav" onmouseleave="closeNav()">
     <!-- javascript:void(0) é para o Html interpretar o "link" como um script, neste caso o void(0), ou seja
     ao clicar o link, a pagina não ira fazer nada, não irá recarregar -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Sobre</a>
-    <a href="#">Materias</a>
-    <a href="#">Provas</a>
-    <a href="#">Contato</a>
+    <a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+    <a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Matérias</a>
+    <a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;Provas</a>
+    <a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Conta</a>
   </div>
   <!-- Linkando o script do JavaScript -->
   <script src="script.js"></script>
-  <div class="conteiner">
+  <div class="conteiner" id="conteiner">
     <header class="header">
-      <div class="header-logo"> 
-        <a href="index.html"><img src="imgs/logo/enemverso_v1-rbg.png" alt="EnemVerso Logo"></a>
-      </div>
+        <a href="index.html"><img src="imgs/logo/enemverso_v1-rbg.png" alt="EnemVerso Logo" width="100" height="100"></a>
     </header>
 
     <div class="left-sidebar">
       <!-- Botão para abrir a navbar -->
-      <span style="cursor:pointer" onclick="openNav()" class="btn-menu">
-        &#9776; <span class="hidde-in-mobile">Menu</span>
-      </span>
+      <span style="cursor:pointer" onmouseenter="openNav()" onclick="openNav()" class="btn-menu">&#9776;</span>
+      <div class="icons-row">
+        <a href="#"><i id="icon-home" class="fa-solid fa-house"></i></a>
+        <a href="#"><i id="icon-learn" class="fa-solid fa-book"></i></a>
+        <a href="#"><i id="icon-works" class="fa-solid fa-pen-to-square"></i></a>
+        <a href="#"><i id="icon-account" class="fa-solid fa-user"></i></a>
+      </div>
     </div>
 
     <main id="main" class="main-content">

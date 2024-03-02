@@ -18,7 +18,7 @@ html {
       'right-sidebar'
       'footer';
   grid-template-columns: 100%;
-  grid-template-rows: 0.1fr 1fr 0.1fr 0.1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
   min-height: 100svh;
   transition: background-color .5s;
 }
@@ -57,26 +57,32 @@ html {
 /* tablet breakpoint */
 @media (min-width:768px) {
   .conteiner {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.05fr 1fr;
+      grid-template-rows: auto auto auto 0.1fr;
       grid-template-areas:
-          'header header'
-          'main-content main-content'
-          'right-sidebar right-sidebar'
-          'footer footer';
+          'left-sidebar header'
+          'left-sidebar main-content'
+          'left-sidebar right-sidebar'
+          'left-sidebar footer';
   }
 }
 
 /* desktop breakpoint */
 @media (min-width:1024px) {
   .conteiner {
-      grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+      grid-template-columns: 0.06fr 1fr 1fr 0.2fr;
       grid-template-rows: 0.3fr 1fr 0.1fr;
       grid-template-areas:
           'left-sidebar header header header'
           'left-sidebar main-content main-content right-sidebar'
           'left-sidebar footer footer footer';
-      
   }
+  .left-sidebar .icons-row i{
+    margin-top: 10px;
+  }
+  /* .sidenav .closebtn{
+    display: none;
+  } */
 }
 
 
@@ -84,25 +90,23 @@ html {
 /* HEADER CSS AREA */
 /* ==================== */
 .header{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
 }
 
 .header-logo img{
   height: 100px;
   width: 100px;
 }
-@media (max-width:450px) {
-  .hidde-in-mobile{
-    display: none;
-  }  
-}
+
 /* ================ */
 /* NAVBAR CSS AREA */
 /* ================ */
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media (max-width:450px) {
+  .left-sidebar .icons-row i{
+    margin-left: 10px;
+  }
 }
 .sidenav {
   height: 100%;
@@ -132,11 +136,26 @@ html {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 10px;
   font-size: 36px;
-  margin-left: 2px;
+  margin-left: 15px;
 }
-
+.btn-menu{
+  font-size: 22px;
+  font-weight: bold;
+}
+.left-sidebar .icons-row{
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+}
+.left-sidebar .icons-row a{
+  text-decoration: none;
+  color: black;
+}
+.left-sidebar .icons-row i{
+  padding: 10px 0px;
+}
 /* ================ */
 /* FOOTER CSS AREA */
 /* ================ */
@@ -167,4 +186,13 @@ html {
 }
 .footer a:hover{
   color: white;
+}
+
+/* ================================================ */
+/* Only because the home icon is bigger than others */
+/* ================================================ */
+@media (min-width:1024px) {
+  #icon-home{
+    font-size: 18px;
+  }  
 }
