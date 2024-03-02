@@ -13,6 +13,7 @@ html {
   display:grid;
   grid-template-areas:
       'header'
+      'left-sidebar'
       'main-content'
       'right-sidebar'
       'footer';
@@ -35,6 +36,10 @@ html {
 .conteiner > .header {
   grid-area:header;
   background:#f97171;
+}
+.conteiner > .left-sidebar{
+  grid-area: left-sidebar;
+  background: lightpink;
 }
 .conteiner > .main-content {
   grid-area:main-content;
@@ -67,9 +72,9 @@ html {
       grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
       grid-template-rows: 0.3fr 1fr 0.1fr;
       grid-template-areas:
-          'header header header header'
-          'main-content main-content main-content right-sidebar'
-          'footer footer footer footer';
+          'left-sidebar header header header'
+          'left-sidebar main-content main-content right-sidebar'
+          'left-sidebar footer footer footer';
       
   }
 }
@@ -80,10 +85,6 @@ html {
 /* ==================== */
 .header{
   text-align: center;
-}
-.header .btn-menu{
-  float: left;
-  padding-top: 20px;
 }
 
 .header-logo img{
