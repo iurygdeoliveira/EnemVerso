@@ -34,8 +34,7 @@
 .tituloSite {
     color: white;
     font-weight: bold;
-    
-    padding-left: 2.5%;
+    padding-left: 1.5%;
 }
 
 #pagina > nav {
@@ -81,18 +80,14 @@
     grid-row: 3;
 }
 
-.texto {
-    font-size: xx-large;
-    padding-left: 1.5%;
-}
-
 .footer_text{
     align-items: center;
+    padding-right: 2.5%;
 }
 
 @media screen and (max-width: 992px) {
     #pagina {
-        grid-template-columns: 0% 90% 10%;
+        grid-template-columns: 0% 100% 0%;
         grid-template-rows: 10% 80% 10%;
     }
 }
