@@ -9,3 +9,25 @@ function closeNav() {
     document.getElementById("left-navbar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
+// =========================================================================
+// =========================================================================
+import("https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js");
+// importScripts("https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js");
+function Ajax(id){
+  $(document).ready(function(){
+  switch (id) {
+    case 'icon-learn':
+      $(document).ready(function(){
+        // Evento de Clique do Link Quimica
+          $.ajax({
+            url: "materias.html",
+            type: "GET",
+            success: function(data){
+              $("main").html(data)
+            }
+          })
+      })
+      break;
+  }
+  })
+}

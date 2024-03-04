@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linkando o CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Adicionando o Favicon -->
+    <link rel="shortcut icon" href="imgs/favicon/enemverso_v1-rbg.png" type="image/x-icon">
+    <title>Matérias - EnemVerso</title>
+
+    <style>
+        .materia{
+            margin: 10px;
+        }
+        .materia:hover{
+            color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <!-- Chamando o arquivo .js -->
+    <script src="script.js"></script>
+    <!-- Script para adicionar o JQUERY (atualizar a pag sem refresh) na pagina. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        //Verifica o documento para ativar o evento
+        $(document).ready(function(){
+        // Evento de Clique do Link Quimica
+        $("#Quimica").click(function(){
+            //Chama todo o conteudo da pagina quimica.html e adiciona na variaval "data"
+            $.ajax({
+            url: "materias/quimica.html",
+            type: "GET",
+            //Caso tenha sucesso em achar o arquivo, puxa as informações e insere na div #main
+            success: function(data){
+                $("main").html(data)
+            }
+            })
+        })
+        })
+    </script>
+
+    <div style="cursor: pointer;" id="Quimica" class="materia">Quimica</div>
+    <div id="Materia2" class="materia">Materia 2</div>
+    <div id="Materia3" class="materia">Materia 3</div>
+</body>
+</html>

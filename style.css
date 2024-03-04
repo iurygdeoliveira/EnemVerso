@@ -17,8 +17,8 @@ html {
       'main-content'
       'right-sidebar'
       'footer';
-  grid-template-columns: 100%;
-  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
   min-height: 100svh;
   transition: background-color .5s;
 }
@@ -57,8 +57,8 @@ html {
 /* tablet breakpoint */
 @media (min-width:768px) {
   .conteiner {
-      grid-template-columns: 0.05fr 1fr;
-      grid-template-rows: auto auto auto 0.1fr;
+      grid-template-columns: 0.05fr auto;
+      grid-template-rows: auto auto auto auto;
       grid-template-areas:
           'left-sidebar header'
           'left-sidebar main-content'
@@ -70,7 +70,7 @@ html {
 /* desktop breakpoint */
 @media (min-width:1024px) {
   .conteiner {
-      grid-template-columns: 0.06fr 1fr 1fr 0.2fr;
+      grid-template-columns: 0.06fr auto auto 0.1fr;
       grid-template-rows: 0.3fr 1fr 0.1fr;
       grid-template-areas:
           'left-sidebar header header header'
@@ -131,6 +131,7 @@ html {
 
 .sidenav a:hover {
   color: #f1f1f1;
+  cursor: pointer;
 }
 
 .sidenav .closebtn {
@@ -156,11 +157,16 @@ html {
 .left-sidebar .icons-row i{
   padding: 10px 0px;
 }
+
+.left-sidebar .icons-row i:hover{
+  color: white;
+  transition: 0.3s;
+}
 /* ================ */
 /* FOOTER CSS AREA */
 /* ================ */
 .footer{
-  padding: 30px 0px;
+  padding: 10px 0px;
   text-align: center;
 }
 .footer .icons-row, .info-row, .copy-row {
@@ -178,7 +184,7 @@ html {
   margin:0px 30px;
 }
 .footer .icons-row a i{
-  margin:0% 1%;
+  margin:0% 30px;
   font-size: 24px;
 }
 .footer .copy-row{

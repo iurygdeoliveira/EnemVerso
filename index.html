@@ -19,29 +19,29 @@
     <!-- javascript:void(0) é para o Html interpretar o "link" como um script, neste caso o void(0), ou seja
     ao clicar o link, a pagina não ira fazer nada, não irá recarregar -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
-    <a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Matérias</a>
-    <a href="#"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;Provas</a>
-    <a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Conta</a>
+    <a><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home</a>
+    <a onclick="Ajax('icon-learn')"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Matérias</a>
+    <a onclick="Ajax('icon-works')"><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;Provas</a>
+    <a onclick="Ajax('icon-account')"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Conta</a>
   </div>
   <!-- Linkando o script do JavaScript -->
   <script src="script.js"></script>
+
+  <!-- Div do conteúdo -->
   <div class="conteiner" id="conteiner">
     <header class="header">
         <a href="index.html"><img src="imgs/logo/enemverso_v1-rbg.png" alt="EnemVerso Logo" width="100" height="100"></a>
     </header>
-
     <div class="left-sidebar">
       <!-- Botão para abrir a navbar -->
       <span style="cursor:pointer" onmouseenter="openNav()" onclick="openNav()" class="btn-menu">&#9776;</span>
       <div class="icons-row">
-        <a href="#"><i id="icon-home" class="fa-solid fa-house"></i></a>
-        <a href="#"><i id="icon-learn" class="fa-solid fa-book"></i></a>
-        <a href="#"><i id="icon-works" class="fa-solid fa-pen-to-square"></i></a>
-        <a href="#"><i id="icon-account" class="fa-solid fa-user"></i></a>
+        <i style="cursor: pointer;" id="icon-home" class="fa-solid fa-house"></i><!-- Home -->
+        <i style="cursor: pointer;" id="icon-learn" class="fa-solid fa-book" onclick="Ajax('icon-learn')"></i><!-- Materias -->
+        <i style="cursor: pointer;" id="icon-works" class="fa-solid fa-pen-to-square" onclick="Ajax('icon-works')"></i> <!-- Questões -->
+        <i style="cursor: pointer;" id="icon-account" class="fa-solid fa-user" onclick="Ajax('icon-account')"></i> <!-- Conta -->
       </div>
     </div>
-
     <main id="main" class="main-content">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
       Qui molestias est iusto vero dolores, dicta natus vel culpa eos nesciunt nam consequatur 
