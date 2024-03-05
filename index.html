@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="/style.css">
+  <!-- Script CDN framework - TailWind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Titulo da pagina -->
   <title>EnemVerso</title>
 </head>
 
 <body>
-  
-  <div id="head">
-    <img class="img1" src="./img/enemverso.png">
+  <!-- Header -->
+  <div class="bg-blue-700 h-[100px] flex justify-center">
+    <img class="w-[345px]" 
+    src="/img/enemverso.png">
   </div>
-  <div id="navbar">NAVBAR</div>
-  <div id="article">ARTICLE</div>
-  <div id="ads">ADS</div>
-  <div id="footer">    
-    <span class="foo1">&copy; 2024 • Desenvolvido por <a class="name" href="https://wa.me/5563992989881" target="_blank">Matheus Kayan</a></span>
-  </div>
+  <!-- Pagina -->
+  <div class=" flex flex justify-between">
+    <div class="bg-rose-500 w-[25 0px] h-[100px] ">NAVBAR</div>
+    <div id="article">ARTICLE</div>
+    <div class="bg-orange-400 order-last w-[200px]">ADS</div>
+    <div id="footer"></div>
+</div>
 
 </body>
-
 </html>
