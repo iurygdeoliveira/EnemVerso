@@ -16,9 +16,9 @@ import("https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js");
 function Ajax(id){
   $(document).ready(function(){
   switch (id) {
+    // Caso o clique seja no icone de livro, ou seja, de materias
     case 'icon-learn':
       $(document).ready(function(){
-        // Evento de Clique do Link Quimica
           $.ajax({
             url: "materias.html",
             type: "GET",
