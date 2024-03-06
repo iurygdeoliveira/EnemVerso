@@ -1,0 +1,57 @@
+body {
+
+
+  min-height: 100vh;
+  
+}
+
+#container {
+
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+  height: 100vh;
+  
+}
+
+#head {
+  
+
+  display: grid;
+  background-color: deeppink;
+  grid-column: 2/11;
+  grid-row: 1;
+  
+}
+
+#navbar {
+
+  display: grid;
+  background-color: green;
+  grid-column: 1;
+  grid-row: 1/11;
+}
+#article {
+  
+  display: grid;
+  background-color:cadetblue;
+  grid-column: 2/10;
+  grid-row: 2/10;
+
+  
+}
+
+#footer{
+
+  display: grid;
+  background-color: yellow;
+  grid-column: 2/11;
+  grid-row: 10;
+}
+#ads{
+  display: grid;
+  background-color: red;
+  grid-column: 10;
+  grid-row: 2/10;
+  
+}
