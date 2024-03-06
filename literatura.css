@@ -1,0 +1,42 @@
+.certoweb {
+  background-color: cornflowerblue;
+  grid-area: escala;
+}
+
+.certoweb1 {
+  background-color: palevioletred;
+  grid-area: escala1;
+}
+
+.certoweb2 {
+  background-color: azure;
+  grid-area: escala2;
+}
+
+.certoweb3 {
+  background-color: aquamarine;
+  grid-area: escala3;
+}
+
+.certoweb4 {
+  background-color: lightblue;
+  grid-area: escala4;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: 
+    "escala1 escala escala escala escala"
+    "escala1 escala2 escala2 escala2 escala3"
+    "escala1 escala2 escala2 escala2 escala3"
+    "escala1 escala2 escala2 escala2 escala3"
+    "escala4 escala4 escala4 escala4 escala4"
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+}
