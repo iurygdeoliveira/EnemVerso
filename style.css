@@ -1,11 +1,11 @@
 html {
-  height: 100%;
   max-width: 100%;
 
   font-family: sans-serif;
 }
 
 body {
+  height:100%;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -37,7 +37,7 @@ header,
 footer {
   display: flex;
   width: 100%;
-  height: 8rem;
+  height: 7.5rem;
   justify-content: center;
   align-items: center;
 
@@ -47,6 +47,7 @@ footer {
 
 #content-and-extra {
   display: flex;
+  height:100%;
 }
 
 article {
@@ -72,8 +73,8 @@ article {
 }
 
 .graphic {
-  width: 11rem;
-  height: 8rem;
+  width: 100%;
+  height: 100%;
 }
 
 figure {
