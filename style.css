@@ -70,7 +70,7 @@ html {
 /* desktop breakpoint */
 @media (min-width:1024px) {
   .conteiner {
-      grid-template-columns: 0.06fr auto auto 0.1fr;
+      grid-template-columns: 0.04fr auto auto 0.1fr;
       grid-template-rows: 0.3fr auto 0.1fr;
       grid-template-areas:
           'left-sidebar header header header'
@@ -86,6 +86,9 @@ html {
   .left-sidebar .icons-row i{
     margin-top: 10px;
   }
+  /* .icons-row{
+    display: block;
+  } */
   /* .sidenav .closebtn{
     display: none;
   } */

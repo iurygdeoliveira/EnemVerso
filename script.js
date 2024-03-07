@@ -28,6 +28,18 @@ function Ajax(id){
           })
       })
       break;
+    case 'icon-home':
+      $(document).ready(function(){
+        $.ajax({
+          url: "main.html",
+          type: "GET",
+          success: function(data){
+            $("main").html(data)
+          }
+        })
+      })
+      break;
   }
+    
   })
 }
