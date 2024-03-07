@@ -129,3 +129,9 @@ a {
   color: #788896;
   font-weight: 850;
 }
+
+@media (max-width: 600px) {
+  #sidebar {
+    display: none;
+  }
+}
