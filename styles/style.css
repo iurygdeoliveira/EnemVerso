@@ -12,7 +12,7 @@
     height: 100%;
 
     grid-template-columns: 15% 75% 10%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 20% 70% 10%;
 }
 
 /* Header */
@@ -80,9 +80,17 @@
     grid-row: 3;
 }
 
-.footer_text{
+.footer_text {
     align-items: center;
     padding-right: 2.5%;
+    color: white;
+    font-weight: bold;
+}
+
+.imagem_logo {
+    display: block;
+    height: 20%;
+    align-items: center;
 }
 
 @media screen and (max-width: 992px) {
