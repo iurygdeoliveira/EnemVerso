@@ -9,7 +9,6 @@ html, body {
   height: 100%;
   font-family: "Open Sans";
 }
-
 #head {
   background-color: #1D4ED8;
   float: right;
@@ -23,20 +22,17 @@ html, body {
   width: 15%;
   height: 85%;
 }
-
 #content {
   display: inline-block;
   width: 50%;
   height: 30rem;
 }
-
 #extra {
   background-color: #FB923C;
   float: right;
   width: 15%;
   height: 70%;
 }
-
 #footer {
   display: flex;
   justify-content: space-between;
