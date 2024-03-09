@@ -10,17 +10,43 @@ html, body {
   font-family: "Open Sans";
 }
 #head {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  height: 100vh; /* Altura total da viewport */
   background-color: #1D4ED8;
   float: right;
   width: 85%;
   text-align: center;
   height: 15%;
 }
+h1 {
+  color: #fff;
+  text-align: center;
+}
 #navbar {
   background-color: #F43F5E;
   float: left;
   width: 15%;
   height: 85%;
+  padding-top: 8%;
+}
+.likmat {
+  display:contents;
+  justify-content: space-between;
+  text-align: center;
+}
+.likmat a {
+  display: block; /* Isso é importante para aplicar margens verticalmente */
+  margin: 10px 0; /* Adiciona 10 pixels de espaço acima e abaixo de cada link */
+}
+a[href] {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+a[href]:hover {
+  color: #881337;
 }
 #content {
   display: inline-block;
