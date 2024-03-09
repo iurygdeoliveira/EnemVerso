@@ -81,7 +81,8 @@ div a.EnV {
   height: 10%; 
 }
 span, a.name {
-  color: #44403C;
+  font-size: 10px;
+  color: #404040;
   font-weight: normal;
   text-decoration: none;
 }
