@@ -9,6 +9,7 @@
   
   <!-- Tags CSS e JS -->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
   <!-- Titulo da Pagina -->
   <title>EnemVerso</title>
@@ -16,27 +17,44 @@
 </head>
 <!-- Pagina -->
 <body>
-    <div id="head">
-      <h1>EnemVerso</h1>
-    </div>
+  <!-- Head Pagina -->
+  <div id="head">
+    <a class="EnV" href="/">EnemVerso</a>
+  </div>
+
+    <!-- Navegação -->
     <div id="navbar">
-      <ol class="likmat">
-        <li><a href="https://www.example.com">Filosofia</a></li>
-        <li><a href="https://www.example.com">Fisica</a></li>
-        <li><a href="https://www.example.com">Geografia</a></li>
-        <li><a href="https://www.example.com">Ingles</a></li>
-        <li> <a href="https://www.example.com">Espanhol</a></li>
-        <li><a href="https://www.example.com">Historia</a></li>
-        <li><a href="https://www.example.com">Lingua Port</a></li>
-        <li> <a href="https://www.example.com">Literatura</a></li>
-        <li> <a href="https://www.example.com">Quimica</a></li>
-        <li><a href="https://www.example.com">Sociologia</a></li>
-      </ol>
+      <nav>
+        <ol class="likmat">
+          <li><a href="#filosofia" onclick="alterarConteudo('filosofia')">Filosofia</a></li>
+          <li><a href="#fisica" onclick="alterarConteudo('fisica')">Fisica</a></li>
+          <li><a href="#geografia" onclick="alterarConteudo('geografia')">Geografia</a></li>
+          <li><a href="#">Ingles</a></li>
+          <li> <a href="#">Espanhol</a></li>
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">Lingua Port</a></li>
+          <li> <a href="#">Literatura</a></li>
+          <li> <a href="#">Quimica</a></li>
+          <li><a href="#">Sociologia</a></li>
+        </ol>
+    </nav>
     </div>
-    <div id="content"> CONTENT </div>
+    <!-- Centeudos -->
+    <div id="content">
+      <div id="filosofia">
+        <h1>Filosofia</h1>
+        <p>Bem vindo ao conhecimento filosofico</p>        
+      </div>
+      <div id="fisica">
+        <h1>Fisica</h1>
+        <p>Bem vindo ao conhecimento fisico</p>        
+      </div>
+    </div>
+    <!-- Extras -->
     <div id="extra"> EXTRA </div>
+    <!-- Footer/Rodapé -->
     <div id="footer">
-      <h3>Footer</h3>
+      <span class="foo1">&copy; 2023 • Desenvolvido por <a class="name" href="https://wa.me/5563992989881" target="_blank">Matheus Kayan</a></span>
     </div>
 
 </body>
