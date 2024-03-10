@@ -1,5 +1,5 @@
 
-![Logo](https://566fc861-8bb7-424e-ac5d-bd7653259ab8-00-jr7o6di0bt5h.janeway.replit.dev/img/enemverso.png)
+![Logo](./img/enemversologo.png)
 
 
 # EnemVerso
@@ -36,7 +36,7 @@ Recebe dois números e retorna a sua soma.
 
 ## Demonstração
 
-Insira um gif ou um link de alguma demonstração
+👉🏽Confira [aqui](https://mattheuskayan.github.io/EnemVerso/) a view do projeto.
 
 
 ## Autores
