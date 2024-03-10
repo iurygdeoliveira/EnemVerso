@@ -28,9 +28,17 @@ div a.EnV {
   background-color: #F43F5E;
   float: left;
   width: 15%;
-  height: 90%;
-  padding-top: 6.9%;
-  padding-left: 3%;
+  height: 91%;
+}
+#navbar .nav {
+  padding-top: 8%;
+  padding-left: 25%;
+}
+img {
+  width: 130px;
+  position:relative;
+  left: 15%;
+  top: 3%;
 }
 .likmat {
   display:contents;
@@ -54,23 +62,45 @@ div a.EnV {
   font-weight: 900;
   color: #881337;
  }
-#content {
+#content  {
   display: inline-block;
+  width: 70%;
+  height: 75%;
 }
-#filosofia {
+#content h1 {
+  padding: 15px;
+}
+#filosofia, #fisica, #geografia, #ingles, #espanhol,
+#historia, #portugues, #literatura, #quimica, #sociologia {
   display: none;
+  padding: 0 15px 0 15px;
+  text-align: center;
 }
-#fisica {
-  display: none;
+p, .BemV {
+  font-size: 16px;
+  text-align: justify;
 }
-#geografia {
-  display: none;
+p{
+  padding-top: 10px;
 }
+
 #extra {
   background-color: #FB923C;
   float: right;
   width: 15%;
-  height: 75%;
+  height: 76%;
+}
+.logoifto {
+  position: relative;
+  top: 0.3cm;
+}
+.bragov {
+  position: relative;
+  top: 4cm;
+}
+.govtoc {
+  position: relative;
+  top: 2cm;
 }
 #footer {
   display: flex;
@@ -78,7 +108,7 @@ div a.EnV {
   align-items: center; /* Alinha verticalmente */
   background-color: #4ADE80;
   width: 100%;
-  height: 10%; 
+  height: 9%; 
 }
 span, a.name {
   font-size: 10px;
