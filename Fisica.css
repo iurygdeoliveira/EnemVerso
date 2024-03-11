@@ -15,12 +15,12 @@
 nav, header, main, aside, footer {
   display: flex;
   flex-wrap: wrap;
-  background-color: royalblue;
   border: 2px solid black;
 }
 
 .header {
   flex: 1 1 100%;
+  background-color: #99ffff;
   height: 80px;
 }
 
@@ -47,6 +47,7 @@ header #logo {
 }
 
 .nav {
+  background-color: #ffff99;
   flex: 1 1 100px;
   height: 40px;
 }
@@ -63,16 +64,19 @@ nav a {
 
 .main {
   flex: 20 1 500px;
+  background-color: #99ff99;
   height: calc(100vh - 184px);
   flex-wrap: wrap;
   overflow: auto;
 }
 
 .aside { 
+  background-color: #ff99ff;
   flex: 1 1 100px;
 }
 
 .footer {
+  background-color: #ff9999;
   flex: 1 1 100%;
   height: 80px;
 }
