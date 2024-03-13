@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>   
+<head>
+<style>
+.item1 { 
+  grid-area: header;
+   background-color: #9775ff;
+}
+.item2 { 
+  grid-area: menu;
+background-color: #03CA4C
+}
+.item3 {
+  padding-top: 10px;
+  grid-area: main;
+background-color: #FFFFFF}
+.item4 { 
+  grid-area: right; 
+background-color: #48D7FA}
+.item5 { 
+  grid-area: footer;
+background-color: #4666E6}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header'
+    'menu main right'
+    'menu footer footer';
+  gap: 5px;
+  height: 90vh;
+  padding: 2px;
+}
+
+/* .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+} */
+
+  @media (max-width: 600px){
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header'
+        'main'
+        'right'
+        'footer';
+      gap: 5px;
+      height: 90vh;
+      padding: 2px;
+    }
+    .item2{
+      display: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Enem Verso Geografia</h1>
+
+<p></p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2"<br> Menu <br> <br> <br>Geografia </div>
+  <div class="item3"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    img {
+      width: 100%;
+      height: auto;
+    }
+    </style>
     </head>
-    
     <body>
 
-       <div id="head">
-       </div>
-       <div id="navbar"> 
-       </div>
-       <div id="article">
-       </div>
-       <div id="ads">
-       </div>
-       <div id="footer">
-       </div>
+    <img src="https://www.siteware.com.br/wp-content/uploads/2019/08/graficos-para-apresentacao-resultados-area-768x295.jpg" width="460" height="345"> A geografia é a ciência que estuda o espaço terrestre, incluindo fenômenos naturais e atividades humanas, e as interações entre eles. Ela investiga a distribuição espacial dos fenômenos físicos e humanos, bem como as relações entre lugares, paisagens e interações sociais, econômicas e culturais em diferentes regiões do mundo. Em resumo, a geografia busca compreender o espaço terrestre em sua totalidade, analisando aspectos naturais e humanos e as complexas interações que ocorrem nesse espaço.</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
 
-    </body>
+</body>
 </html>
