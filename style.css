@@ -9,7 +9,7 @@
 
 #logo {
 
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
     border-radius: 50%;
     margin: 20% 10%;
@@ -18,7 +18,7 @@
 
 body {
 
-    min-height: 100vh;
+    min-height: 200vh;
     margin: 0%;
 
 }
@@ -26,15 +26,15 @@ body {
 header {
     
     display: inherit;
-    background-color: rgba(255, 228, 196, 0.4);
-    border: 2px solid rgb(179, 64, 181);
+    background-color: rgba(250, 255, 198, 0.6);
+    border: 2px solid rgb(48, 120, 56);
 
 }
 
 #ads {
 
     display: inherit;
-    background-color: rgba(244, 165, 96, 0.3);
+    background-color: rgba(220, 120, 85, 0.3);
     border: 2px solid rgb(69, 39, 12);
 
 }
@@ -44,7 +44,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 36, 36, 0.45);
+    background-color: rgba(200, 70, 70, 0.60);
     border: 2px solid rgb(91, 77, 77);
     text-align: start;
 
