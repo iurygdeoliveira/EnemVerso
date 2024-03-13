@@ -1,4 +1,158 @@
-html {
-  height: 100%;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+nav, header, main, aside, footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:  #00fa3e;
+
+}
+
+.header {
+  flex: 1 1 100%;
+  height: 80px;
+  background-color: ;
+
+}
+
+#openMenu, #closeMenu {
+  border: none;
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px, 5px, 0px, 5px;
+  cursor: pointer; 
+  display: none;
+}
+
+header #logo {
+  flex: 0 1 80px;
+  border-radius: 360px;
+  background: #ffffff;
+}
+
+.nav2{
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: flex-end;
+  background-color:#66b3ff;
+}
+
+.nav {
+  flex: 1 1 100px;
+  height: 40px;
+  background-color:#cacace ;
+}
+
+nav a {
+margin: 3%;
+font-size: 10pt;
+}
+
+.nav2 a {
+  margin: 3%;
+  font-size: 10pt;
+  background-color:#ff7566 ;
+
+}
+
+.main {
+  flex: 20 1 500px;
+  height: calc(100vh - 184px);
+  flex-wrap: wrap;
+  overflow: auto;
+  background-color: #fff266;
+}
+
+
+.aside { 
+  flex: 1 1 100px;
+  background-color:  #ea4d7c;
+}
+
+.footer {
+  flex: 1 1 100%;
+  height: 80px;
+  background-color:  #574dea;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (max-width: 700px){
+  .nav {
+    display: none;
+  }
+  #openMenu, #closeMenu {
+    display: block;
+  }
+  #openMenu {
+    margin-left: auto;
+  }
+  #closeMenu{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+  }
+  .nav2 {
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.8);
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 700.5px) {
+  #openMenu, #closeMenu {
+    display: none !important;
+  }
+  .main {
+    flex: 20 1 300px;
+    order: 2;
+  }
+  .aside {
+    order: 3;
+    flex: 1 1 100px;
+  }
+  .nav2{
+    display: none !important;
+  }
+  .header {
+    order: 0;
+  }
+  .nav {
+    flex: 1 1 100px;
+    order: 1;
+  }
+  .footer {
+    flex: 1 1 100%;
+    height: 44px;
+    order: 4;
+  }
+  .nav, .main {
+     height: calc(100vh - 124px);
+  }
+  nav a {
+    margin: 3%;
+    font-size: 10pt;
+    flex-direction: center;
+    aling-items: center;
+  }

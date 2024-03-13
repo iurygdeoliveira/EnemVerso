@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>EnemVerso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EnemVerso Portugues</title>
 </head>
+<body class="container">
+  <header class="header">
+    <a href="#" id="logo">logo</a>
+    <button id="openMenu">&#9776;</button>
+    <div id="menu" class="nav2">
+      <button id=closeMenu>X</button>
+      <a href="https://www.todamateria.com.br/portugues-enem/">Português</a>
+      <a href="https://brasilescola.uol.com.br/matematica#:~:text=Matem%C3%A1tica%20%C3%A9%20uma%20ci%C3%AAncia%20que%20utiliza%20conceitos%20e%20t%C3%A9cnicas%20para,%2C%20racioc%C3%ADnio%20l%C3%B3gico%2C%20entre%20outros.">Matemática</a>
+      <a href="https://www.todamateria.com.br/historia-no-enem/">História</a>
+      <a href="https://www.todamateria.com.br/geografia-enem/"></a>
+    </div>
+  </header>
+  <nav class="nav"> 
+    <a href="https://www.todamateria.com.br/portugues-enem/">Português</a>
+    <a href="https://brasilescola.uol.com.br/matematica#:~:text=Matem%C3%A1tica%20%C3%A9%20uma%20ci%C3%AAncia%20que%20utiliza%20conceitos%20e%20t%C3%A9cnicas%20para,%2C%20racioc%C3%ADnio%20l%C3%B3gico%2C%20entre%20outros.">Matemática</a>
+    <a href="https://www.todamateria.com.br/historia-no-enem/">História</a>
+    <a"></a></nav>
+  <main class="main">Main</main>
+  <aside class="aside">Aside</aside>
+  <footer class="footer">Footer</footer>
+  <script type="text/javascript">
+    openMenu.addEventListener('click', () => {
+      menu.style.display = 'flex'
 
-<body>
+      menu.style.right = (menu.offsetWidth * -1) + 'px'
 
-  <div id="head"> HEAD </div>
-  <div id="navbar"> NAVBAR </div>
-  <div id="article"> ARTICLE </div>
-  <div id="ads"> ADS </div>
-  <div id="footer"> FOOTER </div>
-  
+      openMenu.style.display = 'none'
+
+      setTimeout(() => {
+        menu.style.opacity = '1'
+
+        menu.style.right = '0'
+      }, 10)
+    })
+
+    closeMenu.addEventListener('click', () => {
+      menu.style.opacity = '0'
+
+      menu.style.right = (menu.offsetWidth * -1) + 'px'
+
+      setTimeout(() => {
+        menu.removeAttribute('style')
+        openMenu.style.display = ('block')
+      }, 200)
+    })
+  </script>
 </body>
-
-</html>
+</html>ddd
