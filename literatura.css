@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
 .certoweb {
   background-color: cornflowerblue;
   grid-area: escala;
@@ -6,24 +12,32 @@
 .certoweb1 {
   background-color: palevioletred;
   grid-area: escala1;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 .certoweb2 {
   background-color: azure;
   grid-area: escala2;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 .certoweb3 {
   background-color: aquamarine;
   grid-area: escala3;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 .certoweb4 {
   background-color: lightblue;
   grid-area: escala4;
+  display: grid;
+  grid-template-rows: auto;
 }
 
-.container{
+.container {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   grid-template-rows: auto auto auto auto auto;
@@ -32,11 +46,46 @@
     "escala1 escala2 escala2 escala2 escala3"
     "escala1 escala2 escala2 escala2 escala3"
     "escala1 escala2 escala2 escala2 escala3"
-    "escala4 escala4 escala4 escala4 escala4"
+    "escala4 escala4 escala4 escala4 escala4";
+}
+.logo1{
+  display: none;
+}
+.logo{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
 }
 
-body {
-  margin: 0px;
-  width: 100%;
-  height: 100vh;
+@media screen and (max-width: 700px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "escala escala escala escala escala"
+    "escala1 escala1 escala1 escala1 escala1 "
+    "escala2 escala2 escala2 escala2 escala2"
+    "escala3 escala3 escala3 escala3 escala3"
+    "escala4 escala4 escala4 escala4 escala4";
+  }
+
+.certoweb1{
+  display: none;
+}
+
+  
+.logo{
+  display: none;
+}
+
+.logo1{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+}
 }
