@@ -1,6 +1,7 @@
 
   body{
     margin:0%;
+    box-sizing: border-box;
   }
   .head { 
     grid-area: head;
@@ -9,7 +10,12 @@
   .navbar {
     grid-area:navbar;
      background-color: #ff4d4d;
+  
   }
+
+ a{
+  font-size: 20px;
+}
   .extra {
     grid-area:extra;
      background-color: #ffff99;
@@ -51,7 +57,7 @@
       height: 20%;
     }
     .navbar {
-      height: 10%;
+      display: none;
     }
     .extra {
       height: 60%;
@@ -69,7 +75,7 @@
       grid-template-areas:
 
         "head head head head head"
-        "navbar navbar navbar navbar navbar"
+        
         "article article article article article"
         "extra extra extra extra extra"
         "footer footer footer footer footer";
@@ -79,4 +85,6 @@
       grid-template-columns: 20% auto 40% 12%;
       grid-template-rows: 15% 69% 15%;
     }
+
+   
   }
