@@ -1,5 +1,5 @@
 .item2 {
-  background-color: #FA8072;
+  background-color: #81f971;
   grid-area: nav;
 }
 
@@ -14,12 +14,12 @@
 }
 
 .item5 {
-  background-color: #3CB371;
+  background-color: #3c44b4;
   grid-area: footer;
 }
 
 .item4 {
-  background-color: #F0E68C;
+  background-color: #ef8ef0;
   grid-area: aside;
 }
 
@@ -39,4 +39,21 @@ body {
   margin: 0px;
   width: 100%;
   height: 100vh;
+}
+
+@media screen and (max-width: 600px){
+  .item2{
+    display: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "header "
+      "main "
+     "aside"
+      
+      "footer ";
+  }
 }
