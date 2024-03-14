@@ -26,7 +26,24 @@
   </div>
   <!-- Linkando o script do JavaScript -->
   <script src="script.js"></script>
-
+  <!-- Ajax Script, para chamar o main automaticamente -->
+  <script>
+    //Verifica o documento para ativar o evento
+    $(document).ready(function(){
+    // Evento de Clique do Link Quimica
+    $("#main").onload(function(){
+        //Chama todo o conteudo da pagina quimica.html e adiciona na variaval "data"
+        $.ajax({
+        url: "materias/quimica.html",
+        type: "GET",
+        //Caso tenha sucesso em achar o arquivo, puxa as informações e insere na div #main
+        success: function(data){
+            $("main").html(data)
+        }
+        })
+    })
+    })
+  </script>
   <!-- Div do conteúdo -->
   <div class="conteiner" id="conteiner">
     <header class="header">
