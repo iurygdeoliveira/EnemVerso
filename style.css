@@ -95,15 +95,20 @@ figure {
   flex-direction: column;
 
   height: auto;
-  width: 7.5rem;
+  width: 8.5rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #f6dade;
 
   border: solid;
   border-width: 1px;
   border-color: #d8586c;
 
+}
+
+#logo {
+  width: 100%;
+  margin-bottom: 3em;
 }
 
 a {
@@ -133,5 +138,22 @@ a {
 @media (max-width: 600px) {
   #sidebar {
     display: none;
+  }
+
+  #content-and-extra{
+    flex-direction: column;
+  }
+
+  .graphic{
+    width:20rem;
+  }
+  
+  #extra{
+    height:7.5rem;
+    width:100%;
+  }
+
+  #figures {
+    flex-direction: column;
   }
 }
