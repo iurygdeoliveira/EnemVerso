@@ -21,8 +21,10 @@ html {
 
 #sidebar {
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
-  grid-template-columns: auto;
+  grid-template-areas: 
+  "l"
+  "d"
+  "t";
   background-color: #f6dade;
   border-color: #d65367;
   border-style: solid;
@@ -36,6 +38,10 @@ html {
 }
 
 #header {
+  display: grid;
+  grid-template-areas:
+  "g"
+  "c";
   background-color: #d5e7f7;
   border-color: #2c88d9;
   border-style: solid;
@@ -45,6 +51,14 @@ html {
 #main {
   background-color: white;
   grid-area: m;
+}
+
+#graficos{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 3.43 / 1;
+  width: 90vh;
 }
 
 #extra {
