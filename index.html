@@ -3,18 +3,148 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width">
+  <script src="https://kit.fontawesome.com/88084bb87d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <title>EnemVerso</title>
+
+
 </head>
 
 <body>
+  <div id="HEADER">
+    <div id="user-menu">
+      <a href="#">Meu Perfil</a>
+      <a href="#">Configurações</a>
+      <a href="#">Sair</a>
+    </div>
+  </div>
 
-  <div id="head"> HEAD </div>
-  <div id="navbar"> NAVBAR </div>
-  <div id="article"> ARTICLE </div>
-  <div id="ads"> ADS </div>
-  <div id="footer"> FOOTER </div>
-  
+  <div id="SIDEBAR">
+    <div id="logo-container">
+      <img src="EnemVerso.jpg" alt="Logo" class="circular-logo">
+    </div>
+    <ul>
+      <li class="subject-list"><a href="#">Artes</a></li>
+      <li class="subject-list"><a href="#">Biologia</a></li>
+      <li class="subject-list"><a href="#">Educação Física</a></li>
+      <li class="subject-list"><a href="#">Espanhol</a></li>
+      <li class="subject-list"><a href="#">Filosofia</a></li>
+      <li class="subject-list"><a href="#">Física</a></li>
+      <li class="subject-list"><a href="#">Geografia</a></li>
+      <li class="subject-list"><a href="#">História</a></li>
+      <li class="subject-list"><a href="#">Inglês</a></li>
+      <li class="subject-list"><a href="#">Língua Portuguesa</a></li>
+      <li class="subject-list"><a href="#">Literatura</a></li>
+      <li class="subject-list"><a href="#">Matemática</a></li>
+      <li class="subject-list"><a href="#">Química</a></li>
+      <li class="subject-list"><a href="#">Sociologia</a></li>
+      <li class="subject-list"><a href="#">Tecnologia</a></li>
+    </ul>
+  </div>
+
+  <div id="CONTENT">
+    <div class="radar-chart">
+      <div class="pie-container">
+        <canvas id="myPieChart1" width="250" height="250"></canvas>
+        <p style="text-align: center; font-weight: bold;">TADS</p>
+      </div>
+      <div class="pie-container">
+        <canvas id="myPieChart2" width="250" height="250"></canvas>
+        <p style="text-align: center; font-weight: bold;">3A</p>
+      </div>
+      <div class="pie-container">
+        <canvas id="myPieChart3" width="250" height="250"></canvas>
+        <p style="text-align: center; font-weight: bold;">3B</p>
+      </div>
+    </div>
+
+    <div class="text-area">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
+    </div>
+  </div>
+
+  <div id="EXTRA"> EXTRA </div>
+
+  <div id="FOOTER">
+    <p>Rodapé: Informações adicionais e links úteis.</p>
+
+    <div>
+      <h3>Suporte</h3>
+      <ul>
+        <li><a href="#">Central de Ajuda</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Redes Sociais</h3>
+      <ul>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook/Enemverso</a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter/Enemverso</a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram/Enemverso</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    var pieData = {
+      labels: ['Artes', 'Biologia', 'Educação Física', 'Espanhol', 'Filosofia'],
+      datasets: [{
+        data: [15, 10, 20, 5, 15],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.7)',
+          'rgba(54, 162, 235, 0.7)',
+          'rgba(255, 206, 86, 0.7)',
+          'rgba(75, 192, 192, 0.7)',
+          'rgba(153, 102, 255, 0.7)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+        ],
+        borderWidth: 1,
+      }]
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      createPieChart('myPieChart1', pieData);
+      createPieChart('myPieChart2', pieData);
+      createPieChart('myPieChart3', pieData);
+    });
+
+    function createPieChart(canvasId, data) {
+      var ctxPie = document.getElementById(canvasId).getContext('2d');
+      new Chart(ctxPie, {
+        type: 'pie',
+        data: data,
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            position: 'bottom',
+          }
+        }
+      });
+    }
+  </script>
+
 </body>
 
 </html>
