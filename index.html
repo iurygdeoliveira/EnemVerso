@@ -7,18 +7,21 @@
     <link rel="shortcut icon" href="imgs/EnemVerso.png" type="image/x-icon">
     <!-- Importa as configurações CSS para a página -->
     <link rel="stylesheet" href="style.css">
+    <!-- Importing Jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <title>EnemVerso</title>
 
 </head>
 <body>
     <!-- Linkando o JS -->
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
     <div class="container">
      <header class="header">
         <img src="imgs/EnemVerso.png" alt="" width="150" height="150">
         <div class="navbar">
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Dropdown 
                     <i class="bi bi-caret-down"></i>
@@ -32,12 +35,24 @@
             <a href="#contact">Contact</a>
         </div>
     </header>
+
     <aside class="left">
         <i class="bi bi-person-circle"></i>
-        Left Sidebar
+        <div class="navbar-left">
+            <div class="navbar-links">
+                <a style="cursor: pointer;" id="backButton">Home</a>
+                <a style="cursor: pointer;" onclick="loadContent('materias/quimica.html')" id="quimica">
+                    Quimica
+                </a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
     </aside>
-    <main class="main">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloribus odit dolores 
+    <main id="content" class="main">
+        <h1>Home Page</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloribus odit dolores 
             delectus cumque recusandae officiis, omnis, ad adipisci quisquam mollitia modi earum. 
             Modi numquam maxime eos corrupti. Pariatur, quis?
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, facere cumque reprehenderit 
@@ -69,15 +84,15 @@
          <div class="footer-section">
              <h3>Redes Sociais</h3>
              <div class="social-icons">
-                 <a href="#"><i class="fa fa-facebook-f"></i></a>
-                 <a href="#"><i class="fa fa-twitter"></i></a>
-                 <a href="#"><i class="fa fa-instagram"></i></a>
+                 <a href="#"><i class="bi bi-facebook"></i></a>
+                 <a href="#"><i class="bi bi-twitter"></i></a>
+                 <a href="#"><i class="bi bi-instagram"></i></a>
              </div>
          </div>
          <div class="footer-section">
              <h3>Newsletter</h3>
              <form>
-                 <input type="email" placeholder="Your email address">
+                 <input type="email" id="email" name="email" placeholder="Your email address">
                  <button type="submit">Enviar</button>
              </form>
          </div>
