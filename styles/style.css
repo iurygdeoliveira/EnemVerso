@@ -99,3 +99,16 @@
         grid-template-rows: 10% 80% 10%;
     }
 }
+
+.chart_image {
+    width: 100%;
+}
+
+.texto_main > p {
+    padding: 10;
+    text-align: justify;
+}
+
+#texto_direitos_autorais{
+    text-align: end;
+}
