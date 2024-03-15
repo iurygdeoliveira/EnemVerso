@@ -1,4 +1,145 @@
-html {
-  height: 100%;
-  width: 100%;
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+body{
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 15% 1fr 15%;
+
+  grid-template-areas: 
+      "menu cabecalho cabecalho"
+      "menu interface aside"
+      "menu rodape rodape";
+
+  height: 100vh;
+  width: 100vw;
+
+} 
+@media   (max-width: 768px) {
+  body{
+      grid-template-columns: 5% 1fr 20%;
+  }
+  .logo{
+      display: none;
+  }
+  .menu .materias a{
+      display: none;
+  }
+  .interface .graficos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+@media  (max-width: 425px) {
+  body{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "cabecalho"
+          "interface"
+          "aside"
+          "rodape";
+  }
+  .menu{
+      display: none;
+  }
+}
+
+.menu{
+  grid-area: menu;
+  background-color: pink;
+  text-align: center;
+}
+.logo{
+  height: 200px;
+  width: 200px;
+  margin-top: 10%;
+  position: relative;
+
+}
+.materias{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  gap: 5px;
+
+}
+.cabecalho{
+  grid-area: cabecalho;
+  background-color: lightblue;
+  color: #fff; /* Cor do texto dos links */
+  text-align: center; /* Centraliza o texto */
+  text-transform: uppercase;
+  font-size: 16pt;
+  top: 0; /* Posiciona o menu no topo da tela */
+  left: 0; /* Posiciona o menu à esquerda da tela */
+  }
+
+.cabecalho a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  margin: 0 10px; /* Adiciona margem entre os links */
+  padding: 10px 20px; /* Adiciona padding aos links */
+  font-size: 1.125rem; /* Define o tamanho da fonte dos links */
+}
+
+.cabecalho a:hover {background-color: rgb(144, 212, 235); /* Cor de fundo ao passar o mouse */}
+
+.interface{
+  grid-area: interface;
+  background-color: white;
+
+
+}
+.interface h2{
+padding: 10px;
+height: 40px;
+}
+.interface p{
+
+  color: black;
+  height: 200px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
+}
+.interface .graficos img{
+  height: 150px;
+  width: 270px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.interface .graficos{
+ justify-content: center;
+
+}
+.aside{
+
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16pt;
+  grid-area: aside;
+}
+.rodape{
+  background-color: lightgreen;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16pt;
+  grid-area: rodape;
+}
+
+.Title{
+  text-align:center;
+}
+
+.texto-rodape {
+height: 50%;
+}
+
+.copyright {
+  height: 50%;
+  text-align: center;
 }
