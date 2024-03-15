@@ -1,4 +1,62 @@
-html {
-  height: 100%;
-  width: 100%;
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 20% 1fr 20%;
+
+  grid-template-rows: 15% 1fr 15%;
+
+  grid-template-areas:
+
+    "sidebar header header"
+    "sidebar article ads"
+    "sidebar footer footer";
+
+  gap: 0;
+
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #34DED0;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #31D1D0;
+}
+
+.article {
+  grid-area: article;
+}
+
+.ads {
+  grid-area: ads;
+  background-color: #94FAF0;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #3AF7F0;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 5% 1fr 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+
+    .sidebar {
+      display: none;
+    }
+
+    grid-template-areas: "header"
+    "article"
+    "ads"
+    "footer";
+  }
 }
