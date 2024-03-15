@@ -14,9 +14,17 @@
 
 </head>
 <body>
+    <script>
+        const link = document.getElementById('quimica');
+        if(link){
+            link.addEventListener('click', addClass)
+        }
+        function addClass(){
+            this.classList.add('noclick');
+        }
+    </script>
     <!-- Linkando o JS -->
     <script type="text/javascript" src="script.js"></script>
-
     <div class="container">
      <header class="header">
         <img src="imgs/EnemVerso.png" alt="" width="150" height="150">
@@ -55,6 +63,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloribus odit dolores 
             delectus cumque recusandae officiis, omnis, ad adipisci quisquam mollitia modi earum. 
             Modi numquam maxime eos corrupti. Pariatur, quis?
+            <a href="#">Teste</a>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, facere cumque reprehenderit 
             ducimus nesciunt nostrum quas magnam ullam eius doloribus alias asperiores eligendi 
             nihil libero. Aut quo molestias necessitatibus voluptatibus.
