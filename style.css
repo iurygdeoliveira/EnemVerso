@@ -1,4 +1,107 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.graficos {
+display: grid;
+background-size: 10px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto; /* Ajuste conforme necessário */
+margin-top: 5px;
+}
+
+.grafico_conteudo{
+margin-bottom: 60px;
+width: 160px;
+height: px;
+}
+
+.grafico_conteudo{
+margin-bottom: 60px;
+width: 160px;
+height: px;
+}
+
+
+.holy-grail-grid{
+display: grid;
+grid-template-areas: 
+'header'
+'main-content'
+'left-sidebar'
+'right-sidebar'
+'footer';
+/*padding: 1rem;*/
+height: 100vh;
+grid-template-rows: 80px 1fr 80px;
+}
+
+.holy-grail-grid > .header{
+grid-area: header;
+background-color: blue;
+text-align: center;
+}
+
+.holy-grail-grid > .content {
+grid-area: main-content;
+background-color: white;
+text-align: center;
+}
+
+.holy-grail-grid > .left-sidebar {
+grid-area: left-sidebar;
+background-color: #ca180c;
+text-align: center;
+grid-template-rows: 4, 25%;
+}
+
+.holy-grail-grid > .right-sidebar {
+grid-area: right-sidebar;
+background-color: yellow;
+text-align: center;
+}
+
+.holy-grail-grid > .footer{
+grid-area: footer;
+background-color: green;
+text-align: center;
+}
+
+.left-sidebar ul{
+text-align: center;
+}
+
+.left-sidebar h1{
+color: white;
+}
+
+.sidebar_links li{
+margin: 10px;
+
+}
+
+h1 {
+text-align: center;
+margin: 25px;
+}
+
+.imagem_logo {
+width: 180px;
+height: 180px;
+/* border-radius: 100%; */
+}
+
+
+@media (min-width: 1024px){
+.holy-grail-grid {
+grid-template-columns: repeat(6, 1fr);
+grid-template-areas: 'left-sidebar header header header header header'
+'left-sidebar main-content main-content main-content main-content right-sidebar' 
+'left-sidebar footer footer footer footer footer';
+}
+}
+
 }
