@@ -1,304 +1,193 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-/* Font size respond screen size */
-html {
-  font-size: calc(15px + 0.390625vw);
-}
-
-/* grid container and mobile breakpoint*/
-.conteiner{
-  display:grid;
-  grid-template-areas:
-      'header'
-      'left-sidebar'
-      'main-content'
-      'right-sidebar'
-      'footer';
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  min-height: 100svh;
-  transition: background-color .5s;
-}
-.main-content{
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-/* general column padding */
-.conteiner > * {
-  padding:1rem;
-}
-
-/* assign columns to grid areas */
-.conteiner > .header {
-  grid-area:header;
-  background:#f97171;
-}
-.conteiner > .left-sidebar{
-  grid-area: left-sidebar;
-  background: lightpink;
-}
-.conteiner > .main-content {
-  grid-area:main-content;
-  background:#fff;
-}
-.conteiner > .right-sidebar {
-  grid-area:right-sidebar;
-  background:#c5ed77;
-}
-.conteiner > .footer {
-  grid-area:footer;
-  background:#72c2f1;
-}
-
-/* tablet breakpoint */
-@media (min-width:768px) {
-  .conteiner {
-      grid-template-columns: 0.05fr auto;
-      grid-template-rows: auto auto auto auto;
-      grid-template-areas:
-          'left-sidebar header'
-          'left-sidebar main-content'
-          'left-sidebar right-sidebar'
-          'left-sidebar footer';
-  }
-}
-
-/* desktop breakpoint */
-@media (min-width:1024px) {
-  .conteiner {
-      grid-template-columns: 0.04fr auto auto 0.1fr;
-      grid-template-rows: 0.3fr auto 0.1fr;
-      grid-template-areas:
-          'left-sidebar header header header'
-          'left-sidebar main-content main-content right-sidebar'
-          'left-sidebar footer footer footer';
-
-      /* fallback height */
-      min-height:100vh;
-
-      /* new small viewport height for modern browsers */
-      min-height:100svh;
-  }
-  .left-sidebar .icons-row i{
-    margin-top: 10px;
-  }
-  /* .icons-row{
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
     display: block;
-  } */
-  /* .sidenav .closebtn{
-    display: none;
-  } */
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
+/* Define the grid container */
+.container {
+ display: grid;
+ grid-template-columns: 10% auto 10%; /* Adjust the fr values to change the width of the sidebars */
+ grid-template-rows: auto 1fr auto; /* Adjust the auto values to change the height of the header and footer */
+ grid-template-areas:
+    "left header header"
+    "left main right"
+    "left footer footer";
+ height: 100vh; /* Full viewport height */
+ width: 100vw; /* Full viewport width */
+}
 
-/* ==================== */
-/* HEADER CSS AREA */
-/* ==================== */
-.header{
+/* Define the grid items */
+.header {
+ grid-area: header;
+ background-color: lightcoral;
+ display: flex;
+ flex-direction: column;
+ align-items: center; /* Center the icon horizontally */
+ justify-content: top; /* Center the icon vertically */
+}
+
+/* Footer Container */
+.footer {
+  grid-area: footer;
+  background-color: lightblue; /* Dark background for the footer */
+  color: black; /* Light text color for better readability */
+  padding: 20px 0; /* Padding at the top and bottom */
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */ /* Space between footer sections */
+  flex-wrap: wrap; /* Allow sections to wrap if necessary */
 }
 
-.header-logo img{
-  height: 100px;
-  width: 100px;
+/* Footer Sections */
+.footer-section {
+  flex: 1; /* Each section takes up an equal amount of space */
+  margin: 0 20px; /* Margin on the sides to space out sections */
 }
-
-/* ================ */
-/* NAVBAR CSS AREA */
-/* ================ */
-@media (max-width:450px) {
-  .left-sidebar .icons-row i{
-    margin-left: 10px;
-  }
-}
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: khaki;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 16px;
+.footer-section a{
   text-decoration: none;
-  color: #000;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-  cursor: pointer;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 36px;
-  margin-left: 15px;
-}
-.btn-menu{
-  font-size: 22px;
-  font-weight: bold;
-}
-.left-sidebar{
-  text-align: center;
-}
-.left-sidebar .icons-row{
   color: black;
-  font-size: 20px;
+}
+.footer-section a:hover{
+  color: gray;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: space-between; /*Space between social icons */
+  width: 100%; /* Full width of the footer section */
+  margin-top: 10px; /* Margin above the social icons */
+}
+
+.social-icons a {
+  color: black; /* Icon color */
+  text-decoration: none; /* Remove underline from links */
+  /* padding-right: 20px; */
+}
+
+.social-icons a:hover {
+  color: #ddd; /* Change icon color on hover */
+}
+.social-icons #icon-right{
+  padding-left: 20px;
+}
+/* Newsletter Form */
+.footer form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the left */
+  margin-top: 10px; /* Margin above the form */
+}
+
+.footer input[type="email"] {
+  padding: 5px;
+  margin-bottom: 10px; /* Margin below the input field */
+  border: none;
+  border-radius: 1px;
+}
+
+.footer button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #555; /* Darker background for the button */
+  color: #fff; /* Light text color for the button */
+  border: none;
+  border-radius: 1px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.footer button[type="submit"]:hover {
+  background-color: #777; /* Darker background on hover */
+}
+
+.left {
+  grid-area: left;
+  background-color: lightsalmon;
+  display: flex; /* Flex display for center items */
+  flex-direction: column;
+  align-items: center;
+}
+/* For moment CSS of User Icon */
+.left i{
+  padding: 15px 20px; /* Rounding background color icon */
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
   display: inline-block;
 }
-.left-sidebar .icons-row a{
-  text-decoration: none;
-  color: black;
+.left i:hover{
+  color: lightsalmon;
+  background-color: white;
 }
-.left-sidebar .icons-row i{
-  padding: 10px 0px;
-}
-
-.left-sidebar .icons-row i:hover{
-  color: white;
-  transition: 0.3s;
-}
-/* ================ */
-/* FOOTER CSS AREA */
-/* ================ */
-.footer{
-  padding: 10px 0px;
-  text-align: center;
-}
-.footer .icons-row, .info-row, .copy-row {
-  width:100%;
-  /* margin:1% 0%; */
-  padding:0.6% 0%;
-  }
-.footer a{
-  text-decoration: none;
-  color: black;
-  transition: 0.8s;
-}
-.footer .info-row ul li{
-  display:inline-block;
-  margin:0px 30px;
-}
-.footer .icons-row a i{
-  margin:0% 30px;
-  font-size: 24px;
-}
-.footer .copy-row{
-  padding-top: 40px;
-}
-.footer a:hover{
-  color: white;
+.right {
+ grid-area: right;
+ background-color: lightgrey;
 }
 
-/* ================================================ */
-/* Only because the home icon is bigger than others */
-/* ================================================ */
-@media (min-width:1024px) {
-  #icon-home{
-    font-size: 18px;
-  }  
-}
-/* ================================================ */
-/* ========= Materias Cards CSS Area ============== */
-/* ================================================ */
-.card-conteiner {
-  margin: 0 auto;
-}
-.card-conteiner a{
-  text-decoration: none;
-}
-.ag-courses_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 50px 0;
-}
-.ag-courses_item {
-  -ms-flex-preferred-size: calc(33.33333% - 25px);
-  flex-basis: calc(33.33333% - 25px);
-  margin: 0 auto 30px;
-  overflow: hidden;
-  border-radius: 28px;
-}
-.ag-courses_item:hover{
-  background-color: lightsteelblue;
-  color: black;
-  transition: 0.5s;
-}
-.ag-courses-item_link {
-  display: block;
-  padding: 30px 20px;
-  background-color: #121212;
-  overflow: hidden;
-  position: relative;
-}
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover {
-  text-decoration: none;
-  color: #FFF;
-  background-color: lightslategrey;
-  transition: 0.5s;
-}
-.ag-courses-item_title {
-  min-height: 87px;
-  margin: 0 0 25px;
-
-  overflow: hidden;
-
-  font-weight: bold;
-  font-size: 30px;
-  color: #FFF;
-
-  z-index: 2;
-  position: relative;
-}
-@media only screen and (max-width: 979px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-    flex-basis: calc(50% - 30px);
-  }
-  .ag-courses-item_title {
-    font-size: 24px;
-  }
+.main {
+ grid-area: main;
+ overflow: auto; /* Enable scrolling in the main content area */
+ background-color: #ffffff;
 }
 
-@media only screen and (max-width: 767px) {
-  .card-conteiner {
-    width: 96%;
+@media (max-width: 1000px){
+  .container{
+    grid-template-columns: 5% auto 10%;
   }
 }
-@media only screen and (max-width: 639px) {
-  .ag-courses_item {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack all columns vertically on small screens */
+    grid-template-areas:
+      "header"
+      "left"
+      "main"
+      "right"
+      "footer";
   }
-  .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
-
-    font-size: 24px;
+  .left{
+    display: none;
   }
-  .ag-courses-item_link {
-    padding: 22px 40px;
-  }
-}
+ }
