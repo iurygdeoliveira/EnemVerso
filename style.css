@@ -1,4 +1,104 @@
-html {
-  height: 100%;
-  width: 100%;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 1fr 100px; 
+    grid-template-rows: 100px 1fr 100px;
+    height: 100vh;
+}
+
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    background-color: pink;
+}
+
+
+.head {
+    grid-column: 2 / span 2; 
+    grid-row: 1; 
+    background-color: lightblue;
+}
+
+.content {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: white;
+}
+
+
+.extra {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: lightgoldenrodyellow;
+}
+
+.footer {
+    grid-column: 2 / span 2; 
+    grid-row: 3; 
+    background-color: lightgreen;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  list-style-type: none;
+  width: 150px;
+}
+
+#navbar li {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+  color: mediumpurple;
+  padding: 0 2px;
+}
+
+#navbar a:hover {
+  background: deeppink;
+  transition: 400ms;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+}
+
+#graf {
+  width: 200px;
+  height: 135px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 100px 100px; 
+    }
+    .sidebar {
+        display: none;
+    }
+    #graf{
+      width: 200px;
+      height: 135px;
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+    }
+    .head, .content, .extra, .footer {
+        grid-column: 1;
+        grid-row: auto;
+    }
 }
