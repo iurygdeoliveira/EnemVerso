@@ -1,4 +1,118 @@
-html {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,300italic,400,400italic,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
   height: 100%;
+  font-family: "Open Sans";
+}
+#head {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  background-color: #1D4ED8;
+  float: right;
+  width: 85%;
+  height: 15%;
+}
+div a.EnV {
+  font-weight: bold;
+  font-size: 45px;
+  color: #fff;
+  text-decoration: none;
+}
+#navbar {
+  background-color: #F43F5E;
+  float: left;
+  width: 15%;
+  height: 91%;
+}
+#navbar .nav {
+  padding-top: 8%;
+  padding-left: 25%;
+}
+img {
+  width: 130px;
+  position:relative;
+  left: 15%;
+  top: 3%;
+}
+.likmat {
+  display:contents;
+  justify-content: space-between;
+  text-align: left;
+  list-style-type: none;
+}
+.likmat a {
+  display: block; /* Isso é importante para aplicar margens verticalmente */
+  margin: 10px 0; /* Adiciona 10 pixels de espaço acima e abaixo de cada link */
+}
+.likmat a[href] {
+  font-size: 16px; /* Tamanho da fonte padrão */
+  font-weight: 400; /* Peso da fonte padrão */
+  color: #F3F4F6; /* Cor */
+  text-decoration: none;
+  transition: font-size 0.2s ease, font-weight 0.2s ease, color 0.2s ease;
+ }
+ .likmat a[href]:hover {
+  /* font-size: 23px; */
+  font-weight: 900;
+  color: #881337;
+ }
+#content  {
+  display: inline-block;
+  width: 70%;
+  height: 75%;
+}
+#content h1 {
+  padding: 15px;
+}
+#filosofia, #fisica, #geografia, #ingles, #espanhol,
+#historia, #portugues, #literatura, #quimica, #sociologia {
+  display: none;
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+p, .BemV {
+  font-size: 16px;
+  text-align: justify;
+}
+p{
+  padding-top: 10px;
+}
+
+#extra {
+  background-color: #FB923C;
+  float: right;
+  width: 15%;
+  height: 76%;
+}
+.logoifto {
+  position: relative;
+  top: 0.3cm;
+}
+.bragov {
+  position: relative;
+  top: 4cm;
+}
+.govtoc {
+  position: relative;
+  top: 2cm;
+}
+#footer {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  background-color: #4ADE80;
   width: 100%;
+  height: 9%; 
+}
+span, a.name {
+  font-size: 11px;
+  color: #404040;
+  font-weight: normal;
+  text-decoration: none;
 }

@@ -1,20 +1,107 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+
+  <!-- Tags meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EnemVerso</title>
-</head>
-
-<body>
-
-  <div id="head"> HEAD </div>
-  <div id="navbar"> NAVBAR </div>
-  <div id="article"> ARTICLE </div>
-  <div id="ads"> ADS </div>
-  <div id="footer"> FOOTER </div>
   
-</body>
+  <!-- Tags CSS e JS -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
+  <!-- Titulo da Pagina -->
+  <title>EnemVerso</title>
+
+</head>
+<!-- Pagina -->
+<body>
+  <!-- Head Pagina -->
+  <div id="head"><a class="EnV" href="/index.html">EnemVerso</a></div>
+    <!-- Navegação -->
+    <div id="navbar">
+      <a href="/index.html"><img src="./img/enemversologo.png" alt="EnemVerso"></a>
+       
+      <div class="nav">
+        <nav>
+          <ol class="likmat">
+            <li><a href="#filosofia" onclick="alterarConteudo('filosofia')">Filosofia</a></li>
+            <li><a href="#fisica" onclick="alterarConteudo('fisica')">Fisica</a></li>
+            <li><a href="#geografia" onclick="alterarConteudo('geografia')">Geografia</a></li>
+            <li><a href="#ingles" onclick="alterarConteudo('ingles')">Ingles</a></li>
+            <li> <a href="#espanhol" onclick="alterarConteudo('espanhol')">Espanhol</a></li>
+            <li><a href="#historia" onclick="alterarConteudo('historia')">Historia</a></li>
+            <li><a href="#portugues" onclick="alterarConteudo('portugues')">Portugues</a></li>
+            <li> <a href="#literatura" onclick="alterarConteudo('literatura')">Literatura</a></li>
+            <li> <a href="#quimica" onclick="alterarConteudo('quimica')">Quimica</a></li>
+            <li><a href="#sociologia" onclick="alterarConteudo('sociologia')">Sociologia</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Centeudos -->
+    <div id="content">
+      <div id="filosofia">
+        <h1>Filosofia</h1>
+        <span class="BemV">Bem vindo ao conhecimento filosofico</span> <br> 
+        <p>Lorem ipsum is a type of placeholder text used in the publishing and graphic design industries. It originates from sections of Cicero's "De Finibus Bonorum et Malorum" (The Extremes of Good and Evil), a 1st-century BC text, and has been used as dummy text since the 1500s. The passage is attributed to an unknown typesetter in the 15th century who scrambled parts of Cicero's work for use in a type specimen book. The purpose of using lorem ipsum is to create a natural-looking block of text that doesn't distract from the layout, allowing designers to focus on the visual aspects of a design without the influence of the content itself.
+
+          The most commonly used version of lorem ipsum begins with "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." This text is used to fill spaces in designs and layouts, ensuring that the focus remains on the design rather than the content. Despite its nonsensical nature, lorem ipsum has been widely adopted in various forms of media, including print, graphic design, and web design, due to its ability to maintain a natural flow and appearance of text.
+          
+          Lorem ipsum is not just random text; it has a history and purpose. It was popularized in the 1960s with the release of Letraset sheets containing lorem ipsum passages and more recently with desktop publishing software like Aldus PageMaker. Today, it is used across the web, in templates, websites, and stock designs, serving as a standard for designers and developers to preview layouts and visual mockups without the need for meaningful content.
+          
+          The use of lorem ipsum is not without controversy, as some argue that it can distract from the content's quality. However, its utility in design and layout previews remains undisputed, making it a staple in the industry for over two millennia.          
+        </p>        
+      </div>
+      <div id="fisica">
+        <h1>Fisica</h1>
+        <p>Bem vindo ao conhecimento fisico</p>        
+      </div>
+      <div id="geografia">
+        <h1>Geografia</h1>
+        <p>Bem vindo ao conhecimento geografico</p>        
+      </div>
+      <div id="ingles">
+        <h1>Ingles</h1>
+        <p>Bem vindo ao conhecimento ingles</p>        
+      </div>
+      <div id="espanhol">
+        <h1>Espanhol</h1>
+        <p>Bem vindo ao conhecimento espanhol</p>        
+      </div>
+      <div id="historia">
+        <h1>Historia</h1>
+        <p>Bem vindo ao conhecimento historia</p>        
+      </div>
+      <div id="portugues">
+        <h1>Portugues</h1>
+        <p>Bem vindo ao conhecimento portugues</p>        
+      </div>
+      <div id="literatura">
+        <h1>Literatura</h1>
+        <p>Bem vindo ao conhecimento literario</p>        
+      </div>
+      <div id="quimica">
+        <h1>Quimica</h1>
+        <p>Bem vindo ao conhecimento quimico</p>        
+      </div>
+      <div id="sociologia">
+        <h1>Sociologia</h1>
+        <p>Bem vindo ao conhecimento sociologico</p>        
+      </div>
+    </div>
+    <!-- Extras -->
+    <div id="extra">
+      <div><img class="logoifto" src="./img/logomarca-ifto.png" alt="logo ifto">
+        <img class="govtoc" src="./img/gov-toc.jpg" alt="govtoc">
+        <img class="bragov" src="./img/logo-slogan-governo-federal.jpg" alt="logobrasilgov">
+      </div>
+    </div>
+    <!-- Footer/Rodapé -->
+    <div id="footer">
+      <span class="foo1">&copy; 2023 • Desenvolvido por <a class="name" href="https://wa.me/5563992989881" target="_blank">Matheus Kayan</a></span>
+    </div>
+
+</body>
 </html>
