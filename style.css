@@ -3,16 +3,20 @@ html {
   width: 100%;
 }
 
+body{
+  height: 100%;
+  width: 100%;
+}
+
 .container {
   display: grid;
   grid-template-areas:
     "s h h"
     "s m e"
     "s f f";
-    grid-template-rows: 1fr 5fr 1fr;
-    grid-template-columns: 1fr 5fr 1fr;
   min-height: 100vh;
-  border: 5px solid black;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 
 .grid-item {
@@ -29,19 +33,26 @@ html {
   border-color: #d65367;
   border-style: solid;
   grid-area: s;
-  justify-items: center;
+}
+
+#disciplinas{
+  grid-area: d;
+  display: block;
+  text-align: center;
 }
 
 #logo{
   aspect-ratio: 1/1;
   height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a, p{
+  font-family: sans-serif;
 }
 
 #header {
-  display: grid;
-  grid-template-areas:
-  "g"
-  "c";
   background-color: #d5e7f7;
   border-color: #2c88d9;
   border-style: solid;
@@ -54,11 +65,21 @@ html {
 }
 
 #graficos{
+  display: flex;
+  justify-content: space-around;
+  grid-area: m;
+}
+
+#graficos figure img{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  aspect-ratio: 3.43 / 1;
-  width: 90vh;
+  margin: auto;
+  aspect-ratio: 4 / 3;
+  width: 25vh;
+}
+
+#graficos figcaption{
+  text-align: center;
+  font-family: sans-serif;
 }
 
 #extra {
@@ -80,13 +101,15 @@ html {
     display: none;
   }
 
+  #graficos{
+    display: block;
+  }
+
   .container {
     grid-template-areas:
-      "h h h"
-      "m m m"
-      "e e e"
-      "f f f";
-      grid-template-rows: 2fr 5fr 1fr 1fr;
-      grid-template-columns: 1fr 5fr 1fr;
+      "h"
+      "m"
+      "e"
+      "f";
   }
 }
