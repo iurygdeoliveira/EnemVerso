@@ -2,3 +2,114 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body{
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "s h h"
+    "s m e"
+    "s f f";
+  min-height: 100vh;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.grid-item {
+  padding: 1%;
+}
+
+#sidebar {
+  display: grid;
+  grid-template-areas: 
+  "l"
+  "d"
+  "t";
+  background-color: #f6dade;
+  border-color: #d65367;
+  border-style: solid;
+  grid-area: s;
+}
+
+#disciplinas{
+  grid-area: d;
+  display: block;
+  text-align: center;
+}
+
+#logo{
+  aspect-ratio: 1/1;
+  height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a, p{
+  font-family: sans-serif;
+}
+
+#header {
+  background-color: #d5e7f7;
+  border-color: #2c88d9;
+  border-style: solid;
+  grid-area: h;
+}
+
+#main {
+  background-color: white;
+  grid-area: m;
+}
+
+#graficos{
+  display: flex;
+  justify-content: space-around;
+  grid-area: m;
+}
+
+#graficos figure img{
+  display: block;
+  margin: auto;
+  aspect-ratio: 4 / 3;
+  width: 25vh;
+}
+
+#graficos figcaption{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#extra {
+  background-color: #fdf3d3;
+  border-color: #f7c325;
+  border-style: solid;
+  grid-area: e;
+}
+
+#footer {
+  background-color: #d2e4e1;
+  border-color: #207868;
+  border-style: solid;
+  grid-area: f;
+}
+
+@media screen and (max-width: 600px) {
+  #sidebar {
+    display: none;
+  }
+
+  #graficos{
+    display: block;
+  }
+
+  .container {
+    grid-template-areas:
+      "h"
+      "m"
+      "e"
+      "f";
+  }
+}
