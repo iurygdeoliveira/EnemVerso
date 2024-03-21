@@ -1,4 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "SIDEBAR HEADER HEADER HEADER HEADER HEADER HEADER HEADER"
+    "SIDEBAR CONTENT CONTENT CONTENT CONTENT CONTENT CONTENT EXTRA"
+    "SIDEBAR FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER";
+}
+
+#head {
+  grid-area: HEADER;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  height: 100px;
+}
+
+#navbar {
+  grid-area: SIDEBAR;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px;
+}
+#navbar {
+    grid-area: SIDEBAR;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    margin-bottom: 5px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+#navbar img {
+    width: 100px;
+}
+
+#content {
+  grid-area: CONTENT;
+  background-color: #ecf0f1;
+  padding: 10px;
+  height: 100vh;
+  /* Ocupa toda a altura da tela */
+}
+#content {
+    grid-area: CONTENT;
+    background-color: #ecf0f1;
+    padding: 10px;
+    height: 100vh;
+    /* Ocupa toda a altura da tela */
+}
+
+#content p {
+    margin-bottom: 20px;
+}
+.espaco {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    padding: 10px; /* Espaçamento interno do texto */
+}
+.imagens-topo {
+    display: flex;
+    justify-content: center; /* Alinha as imagens horizontalmente no centro */
+    margin-bottom: 20px; /* Adiciona um espaçamento abaixo das imagens */
+}
+
+.imagens-topo img {
+    width: 100px; /* Defina o tamanho desejado para suas imagens */
+    margin: 0 5px; /* Adiciona um espaçamento entre as imagens */
+}
+
+#ads {
+  grid-area: EXTRA;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+}
+
+#footer {
+  grid-area: FOOTER;
+  background-color: #34495e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  height: 100px;
+}
+#footer {
+    grid-area: FOOTER;
+    background-color: #34495e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#footer ul li:last-child {
+    margin-right: 0;
+}
+
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+
+  /* Ajustes para telas menores, por exemplo, dispositivos móveis */
+  body {
+    grid-template-areas:
+      "HEADER"
+      "SIDEBAR"
+      "CONTENT"
+      "EXTRA"
+      "FOOTER";
+  }
 }
