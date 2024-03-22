@@ -1,0 +1,21 @@
+/* Resetar CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pagina {
+    display: grid;
+
+    width: 100%;
+    height: 100%;
+
+    grid-template-columns: 15% 75% 10%;
+    grid-template-rows: 20% 70% 10%;
+
+    grid-template-areas: 
+        "nav header header"
+        "nav main adsExtra"
+        "nav footer footer";
+}

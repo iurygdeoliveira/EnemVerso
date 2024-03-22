@@ -1,0 +1,18 @@
+#pagina > main {
+    grid-area: main;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+}
+
+.chart_image {
+    width: 100%;
+}
+
+.texto_main > p {
+    padding: 10;
+    text-align: justify;
+}
+
+#texto_direitos_autorais{
+    text-align: end;
+}

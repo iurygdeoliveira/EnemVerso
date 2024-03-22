@@ -1,0 +1,12 @@
+/* Configuração */
+@import "configuracao/configuracao.css";
+
+/* Áreas do Grid */
+@import "areas/nav.css";
+@import "areas/header.css";
+@import "areas/main.css";
+@import "areas/ads_extra.css";
+@import "areas/footer.css";
+
+/* MediaQuery para responsividade */
+@import "responsividade/responsividade.css";
