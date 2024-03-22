@@ -1,0 +1,14 @@
+#pagina > footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #89DCB2;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer_text {
+    align-items: center;
+    padding-right: 2.5%;
+    color: white;
+    font-weight: bold;
+}

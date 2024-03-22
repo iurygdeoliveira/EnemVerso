@@ -1,0 +1,13 @@
+#pagina > nav {
+    grid-area: nav;
+    background-color: #FF7BAB;
+    overflow-y: auto;
+}
+
+.imagem_logo {
+    display: block;
+    height: 20%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
