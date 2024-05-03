@@ -1,0 +1,17 @@
+@import 'content.css';
+@import 'header.css';
+@import 'footer.css';
+@import 'sidebar.css';
+@import 'extra.css';
+@import 'grid.css';
+
+/* Reset Basico */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #D4DED6; /* Adicionando cor de fundo em toda a página */
+}
+

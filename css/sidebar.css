@@ -1,0 +1,54 @@
+.sidebar {
+  grid-area: sidebar;
+  background-color: #1E3231;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  grid-row: 2;
+
+}
+
+.icon-tabler {
+  color: #ffffff;
+  opacity: .25;
+  margin-right: 11px;
+}
+
+.disciplina {
+  display: inline;
+}
+
+
+.logo {
+  width: 100px;
+  height: 100px;
+  grid-row: 1;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+a{
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Alinha os elementos verticalmente no centro */
+  justify-content: center; /* Alinha os elementos horizontalmente no centro */
+}
+
+a:hover{
+  color: #B5DDA4 !important;
+}

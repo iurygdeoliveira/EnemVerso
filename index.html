@@ -5,16 +5,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>EnemVerso</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link href="css/header.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+  <link href="css/content.css" rel="stylesheet" type="text/css">
+  <link href="css/extra.css" rel="stylesheet" type="text/css">
+  <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <div class="grid-container">
+    <div class="header"></div>
+    <div class="content">
+      <div id="grafico" style="width: 400px; height: 400px;">
 
-  <div id="head"> HEAD </div>
-  <div id="navbar"> NAVBAR </div>
-  <div id="article"> ARTICLE </div>
-  <div id="ads"> ADS </div>
-  <div id="footer"> FOOTER </div>
-  
+      </div>
+    </div>
+    <div class="sidebar">
+      <img src="EnemVerso.png" alt="Logo" class="logo">
+      <ul class="menu" id="menu">
+      </ul>
+    </div>
+    <div class="extra"></div>
+    <div class="footer"></div>
+  </div>
+  <script src="sidebar/menu.js"> </script>
+  <script src="echarts.min.js"></script>
+  <script src="script.js"> </script>
+  <script src="grafico.js"> </script>
 </body>
 
 </html>
