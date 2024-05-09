@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>EnemVerso</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="echarts.min.js"></script>
 </head>
 
 <body>
@@ -36,9 +37,7 @@
     <div id="content-and-extra">
       <article>
         <div id="figures">
-          <figure>
-            <img src="./images/default_graph.png" alt="TADS graphic." class="graphic">
-            <figcaption>TADS</figcaption>
+            <div id="grafico" style="width: 400px; height: 400px;"></div>
           </figure>
           <figure>
             <img src="./images/default_graph.png" alt="3A graphic." class="graphic">
@@ -72,6 +71,7 @@
     </div>
     <footer> FOOTER </footer>
   </main>
+  <script src="grafico.js"></script>
 </body>
 
 </html>
