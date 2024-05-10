@@ -73,18 +73,6 @@ article {
   color: black;
 }
 
-.graphic {
-  width: 100%;
-  height: 100%;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
-
 .content-paragraph {
   font-weight: 200;
   color: black;

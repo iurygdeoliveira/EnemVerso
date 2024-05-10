@@ -3,7 +3,7 @@ var myChart = echarts.init(chartDom);
 var option;
 option = {
   title: {
-    text: 'Basic Radar Chart'
+    text: 'TADS'
   },
   legend: {
     data: ['Allocated Budget', 'Actual Spending']
