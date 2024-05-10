@@ -35,6 +35,10 @@ body{
   grid-area: s;
 }
 
+#graficos{
+  margin: 0 auto;
+}
+
 #disciplinas{
   grid-area: d;
   display: block;
@@ -64,24 +68,6 @@ a, p{
   grid-area: m;
 }
 
-#graficos{
-  display: flex;
-  justify-content: space-around;
-  grid-area: m;
-}
-
-#graficos figure img{
-  display: block;
-  margin: auto;
-  aspect-ratio: 4 / 3;
-  width: 25vh;
-}
-
-#graficos figcaption{
-  text-align: center;
-  font-family: sans-serif;
-}
-
 #extra {
   background-color: #fdf3d3;
   border-color: #f7c325;
@@ -99,10 +85,6 @@ a, p{
 @media screen and (max-width: 600px) {
   #sidebar {
     display: none;
-  }
-
-  #graficos{
-    display: block;
   }
 
   .container {

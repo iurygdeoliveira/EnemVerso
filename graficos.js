@@ -1,4 +1,4 @@
-var dom = document.getElementById('main');
+var dom = document.getElementById('graficos');
 var myChart = echarts.init(dom, null, {
     renderer: 'canvas',
     useDirtyRect: false
@@ -8,9 +8,6 @@ var app = {};
 var option;
 
 option = {
-title: {
-text: 'Basic Radar Chart'
-},
 legend: {
 data: ['Allocated Budget', 'Actual Spending']
 },
@@ -23,7 +20,9 @@ indicator: [
     { name: 'Customer Support', max: 38000 },
     { name: 'Development', max: 52000 },
     { name: 'Marketing', max: 25000 }
-]
+],
+center: ["50%", "50%"],
+radius: ["0%", "50%"]
 },
 series: [
 {
