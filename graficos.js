@@ -8,6 +8,9 @@ var app = {};
 var option;
 
 option = {
+title:{
+    text: 'TADS'
+},
 legend: {
 data: ['Allocated Budget', 'Actual Spending']
 },
