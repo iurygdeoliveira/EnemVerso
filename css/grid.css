@@ -1,0 +1,61 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr; 
+    grid-template-rows: 0.3fr 1fr 0.2fr;
+    gap: 0px; /* Espaçamento entre as células da grid */
+    width: 100%; /* Largura total da grid */
+    height: 100vh; /* Altura total da grid */
+    grid-template-areas:
+        "sidebar header header"
+        "sidebar content extra"
+        "sidebar footer footer";
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 0.1fr 1fr 0.3fr;
+   }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .icon-tabler {
+    color: #ffffff;
+    margin-right: 11px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .disciplina{
+    display: none;
+  }
+}
+
+/* Media query para smartphones */
+@media (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto; 
+        grid-template-areas:
+            "header"
+            "content"
+            "extra"
+            "footer";
+    }
+  
+    .sidebar{
+      display: none;
+    }
+}

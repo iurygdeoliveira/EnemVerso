@@ -1,0 +1,26 @@
+.sidebar {
+    grid-area: sidebar; 
+    background-color: #1E3231; /* Cor de fundo da sidebar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu {
+  list-style: none;
+}
+
+.icon-tabler {
+  color: #ffffff;
+  opacity: .25;
+}
+
+.disciplina{
+  display: inline;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
