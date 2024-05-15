@@ -1,4 +1,4 @@
-<h5>Atividade: Adição de gráficos de radar</h5>
+<h1>Atividade: Adição de gráficos de radar</h1>
 Disciplina: Desenvolvimento Web
 
 Data: 14/05/2024
