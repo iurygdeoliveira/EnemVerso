@@ -36,6 +36,8 @@ body{
 }
 
 #graficos{
+  height: 30vh;
+  width: 30vw;
   margin: 0 auto;
 }
 
