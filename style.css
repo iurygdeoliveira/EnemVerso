@@ -35,10 +35,13 @@ body{
   grid-area: s;
 }
 
-#graficos{
-  height: 30vh;
-  width: 30vw;
-  margin: 0 auto;
+#graficos {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto
 }
 
 #disciplinas{
