@@ -9,8 +9,6 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <title>EnemVerso</title>
-
-
 </head>
 
 <body>
@@ -47,32 +45,40 @@
 
   <div id="CONTENT">
     <div class="radar-chart">
-      <div class="pie-container">
-        <canvas id="myPieChart1" "></canvas>
-        <p style=" text-align: center; font-weight: bold;">TADS</p>
+      <div class="radar-container">
+        <canvas id="myRadarChart1"></canvas>
+        <p style="text-align: center; font-weight: bold;">TADS</p>
       </div>
-      <div class="pie-container">
-        <canvas id="myPieChart2" "></canvas>
-        <p style=" text-align: center; font-weight: bold;">3A</p>
+      <div class="radar-container">
+        <canvas id="myRadarChart2"></canvas>
+        <p style="text-align: center; font-weight: bold;">3A</p>
       </div>
-      <div class="pie-container">
-        <canvas id="myPieChart3" "></canvas>
-        <p style=" text-align: center; font-weight: bold;">3B</p>
+      <div class="radar-container">
+        <canvas id="myRadarChart3"></canvas>
+        <p style="text-align: center; font-weight: bold;">3B</p>
       </div>
     </div>
 
     <div class="text-area">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem ipsum
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem
+        ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem
+        ipsum
         dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem ipsum
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem
+        ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem
+        ipsum
         dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem ipsum
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem
+        ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem
+        ipsum
         dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem ipsum
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem
+        ipsum
+        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem
+        ipsum
         dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
     </div>
   </div>
@@ -114,50 +120,185 @@
   </div>
 
   <script>
-    var pieData = {
-      labels: ['Artes', 'Biologia', 'Educação Física', 'Espanhol', 'Filosofia'],
-      datasets: [{
-        data: [15, 10, 20, 5, 15],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.7)',
-          'rgba(54, 162, 235, 0.7)',
-          'rgba(255, 206, 86, 0.7)',
-          'rgba(75, 192, 192, 0.7)',
-          'rgba(153, 102, 255, 0.7)',
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-        ],
-        borderWidth: 1,
-      }]
-    };
+    var radarData = {
+      labels: ['Indicador01', 'Indicador02', 'Indicador03', 'Indicador04', 'Indicador05'],
+      datasets: [
+        {
+          label: 'Artes',
+          data: [10, 15, 20, 25, 30],
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgba(255, 99, 132, 1)',
+          pointBackgroundColor: 'rgba(255, 99, 132, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(255, 99, 132, 1)'
+        },
+        {
+          label: 'Biologia',
+          data: [10, 25, 30, 15, 20],
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(54, 162, 235, 1)'
+        },
+        {
+          label: 'Espanhol',
+          data: [10, 15, 20, 25, 30],
+          backgroundColor: 'rgba(255, 206, 86, 0.2)',
+          borderColor: 'rgba(255, 206, 86, 1)',
+          pointBackgroundColor: 'rgba(255, 206, 86, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(255, 206, 86, 1)'
+        },
+        {
+          label: 'Filosofia',
+          data: [10, 15, 20, 25, 30],
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderColor: 'rgba(255, 99, 132, 1)',
+          pointBackgroundColor: 'rgba(255, 99, 132, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(255, 99, 132, 1)'
+        },
+        {
+          label: 'Física',
+          data: [10, 15, 20, 25, 30],
+          backgroundColor: 'rgba(255, 159, 64, 0.2)',
+          borderColor: 'rgba(255, 159, 64, 1)',
+          pointBackgroundColor: 'rgba(255, 159, 64, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(255, 159, 64, 1)'
+        },
+        {
+          label: 'Geografia',
+          data: [10, 15, 20, 25, 30],
+          backgroundColor: 'rgba(144, 238, 144, 0.2)',
+          borderColor: 'rgba(144, 238, 144, 1)',
+          pointBackgroundColor: 'rgba(144, 238, 144, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(144, 238, 144, 1)'
+        },
+        {
+          label: 'História',
+          data: [10, 15, 20, 25, 30],
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(75, 192, 192, 1)'
+        },
+        {
+          label: 'Inglês',
+          data: [15, 20, 25, 30, 35],
+          backgroundColor: 'rgba(46, 139, 87, 0.2)',
+          borderColor: 'rgba(46, 139, 87, 1)',
+          pointBackgroundColor: 'rgba(46, 139, 87, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(46, 139, 87, 1)'
+        },
 
+        {
+          label: 'Língua Portuguesa',
+          data: [20, 25, 30, 35, 40],
+          backgroundColor: 'rgba(0, 51, 102, 0.2)',
+          borderColor: 'rgba(0, 51, 102, 1)',
+          pointBackgroundColor: 'rgba(0, 51, 102, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(0, 51, 102, 1)'
+
+        },
+        {
+          label: 'Literatura',
+          data: [25, 30, 35, 40, 45],
+          backgroundColor: 'rgba(153, 50, 204, 0.2)',
+          borderColor: 'rgba(153, 50, 204, 1)',
+          pointBackgroundColor: 'rgba(153, 50, 204, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(153, 50, 204, 1)'
+
+        },
+        {
+          label: 'Matemática',
+          data: [30, 35, 40, 45, 50],
+          backgroundColor: 'rgba(139, 0, 0, 0.2)',
+          borderColor: 'rgba(139, 0, 0, 1)',
+          pointBackgroundColor: 'rgba(139, 0, 0, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(139, 0, 0, 1)'
+
+        },
+        {
+          label: 'Química',
+          data: [30, 35, 40, 45, 50],
+          backgroundColor: 'rgba(75, 0, 130, 0.2)',
+          borderColor: 'rgba(75, 0, 130, 1)',
+          pointBackgroundColor: 'rgba(75, 0, 130, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(75, 0, 130, 1)'
+
+        },
+        {
+          label: 'Sociologia',
+          data: [30, 35, 40, 45, 50],
+          backgroundColor: 'rgba(255, 140, 0, 0.2)',
+          borderColor: 'rgba(255, 140, 0, 1)',
+          pointBackgroundColor: 'rgba(255, 140, 0, 1)',
+          pointBorderColor: '#fff',
+          pointHoverBackgroundColor: '#fff',
+          pointHoverBorderColor: 'rgba(255, 140, 0, 1)'
+        },
+        {
+          label: 'Tecnologia', // Nome da série de dados
+          data: [30, 35, 40, 45, 50], // Valores correspondentes à disciplina de Matemática
+          backgroundColor: 'rgba(153, 102, 255, 0.2)', // Cor de fundo
+          borderColor: 'rgba(153, 102, 255, 1)', // Cor da borda
+          pointBackgroundColor: 'rgba(153, 102, 255, 1)', // Cor dos pontos
+          pointBorderColor: '#fff', // Cor da borda dos pontos
+          pointHoverBackgroundColor: '#fff', // Cor de fundo do ponto ao passar o mouse
+          pointHoverBorderColor: 'rgba(153, 102, 255, 1)' // Cor da borda do ponto ao passar o mouse
+        },
+
+
+      ]
+    };
     document.addEventListener("DOMContentLoaded", function () {
-      createPieChart('myPieChart1', pieData);
-      createPieChart('myPieChart2', pieData);
-      createPieChart('myPieChart3', pieData);
+      createRadarChart('myRadarChart1', radarData);
+      createRadarChart('myRadarChart2', radarData);
+      createRadarChart('myRadarChart3', radarData);
     });
 
-    function createPieChart(canvasId, data) {
-      var ctxPie = document.getElementById(canvasId).getContext('2d');
-      new Chart(ctxPie, {
-        type: 'pie',
+    function createRadarChart(canvasId, data) {
+      var ctxRadar = document.getElementById(canvasId).getContext('2d');
+      new Chart(ctxRadar, {
+        type: 'radar',
         data: data,
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          legend: {
-            position: 'bottom',
+          scales: {
+            r: {
+              angleLines: {
+                display: false
+              },
+              suggestedMin: 0,
+              suggestedMax: 25
+            }
           }
         }
       });
     }
   </script>
-
 
 </body>
 
