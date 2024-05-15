@@ -270,3 +270,7 @@ table {
     color: black;
   }
 }
+.graphic-box{
+  display: flex;
+  flex-direction: row;
+}
