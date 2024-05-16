@@ -6,10 +6,7 @@ var option;
 
 option = {
   title: {
-    text: 'Consigo relacionar obras e artistas específicos às suas respectivas vanguardas artísticas?',
-    textStyle: {
-      fontSize: 14,
-    }
+    text: 'Artes'
   },
   legend: {
     data: ['TADS', 'Ensino Médio'],
@@ -19,12 +16,15 @@ option = {
     shape: 'circle',
     center: ['50%', '50%'],
     radius: 100,
+    axisName: {
+      color: "black"
+    },
     indicator: [
-      { name: 'Indiferente', max: 5 },
-      { name: 'Discordo', max: 5 },
-      { name: 'Discordo totalmente', max: 5 },
-      { name: 'Concordo totalmente', max: 5 },
-      { name: 'Concordo', max: 5 },
+      { name: 'Arte Contemporânea', max: 5 },
+      { name: 'Vanguardas Artísticas Europeias', max: 5 },
+      { name: 'Modernismo', max: 5 },
+      { name: 'História da Arte e Outros Assuntos', max: 5 },
+      { name: 'Arte de Origem Africana no Brasil e Tradições Indígenas', max: 5 },
     ]
   },
   series: [
@@ -33,11 +33,11 @@ option = {
       type: 'radar',
       data: [
         {
-          value: [3, 4, 2, 1, 5, 1, 5, 4, 3, 4],
+          value: [3, 4, 2, 3, 5],
           name: 'TADS'
         },
         {
-          value: [5, 4, 1, 3, 4, 2, 5, 1, 4, 5],
+          value: [5, 4, 5, 3, 4],
           name: 'Ensino Médio'
         }
       ]
