@@ -4,7 +4,7 @@ var option;
 
 option = {
   title: {
-    text: ''
+    text: 'ADS'
   },
   legend: {
     data: ['Allocated Budget', 'Actual Spending']
@@ -12,21 +12,11 @@ option = {
   radar: {
     shape: 'circle',
     indicator: [
-      { name: 'Questão 1', max: 9500 },
-      { name: 'Questão 2', max: 16000 },
-      { name: 'Questão 3', max: 30000 },
-      { name: 'Questão 4', max: 38000 },
-      { name: 'Questão 5', max: 52000 },
-      { name: 'Questão 6', max: 25000 },
-      { name: 'Questão 7', max: 6500 },
-      { name: 'Questão 8', max: 16000 },
-      { name: 'Questão 9', max: 30000 },
-      { name: 'Questão 10', max: 38000 },
-      { name: 'Questão 11', max: 52000 },
-      { name: 'Questão 12', max: 25000 },
-      { name: 'Questão 13', max: 38000 },
-      { name: 'Questão 14', max: 52000 },
-      { name: 'Questão 15', max: 65000 }
+      { name: 'Quimica Inorganica', max: 16000 },
+      { name: 'Quimica Organica', max: 16000 },
+      { name: 'Fisico-Quimica', max: 30000 },
+      { name: 'Quimica Analitica', max: 38000 },
+      { name: 'Bioquimica', max: 38000 }
     ]
   },
   series: [
@@ -35,11 +25,11 @@ option = {
       type: 'radar',
       data: [
         {
-          value: [Math.random() * 10999, Math.random() * 10999, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000],
+          value: [Math.random() * 12000, Math.random() * 12000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000],
           name: 'Allocated Budget'
         },
         {
-          value: [5000, 14000, 28000, 26000, 42000, 21000, 5000, 14000, 28000, 26000, 42000, 21000, 26000, 42000, 21000],
+          value: [Math.random() * 10999, Math.random() * 10999, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000],
           name: 'Actual Spending'
         }
       ]
