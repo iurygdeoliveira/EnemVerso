@@ -1,41 +1,42 @@
-  var chartDom = document.getElementById('grafico');
-  var myChart = echarts.init(chartDom);
-  var option;
-  option = {
-    title: {
-      text: 'Basic Radar Chart'
-    },
-    legend: {
-      data: ['Allocated Budget', 'Actual Spending']
-    },
-    radar: {
-      shape: 'circle',
-      center: ['50%', '50%'],
-      radius: 100,
-      indicator: [
-        { name: 'Eixo 1', max: 100 },
-        { name: 'Eixo 2', max: 100 },
-        { name: 'Eixo 3', max: 100 },
-        { name: 'Eixo 4', max: 100 },
-        { name: 'Eixo 5', max: 100 },
-      ]
-    },
-    series: [
-      {
-        name: 'Budget vs spending',
-        type: 'radar',
-        data: [
-          {
-            value: [42, 30, 20, 35, 50],
-            name: 'Allocated Budget'
-          },
-          {
-            value: [50, 14, 28, 26, 42],
-            name: 'Actual Spending'
-          }
-        ]
-      }
+var chartDom = document.getElementById('grafico');
+var myChart = echarts.init(chartDom);
+var option;
+option = {
+  title: {
+    text: 'Química'
+  },
+  legend: {
+    data: ['TADS', 'Ensino Médio'],
+    bottom: 0
+  },
+  radar: {
+    shape: 'circle',
+    center: ['50%', '50%'],
+    radius: 100,
+    indicator: [
+      { name: 'QUÍMICA GERAL E INORGÂNICA', max: 100 },
+      { name: 'QUÍMICA ORGÂNICA', max: 100 },
+      { name: 'FÍSICO-QUÍMICA', max: 100 },
+      { name: 'QUÍMICA ANALÍTICA', max: 100 },
+      { name: 'QUÍMICA AMBIENTAL', max: 100 },
     ]
-  };
+  },
+  series: [
+    {
+      name: 'Budget vs spending',
+      type: 'radar',
+      data: [
+        {
+          value: [42, 30, 70, 35, 50],
+          name: 'TADS'
+        },
+        {
+          value: [50, 78, 28, 26, 42],
+          name: 'Ensino Médio'
+        }
+      ]
+    }
+  ]
+};
 
-  option && myChart.setOption(option);
+option && myChart.setOption(option);
