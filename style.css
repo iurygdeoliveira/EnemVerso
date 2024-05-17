@@ -3,7 +3,7 @@ html {
   width: 100%;
 }
 
-.echarts {
-    display: flex;
-    justify-content: space-between;
+.Graficos {
+  display: flex;
+  flex-direction: row;
 }
