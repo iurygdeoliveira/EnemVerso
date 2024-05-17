@@ -2,3 +2,8 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.echarts {
+    display: flex;
+    justify-content: space-between;
+}
