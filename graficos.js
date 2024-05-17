@@ -13,7 +13,9 @@ var option;
 
 option = {
     title: {
-        text: 'TADS'
+        text: 'TADS',
+        left: 'center',
+        bottom: 0
     },
     legend: {
         data: ['Allocated Budget', 'Actual Spending']
