@@ -1,4 +1,4 @@
-var chartDom = document.getElementById('grafico');
+var chartDom = document.getElementById('grafico02');
 
 var myChart = echarts.init(chartDom);
 
@@ -6,7 +6,7 @@ var option;
 
 option = {
   title: {
-    text: 'ADS'
+    text: '3A'
   },
   legend: {
     data: ['TADS', 'Ensino Médio'],
