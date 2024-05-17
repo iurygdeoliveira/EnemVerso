@@ -1,465 +1,129 @@
-<!DOCTYPE html>
-<<<<<<< HEAD
-<html>
+    HTML:
+    <!DOCTYPE html>
+    <html lang="pt-BR">
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width">
-  <script src="https://kit.fontawesome.com/88084bb87d.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>EnemVerso</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="css/header.css" rel="stylesheet" type="text/css">
+        <link href="css/sidebar.css" rel="stylesheet" type="text/css">
+        <link href="css/content.css" rel="stylesheet" type="text/css">
+        <link href="css/extra.css" rel="stylesheet" type="text/css">
+        <link href="css/footer.css" rel="stylesheet" type="text/css">
+        <link href="css/grid.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/88084bb87d.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
 
-  <title>EnemVerso</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link href="css/header.css" rel="stylesheet" type="text/css">
-  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
-  <link href="css/content.css" rel="stylesheet" type="text/css">
-  <link href="css/extra.css" rel="stylesheet" type="text/css">
-  <link href="css/footer.css" rel="stylesheet" type="text/css">
-  <link href="css/grid.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-<<<<<<< HEAD
-  <div id="HEADER">
-    <div id="user-menu">
-      <a href="#">Meu Perfil</a>
-      <a href="#">Configurações</a>
-      <a href="#">Sair</a>
-    </div>
-  </div>
-
-  <div id="SIDEBAR">
-    <div id="logo-container">
-      <img src="EnemVerso.jpg" alt="Logo" class="circular-logo">
-    </div>
-    <ul>
-      <li class="subject-list"><a href="#">Artes</a></li>
-      <li class="subject-list"><a href="#">Biologia</a></li>
-      <li class="subject-list"><a href="#">Educação Física</a></li>
-      <li class="subject-list"><a href="#">Espanhol</a></li>
-      <li class="subject-list"><a href="#">Filosofia</a></li>
-      <li class="subject-list"><a href="#">Física</a></li>
-      <li class="subject-list"><a href="#">Geografia</a></li>
-      <li class="subject-list"><a href="#">História</a></li>
-      <li class="subject-list"><a href="#">Inglês</a></li>
-      <li class="subject-list"><a href="#">Língua Portuguesa</a></li>
-      <li class="subject-list"><a href="#">Literatura</a></li>
-      <li class="subject-list"><a href="#">Matemática</a></li>
-      <li class="subject-list"><a href="#">Química</a></li>
-      <li class="subject-list"><a href="#">Sociologia</a></li>
-      <li class="subject-list"><a href="#">Tecnologia</a></li>
-    </ul>
-  </div>
-
-  <div id="CONTENT">
-    <div class="radar-chart">
-      <div class="radar-container">
-        <canvas id="myRadarChart1"></canvas>
-        <p style="text-align: center; font-weight: bold;">TADS</p>
-      </div>
-      <div class="radar-container">
-        <canvas id="myRadarChart2"></canvas>
-        <p style="text-align: center; font-weight: bold;">3A</p>
-      </div>
-      <div class="radar-container">
-        <canvas id="myRadarChart3"></canvas>
-        <p style="text-align: center; font-weight: bold;">3B</p>
-      </div>
-    </div>
-
-    <div class="text-area">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem
-        ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem
-        ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem
-        ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem
-        ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem
-        ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem
-        ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest Lorem
-        ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.Lorem
-        ipsum
-        dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa, laudantium optio.</p>
-    </div>
-  </div>
-
-  <div id="EXTRA">
-    <a href="#">
-      <img src="Informações.jpg" alt="Informações">
-      <p>Informações</p>
-    </a>
-    <a href="#">
-      <img src="Dúvidas.jpg" alt="Dúvidas">
-      <p>Dúvidas</p>
-    </a>
-    <a href="#">
-      <img src="Governo-Federal.jpg" alt="Governo Federal">
-      <p>Governo Federal</p>
-    </a>
-  </div>
-
-  <div id="FOOTER">
-    <p>Informações adicionais e links úteis.</p>
-
-    <div>
-      <h3>Suporte</h3>
-      <ul>
-        <li><a href="#">Central de Ajuda</a></li>
-        <li><a href="#">Fale Conosco</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <h3>Redes Sociais</h3>
-      <ul>
-        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook/Enemverso</a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter/Enemverso</a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram/Enemverso</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <script>
-    var radarData = {
-      labels: ['Indicador01', 'Indicador02', 'Indicador03', 'Indicador04', 'Indicador05'],
-      datasets: [
-        {
-          label: 'Artes',
-          data: [10, 15, 20, 25, 30],
-          backgroundColor: 'rgba(255, 99, 132, 0.2)',
-          borderColor: 'rgba(255, 99, 132, 1)',
-          pointBackgroundColor: 'rgba(255, 99, 132, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(255, 99, 132, 1)'
-        },
-        {
-          label: 'Biologia',
-          data: [10, 25, 30, 15, 20],
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          borderColor: 'rgba(54, 162, 235, 1)',
-          pointBackgroundColor: 'rgba(54, 162, 235, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(54, 162, 235, 1)'
-        },
-        {
-          label: 'Espanhol',
-          data: [10, 15, 20, 25, 30],
-          backgroundColor: 'rgba(255, 206, 86, 0.2)',
-          borderColor: 'rgba(255, 206, 86, 1)',
-          pointBackgroundColor: 'rgba(255, 206, 86, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(255, 206, 86, 1)'
-        },
-        {
-          label: 'Filosofia',
-          data: [10, 15, 20, 25, 30],
-          backgroundColor: 'rgba(255, 99, 132, 0.2)',
-          borderColor: 'rgba(255, 99, 132, 1)',
-          pointBackgroundColor: 'rgba(255, 99, 132, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(255, 99, 132, 1)'
-        },
-        {
-          label: 'Física',
-          data: [10, 15, 20, 25, 30],
-          backgroundColor: 'rgba(255, 159, 64, 0.2)',
-          borderColor: 'rgba(255, 159, 64, 1)',
-          pointBackgroundColor: 'rgba(255, 159, 64, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(255, 159, 64, 1)'
-        },
-        {
-          label: 'Geografia',
-          data: [10, 15, 20, 25, 30],
-          backgroundColor: 'rgba(144, 238, 144, 0.2)',
-          borderColor: 'rgba(144, 238, 144, 1)',
-          pointBackgroundColor: 'rgba(144, 238, 144, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(144, 238, 144, 1)'
-        },
-        {
-          label: 'História',
-          data: [10, 15, 20, 25, 30],
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
-          borderColor: 'rgba(75, 192, 192, 1)',
-          pointBackgroundColor: 'rgba(75, 192, 192, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(75, 192, 192, 1)'
-        },
-        {
-          label: 'Inglês',
-          data: [15, 20, 25, 30, 35],
-          backgroundColor: 'rgba(46, 139, 87, 0.2)',
-          borderColor: 'rgba(46, 139, 87, 1)',
-          pointBackgroundColor: 'rgba(46, 139, 87, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(46, 139, 87, 1)'
-        },
-
-        {
-          label: 'Língua Portuguesa',
-          data: [20, 25, 30, 35, 40],
-          backgroundColor: 'rgba(0, 51, 102, 0.2)',
-          borderColor: 'rgba(0, 51, 102, 1)',
-          pointBackgroundColor: 'rgba(0, 51, 102, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(0, 51, 102, 1)'
-
-        },
-        {
-          label: 'Literatura',
-          data: [25, 30, 35, 40, 45],
-          backgroundColor: 'rgba(153, 50, 204, 0.2)',
-          borderColor: 'rgba(153, 50, 204, 1)',
-          pointBackgroundColor: 'rgba(153, 50, 204, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(153, 50, 204, 1)'
-
-        },
-        {
-          label: 'Matemática',
-          data: [30, 35, 40, 45, 50],
-          backgroundColor: 'rgba(139, 0, 0, 0.2)',
-          borderColor: 'rgba(139, 0, 0, 1)',
-          pointBackgroundColor: 'rgba(139, 0, 0, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(139, 0, 0, 1)'
-
-        },
-        {
-          label: 'Química',
-          data: [30, 35, 40, 45, 50],
-          backgroundColor: 'rgba(75, 0, 130, 0.2)',
-          borderColor: 'rgba(75, 0, 130, 1)',
-          pointBackgroundColor: 'rgba(75, 0, 130, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(75, 0, 130, 1)'
-
-        },
-        {
-          label: 'Sociologia',
-          data: [30, 35, 40, 45, 50],
-          backgroundColor: 'rgba(255, 140, 0, 0.2)',
-          borderColor: 'rgba(255, 140, 0, 1)',
-          pointBackgroundColor: 'rgba(255, 140, 0, 1)',
-          pointBorderColor: '#fff',
-          pointHoverBackgroundColor: '#fff',
-          pointHoverBorderColor: 'rgba(255, 140, 0, 1)'
-        },
-        {
-          label: 'Tecnologia', // Nome da série de dados
-          data: [30, 35, 40, 45, 50], // Valores correspondentes à disciplina de Matemática
-          backgroundColor: 'rgba(153, 102, 255, 0.2)', // Cor de fundo
-          borderColor: 'rgba(153, 102, 255, 1)', // Cor da borda
-          pointBackgroundColor: 'rgba(153, 102, 255, 1)', // Cor dos pontos
-          pointBorderColor: '#fff', // Cor da borda dos pontos
-          pointHoverBackgroundColor: '#fff', // Cor de fundo do ponto ao passar o mouse
-          pointHoverBorderColor: 'rgba(153, 102, 255, 1)' // Cor da borda do ponto ao passar o mouse
-        },
-
-
-      ]
-    };
-    document.addEventListener("DOMContentLoaded", function () {
-      createRadarChart('myRadarChart1', radarData);
-      createRadarChart('myRadarChart2', radarData);
-      createRadarChart('myRadarChart3', radarData);
-    });
-
-    function createRadarChart(canvasId, data) {
-      var ctxRadar = document.getElementById(canvasId).getContext('2d');
-      new Chart(ctxRadar, {
-        type: 'radar',
-        data: data,
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-            r: {
-              angleLines: {
-                display: false
-              },
-              suggestedMin: 0,
-              suggestedMax: 25
-            }
-          }
-        }
-      });
-    }
-  </script>
-
-=======
-  <div class="grid-container">
-    <div class="header"></div>
-    <div class="content">
-      <div id="grafico" style="width: 400px; height: 400px;">
-
-      </div>
-    </div>
-    <div class="sidebar">
-      <img src="EnemVerso.png" alt="Logo" class="logo">
-      <ul class="menu" id="menu">
-      </ul>
-    </div>
-    <div class="extra"></div>
-    <div class="footer"></div>
-  </div>
-  <script src="sidebar/menu.js"> </script>
-  <script src="echarts.min.js"></script>
-  <script src="script.js"> </script>
-  <script src="grafico.js"> </script>
->>>>>>> c8d57573e61a01d944fc7d5b2e5d4355a84a084e
-</body>
-
-</html>
-=======
-<html lang="pt-BR">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>EnemVerso</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="css/header.css" rel="stylesheet" type="text/css">
-    <link href="css/sidebar.css" rel="stylesheet" type="text/css">
-    <link href="css/content.css" rel="stylesheet" type="text/css">
-    <link href="css/extra.css" rel="stylesheet" type="text/css">
-    <link href="css/footer.css" rel="stylesheet" type="text/css">
-    <link href="css/grid.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/88084bb87d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-
-<body>
-    <div id="HEADER">
-        <div id="user-menu">
-            <a href="#">Meu Perfil</a>
-            <a href="#">Configurações</a>
-            <a href="#">Sair</a>
-        </div>
-    </div>
-
-    <div id="SIDEBAR">
-        <div id="logo-container">
-            <img src="EnemVerso.jpg" alt="Logo" class="circular-logo">
-        </div>
-        <ul>
-            <li class="subject-list" id="artes"><a href="#">Artes</a></li>
-            <li class="subject-list" id="biologia"><a href="#">Biologia</a></li>
-            <li class="subject-list" id="educacao-fisica"><a href="#">Educação Física</a></li>
-            <li class="subject-list" id="espanhol"><a href="#">Espanhol</a></li>
-            <li class="subject-list" id="filosofia"><a href="#">Filosofia</a></li>
-            <li class="subject-list" id="fisica"><a href="#">Física</a></li>
-            <li class="subject-list" id="geografia"><a href="#">Geografia</a></li>
-            <li class="subject-list" id="historia"><a href="#">História</a></li>
-            <li class="subject-list" id="ingles"><a href="#">Inglês</a></li>
-            <li class="subject-list" id="linguaportuguesa"><a href="#">Língua Portuguesa</a></li>
-            <li class="subject-list" id="literatura"><a href="#">Literatura</a></li>
-            <li class="subject-list" id="matematica"><a href="#">Matemática</a></li>
-            <li class="subject-list" id="quimica"><a href="#">Química</a></li>
-            <li class="subject-list" id="sociologia"><a href="#">Sociologia</a></li>
-            <li class="subject-list" id="tecnologia"><a href="#">Tecnologia</a></li>
-        </ul>
-    </div>
-
-    <div id="CONTENT">
-        <div class="radar-chart">
-            <div class="radar-container">
-                <canvas id="myRadarChart1"></canvas>
-                <p style="text-align: center; font-weight: bold;">TADS</p>
-            </div>
-            <div class="radar-container">
-                <canvas id="myRadarChart2"></canvas>
-                <p style="text-align: center; font-weight: bold;">3A</p>
-            </div>
-            <div class="radar-container">
-                <canvas id="myRadarChart3"></canvas>
-                <p style="text-align: center; font-weight: bold;">3B</p>
+    <body>
+        <div id="HEADER">
+            <div id="user-menu">
+                <a href="#">Meu Perfil</a>
+                <a href="#">Configurações</a>
+                <a href="#">Sair</a>
             </div>
         </div>
 
-        <div class="text-area">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa,
-                laudantium optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae
-                nesciunt! Ipsa, laudantium optio.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa,
-                laudantium optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae
-                nesciunt! Ipsa, laudantium optio.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa,
-                laudantium optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae
-                nesciunt! Ipsa, laudantium optio.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa,
-                laudantium optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae
-                nesciunt! Ipsa, laudantium optio.</p>
-        </div>
-    </div>
-
-    <div id="EXTRA">
-        <a href="#">
-            <img src="Informações.jpg" alt="Informações">
-            <p>Informações</p>
-        </a>
-        <a href="#">
-            <img src="Dúvidas.jpg" alt="Dúvidas">
-            <p>Dúvidas</p>
-        </a>
-        <a href="#">
-            <img src="Governo-Federal.jpg" alt="Governo Federal">
-            <p>Governo Federal</p>
-        </a>
-    </div>
-
-    <div id="FOOTER">
-        <p>Informações adicionais e links úteis.</p>
-
-        <div>
-            <h3>Suporte</h3>
+        <div id="SIDEBAR">
+            <div id="logo-container">
+                <img src="EnemVerso.jpg" alt="Logo" class="circular-logo">
+            </div>
             <ul>
-                <li><a href="#">Central de Ajuda</a></li>
-                <li><a href="#">Fale Conosco</a></li>
+                <li class="subject-list" id="artes"><a href="#">Artes</a></li>
+                <li class="subject-list" id="biologia"><a href="#">Biologia</a></li>
+                <li class="subject-list" id="educacao-fisica"><a href="#">Educação Física</a></li>
+                <li class="subject-list" id="espanhol"><a href="#">Espanhol</a></li>
+                <li class="subject-list" id="filosofia"><a href="#">Filosofia</a></li>
+                <li class="subject-list" id="fisica"><a href="#">Física</a></li>
+                <li class="subject-list" id="geografia"><a href="#">Geografia</a></li>
+                <li class="subject-list" id="historia"><a href="#">História</a></li>
+                <li class="subject-list" id="ingles"><a href="#">Inglês</a></li>
+                <li class="subject-list" id="linguaportuguesa"><a href="#">Língua Portuguesa</a></li>
+                <li class="subject-list" id="literatura"><a href="#">Literatura</a></li>
+                <li class="subject-list" id="matematica"><a href="#">Matemática</a></li>
+                <li class="subject-list" id="quimica"><a href="#">Química</a></li>
+                <li class="subject-list" id="sociologia"><a href="#">Sociologia</a></li>
+                <li class="subject-list" id="tecnologia"><a href="#">Tecnologia</a></li>
             </ul>
         </div>
 
-        <div>
-            <h3>Redes Sociais</h3>
-            <ul>
-                <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook/Enemverso</a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter/Enemverso</a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram/Enemverso</a></li>
-            </ul>
+        <div id="CONTENT">
+            <div class="radar-chart">
+                <div class="radar-container">
+                    <canvas id="myRadarChart1"></canvas>
+                    <p style="text-align: center; font-weight: bold;">TADS</p>
+                </div>
+                <div class="radar-container">
+                    <canvas id="myRadarChart2"></canvas>
+                    <p style="text-align: center; font-weight: bold;">3A</p>
+                </div>
+                <div class="radar-container">
+                    <canvas id="myRadarChart3"></canvas>
+                    <p style="text-align: center; font-weight: bold;">3B</p>
+                </div>
+            </div>
+
+            <div class="text-area">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa,
+                    laudantium optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae
+                    nesciunt! Ipsa, laudantium optio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa,
+                    laudantium optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae
+                    nesciunt! Ipsa, laudantium optio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa,
+                    laudantium optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae
+                    nesciunt! Ipsa, laudantium optio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed auctor, magna id vest
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae nesciunt! Ipsa,
+                    laudantium optio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eius recusandae
+                    nesciunt! Ipsa, laudantium optio.</p>
+            </div>
         </div>
-    </div>
 
-  <script src="charts.js""></script>
-</body>
+        <div id="EXTRA">
+            <a href="#">
+                <img src="Informações.jpg" alt="Informações">
+                <p>Informações</p>
+            </a>
+            <a href="#">
+                <img src="Dúvidas.jpg" alt="Dúvidas">
+                <p>Dúvidas</p>
+            </a>
+            <a href="#">
+                <img src="Governo-Federal.jpg" alt="Governo Federal">
+                <p>Governo Federal</p>
+            </a>
+        </div>
 
-</html>
->>>>>>> bfcaf75 (Adicao de graficos para cada materia.)
+        <div id="FOOTER">
+            <p>Informações adicionais e links úteis.</p>
+
+            <div>
+                <h3>Suporte</h3>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook/Enemverso</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter/Enemverso</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram/Enemverso</a></li>
+                </ul>
+            </div>
+        </div>
+
+      <script src="charts.js""></script>
+    </body>
+
+    </html>
