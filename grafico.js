@@ -8,7 +8,7 @@ option = {
         top: '3%',
     },
     legend: {
-        data: ['orçamento alocado', 'gastos reais']
+        data: ['Superior', 'E.MÉDIO']
     },
     radar: {
         shape: 'circle',
