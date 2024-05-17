@@ -3,3 +3,12 @@
     background-color: #D4DED6; /* Cor de fundo do content */
     padding: 5%;
 }
+.flex-container {
+  height: 400px;
+  display: flex;
+  flex-wrap: row; /* Alinhar horizontalmente */
+  justify-content: space-between; /* Distribuir uniformemente */
+}
+.flex-item {
+  width: 33.33%; /* Cada item ocupará 33.33% da largura do container*/ 
+} 

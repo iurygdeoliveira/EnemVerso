@@ -3,21 +3,23 @@
   var option;
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: 'TADS',
+      left: 115
     },
     legend: {
-      data: ['Allocated Budget', 'Actual Spending']
+      data: ['Estudou', 'Não Estudou'],
+      top: 25
     },
     radar: {
       shape: 'circle',
       center: ['50%', '50%'],
-      radius: 100,
+      radius: 85,
       indicator: [
-        { name: 'Eixo 1', max: 100 },
-        { name: 'Eixo 2', max: 100 },
-        { name: 'Eixo 3', max: 100 },
-        { name: 'Eixo 4', max: 100 },
-        { name: 'Eixo 5', max: 100 },
+        { name: 'Anatomia', max: 100 },
+        { name: 'Genética', max: 100 },
+        { name: 'Evolução', max: 100 },
+        { name: 'Botânica', max: 100 },
+        { name: 'Zoologia', max: 100 },
       ]
     },
     series: [
@@ -27,11 +29,11 @@
         data: [
           {
             value: [42, 30, 20, 35, 50],
-            name: 'Allocated Budget'
+            name: 'Estudou'
           },
           {
             value: [50, 14, 28, 26, 42],
-            name: 'Actual Spending'
+            name: 'Não Estudou'
           }
         ]
       }
@@ -39,3 +41,5 @@
   };
 
   option && myChart.setOption(option);
+
+
