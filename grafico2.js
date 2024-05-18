@@ -1,9 +1,9 @@
-var chartDom = document.getElementById('grafico');
+var chartDom = document.getElementById('grafico2');
 var myChart = echarts.init(chartDom);
 var option;
 option = {
   title: {
-    text: 'TADS'
+    text: '3B'
   },
   legend: {
     data: ['TADS', 'Ensino Médio'],
