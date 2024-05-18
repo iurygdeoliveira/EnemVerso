@@ -1,43 +1,13 @@
-import * as echarts from 'echarts'
+import { graph_3a, graph_3b, graph_tads } from "./graficos.js"
 
 const div1 = document.getElementById('grafico_3b')
-const graph1 = echarts.init()
-const options1 = {
+const div2 = document.getElementById('grafico_3a')
+const div3 = document.getElementById('grafico_tads')
 
-    title: {
-        text: 'Gráfico 1'
-      },
-      legend: {
-        data: ['Turma Alpha', 'Turma Beta']
-      },
-      radar: {
-        // shape: 'circle',
-        indicator: [
-          { name: 'Sales', max: 6500 },
-          { name: 'Administration', max: 16000 },
-          { name: 'Information Technology', max: 30000 },
-          { name: 'Customer Support', max: 38000 },
-          { name: 'Development', max: 52000 },
-          { name: 'Marketing', max: 25000 }
-        ]
-      },
-      series: [
-        {
-          name: 'Budget vs spending',
-          type: 'radar',
-          data: [
-            {
-              value: [4200, 3000, 20000, 35000, 50000, 18000],
-              name: 'Allocated Budget'
-            },
-            {
-              value: [5000, 14000, 28000, 26000, 42000, 21000],
-              name: 'Actual Spending'
-            }
-          ]
-        }
-      ]
+const graph1 = echarts.init(div1)
+const graph2 = echarts.init(div2)
+const graph3 = echarts.init(div3)
 
-}
-
-graph1.setOption(options1)
+graph1.setOption(graph_3b)
+graph2.setOption(graph_3a)
+graph3.setOption(graph_tads)

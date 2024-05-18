@@ -82,6 +82,7 @@ article {
 
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     
 }
 
@@ -95,8 +96,11 @@ footer {
 
 .graph {
 
-    height: 30%;
-    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 25vw;
 
 }
 
@@ -133,6 +137,8 @@ footer {
 
     article {
 
+        display: flex;
+        flex-direction: column;
         min-height: 70vh;
         
     }
@@ -147,6 +153,12 @@ footer {
     nav {
 
         display: none;
+
+    }
+
+    .graph {
+
+        margin: 5% 0
 
     }
 
