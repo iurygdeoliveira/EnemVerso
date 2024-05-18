@@ -13,6 +13,7 @@ option = {
     bottom: 0
   },
   radar: {
+    
     shape: 'circle',
     center: ['50%', '50%'],
     radius: 100,

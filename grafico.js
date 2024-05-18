@@ -6,7 +6,7 @@ var option;
 
 option = {
   title: {
-    text: 'ADS'
+    text: 'TADS'
   },
   legend: {
     data: ['TADS', 'Ensino Médio'],
