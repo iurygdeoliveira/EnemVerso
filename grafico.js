@@ -3,35 +3,40 @@
   var option;
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: 'Espanhol - TADS',
+      bottom: 0
     },
     legend: {
-      data: ['Allocated Budget', 'Actual Spending']
+      data: ['Interpretação Texto', 'Diversidade Linguistica', 'Conjunções']
     },
     radar: {
       shape: 'circle',
       center: ['50%', '50%'],
       radius: 100,
       indicator: [
-        { name: 'Eixo 1', max: 100 },
-        { name: 'Eixo 2', max: 100 },
-        { name: 'Eixo 3', max: 100 },
-        { name: 'Eixo 4', max: 100 },
-        { name: 'Eixo 5', max: 100 },
+        { name: 'Entendo', max: 100 },
+        { name: 'Discutivel', max: 100 },
+        { name: 'Conhecido', max: 100 },
+        { name: 'Complicado', max: 100 },
+        { name: 'Não conheço', max: 100 },
       ]
     },
     series: [
       {
-        name: 'Budget vs spending',
+        name: 'TADS vs 3',
         type: 'radar',
         data: [
           {
-            value: [42, 30, 20, 35, 50],
-            name: 'Allocated Budget'
+            value: [62, 50, 40, 55, 70],
+            name: 'Interpretação Texto'
           },
           {
-            value: [50, 14, 28, 26, 42],
-            name: 'Actual Spending'
+            value: [40, 44, 48, 46, 62],
+            name: 'Diversidade Linguistica'
+          },
+          {
+            value: [40, 44, 38, 56, 62],
+            name: 'Conjunções'
           }
         ]
       }
