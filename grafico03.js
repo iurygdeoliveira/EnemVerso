@@ -1,4 +1,4 @@
-var chartDom = document.getElementById('grafico');
+var chartDom = document.getElementById('grafico03');
 
 var myChart = echarts.init(chartDom);
 
@@ -6,13 +6,14 @@ var option;
 
 option = {
   title: {
-    text: 'TADS'
+    text: '3B'
   },
   legend: {
     data: ['TADS', 'Ensino Médio'],
     bottom: 0
   },
   radar: {
+    
     shape: 'circle',
     center: ['50%', '50%'],
     radius: 100,
