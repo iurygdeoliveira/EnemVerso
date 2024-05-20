@@ -1,54 +1,159 @@
-var dom = document.getElementById('graficos');
-var myChart = echarts.init(dom, null, {
-    renderer: 'canvas',
-    useDirtyRect: false
-});
+function calcularMediasDaTurma(inglesData) {
+    // Organizando as perguntas em cada área da língua inglesa
+    const areas = [
+      {
+        nome: "interpretação",
+        perguntas: [
+          "Consigo compreender o significado geral e os detalhes específicos de textos em inglês, independentemente do formato ou do tema?",
+          "Tenho habilidade para identificar a ideia principal e os argumentos secundários em um texto em inglês?",
+          "Sinto-me confiante na minha capacidade de interpretar textos em inglês que abordam temas econômicos, políticos e socioculturais?​"
+        ]
+      },
+      {
+        nome: "gramática",
+        perguntas: [
+          "Entendo as regras básicas da gramática inglesa, incluindo tempos verbais, uso de pronomes e diferenças de palavras entre inglês e português?",
+          "Consigo aplicar corretamente as estruturas gramaticais do inglês em diferentes contextos?",
+          "Sinto-me seguro(a) ao usar a gramática inglesa para aprimorar minha compreensão de textos?"
+        ]
+      },
+      {
+        nome: "tempos_verbais",
+        perguntas: [
+          "Tenho facilidade em identificar e usar corretamente diferentes tempos verbais em inglês, como o passado simples, presente simples e futuro simples ?",
+          "Consigo compreender e aplicar o present perfect em contextos adequados?",
+          "Entendo como os tempos verbais em inglês influenciam o sentido de uma frase ou texto?"
+        ]
+      },
+      {
+        nome: "voz_passiva_ativa",
+        perguntas: [
+          "Compreendo a estrutura e o uso da voz passiva em inglês e consigo identificá-la em diferentes textos?",
+          "Sou capaz de transformar frases da voz ativa para a voz passiva em inglês?",
+          "Entendo a função e o efeito da voz passiva no contexto de uma frase ou texto em inglês?"
+        ]
+      },
+      {
+        nome: "conectivos",
+        perguntas: [
+          "Sinto-me confortável utilizando conectivos (linking words) em inglês para estabelecer relações lógicas em textos?",
+          "Consigo identificar e empregar corretamente adjuntos adverbiais em inglês para especificar tempo, lugar, modo, razão, entre outros?",
+          "Entendo como os conectivos e adjuntos adverbiais contribuem para a coesão e a coerência de um texto em inglês?"
+        ]
+      }
+    ];
+  
+    // Objeto para armazenar o total de notas de cada área
+    const totalNotasPorArea = {};
+  
+    // Iterar sobre cada área e inicializar o total de notas como zero
+    areas.forEach(area => {
+      totalNotasPorArea[area.nome] = 0;
+    });
+  
+    // Iterar sobre cada aluno no arquivo JSON
+    inglesData.forEach(aluno => {
+      // Calcular o total de notas de cada área para o aluno atual e acumular no objeto totalNotasPorArea
+      areas.forEach(area => {
+        const totalNotas = area.perguntas.reduce((acc, pergunta) => {
+          return acc + parseInt(aluno[pergunta]);
+        }, 0);
+        totalNotasPorArea[area.nome] += totalNotas;
+      });
+    });
+  
+    // Calcular a média da turma inteira para cada área da língua inglesa
+    const mediasDaTurmaPorArea = {};
+    areas.forEach(area => {
+      const mediaDaTurma = totalNotasPorArea[area.nome] / (inglesData.length * area.perguntas.length);
+      mediasDaTurmaPorArea[area.nome] = mediaDaTurma;
+    });
+  
+    return mediasDaTurmaPorArea;
+  }
+
+// Usando o arquivo JSON: Ingles.json
+function obterMediasDaTurma() {
+  return fetch('Ingles.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Erro ao carregar o arquivo JSON');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const mediasDaTurma = calcularMediasDaTurma(data);
+      return mediasDaTurma;
+    })
+    .catch(error => {
+      console.error('Erro:', error);
+      return null; // ou lança o erro novamente se desejar
+    });
+}
+
+// Para usar a função e obter as médias da turma
+obterMediasDaTurma()
+  .then(mediasDaTurma => {
+    medias = mediasDaTurma;
+
+    let interpretacao = medias['interpretação'];
+    let gramatica = medias['gramática'];
+    let temposVerbais = medias['tempos_verbais'];
+    let vozPassivaAtiva = medias['voz_passiva_ativa'];
+    let conectivos = medias['conectivos'];
+    
+    var dom = document.getElementById('graficos');
+    var myChart = echarts.init(dom, null, {
+        renderer: 'canvas',
+        useDirtyRect: false
+    });
+
+        var app = {};
+
+        var option;
+
+        option = {
+            title: {
+                text: 'TADS',
+                left: 'center',
+                bottom: 0
+            },
+            legend: {
+                data: ['Língua Inglesa']
+            },
+            radar: {
+                indicator: [
+                    { name: 'Interpretação', max: 5 },
+                    { name: 'Gramática', max: 5 },
+                    { name: 'Tempos Verbais', max: 5 },
+                    { name: 'Voz Passiva e Ativa', max: 5 },
+                    { name: 'Conectivos', max: 5 }
+                ],
+                center: ["50%", "50%"],
+                radius: ["0%", "50%"]
+            },
+            series: [{
+                name: 'Áreas da língua inglesa',
+                type: 'radar',
+                data: [{
+                        value: [interpretacao, gramatica, temposVerbais, vozPassivaAtiva, conectivos],
+                        name: 'Língua Inglesa'
+                    }
+                ]
+            }]
+        };
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+
+        window.addEventListener('resize', myChart.resize);
+
+  })
+  .catch(error => {
+    console.error('Erro ao obter as médias da turma:', error);
+  });
 
 // Definir tamanho pré-definido para o gráfico (opcional)
 // Isso garante que o gráfico tenha uma dimensão mínima inicial, mas não é necessário para torná-lo responsivo
 
-var app = {};
-
-var option;
-
-option = {
-    title: {
-        text: 'TADS',
-        left: 'center',
-        bottom: 0
-    },
-    legend: {
-        data: ['Allocated Budget', 'Actual Spending']
-    },
-    radar: {
-        indicator: [
-            { name: 'Sales', max: 6500 },
-            { name: 'Administration', max: 16000 },
-            { name: 'Information Technology', max: 30000 },
-            { name: 'Customer Support', max: 38000 },
-            { name: 'Development', max: 52000 },
-            { name: 'Marketing', max: 25000 }
-        ],
-        center: ["50%", "50%"],
-        radius: ["0%", "50%"]
-    },
-    series: [{
-        name: 'Budget vs spending',
-        type: 'radar',
-        data: [{
-                value: [4200, 3000, 20000, 35000, 50000, 18000],
-                name: 'Allocated Budget'
-            },
-            {
-                value: [5000, 14000, 28000, 26000, 42000, 21000],
-                name: 'Actual Spending'
-            }
-        ]
-    }]
-};
-
-if (option && typeof option === 'object') {
-    myChart.setOption(option);
-}
-
-window.addEventListener('resize', myChart.resize);
