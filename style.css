@@ -76,8 +76,16 @@ nav ul li a:hover {
 
 article {
 
-    display: inherit;
+    display: flex;
+    align-items: center;
     
+}
+
+.graph {
+
+    height: 30%;
+    width: 40%;
+
 }
 
 footer {
