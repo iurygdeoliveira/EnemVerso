@@ -9,6 +9,8 @@
 }
 
 .item3 {
+  display: flex;
+  flex-direction: row;
   background-color: #FFFFFF;
   grid-area: main;
 }
@@ -22,6 +24,27 @@
   background-color: #F0E68C;
   grid-area: aside;
 }
+
+#grafico1{
+
+  height: 45%;
+  width: 45%;
+  
+}
+
+#grafico2{
+
+  height: 45%;
+  width: 45%;
+}
+
+#grafico3{
+  
+  height: 45%;
+  width: 45%;
+  
+}
+  
 
 .container {
   display: grid;
