@@ -15,6 +15,9 @@
 .item3 {
   background-color: #FFFFFF;
   grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .item5 {
@@ -25,11 +28,20 @@
 .item4 {
   background-color: #F0E68C;
   grid-area: aside;
+
 }
 
 .links {
 
   padding: 0;
+  
+}
+
+.grafico {
+  
+
+  width: 60%;
+  height: 60%;
   
 }
 
