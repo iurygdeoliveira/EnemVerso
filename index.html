@@ -1,40 +1,67 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>EnemVerso</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link href="css/header.css" rel="stylesheet" type="text/css">
-  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
-  <link href="css/content.css" rel="stylesheet" type="text/css">
-  <link href="css/extra.css" rel="stylesheet" type="text/css">
-  <link href="css/footer.css" rel="stylesheet" type="text/css">
-  <link href="css/grid.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>English</title>
+    <script type="module" src="echarts.min.js" defer></script>
+    <script type="module" src="script.js" defer></script>
 </head>
-
 <body>
-  <div class="grid-container">
-    <div class="header"></div>
-    <div class="content">
-      <div id="grafico" style="width: 400px; height: 400px;">
 
-      </div>
+    <div class="grid-container">
+
+        <header>
+
+            <h2>Header</h2>
+
+        </header>
+
+        <nav>
+
+            <img id="logo" src="/logo.png" alt="logo">
+
+            <ul>
+
+                <li><a href="">Português</a></li>
+                <li><a href="">Matemática</a></li>
+                <li><a href="">Física</a></li>
+                <li><a href="">Química</a></li>
+                <li><a href="">Biologia</a></li>
+                <li><a href="">História</a></li>
+                <li><a href="">Geografia</a></li>
+                <li><a href="">Inglês</a></li>
+                <li><a href="">Espanhol</a></li>
+                <li><a href="">Artes</a></li>
+                <li><a href="">Sociologia</a></li>
+                <li><a href="">Filosofia</a></li>
+
+            </ul>
+
+        </nav>
+
+        <article>
+
+            <div class="graph" id="grafico_3b"></div>
+            <div class="graph" id="grafico_3a"></div>
+            <div class="graph" id="grafico_tads"></div>
+
+        </article>
+
+        <div id="ads">
+
+            <h2>Ads</h2>
+
+        </div>
+
+        <footer>
+
+            <h2>Footer</h2>
+
+        </footer>
+
     </div>
-    <div class="sidebar">
-      <img src="EnemVerso.png" alt="Logo" class="logo">
-      <ul class="menu" id="menu">
-      </ul>
-    </div>
-    <div class="extra"></div>
-    <div class="footer"></div>
-  </div>
-  <script src="sidebar/menu.js"> </script>
-  <script src="echarts.min.js"></script>
-  <script src="script.js"> </script>
-  <script src="grafico.js"> </script>
+
 </body>
-
 </html>
