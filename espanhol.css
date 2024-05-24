@@ -12,7 +12,11 @@
   overflow: auto;
 }
 
-nav, header, main, aside, footer {
+nav,
+header,
+main,
+aside,
+footer {
   display: flex;
   flex-wrap: wrap;
   border: 2px solid black;
@@ -23,13 +27,14 @@ nav, header, main, aside, footer {
   height: 80px;
 }
 
-#openMenu, #closeMenu {
+#openMenu,
+#closeMenu {
   border: none;
   background: none;
   font-size: 30px;
   font-weight: bold;
   padding: 0px, 5px, 0px, 5px;
-  cursor: pointer; 
+  cursor: pointer;
   display: none;
 }
 
@@ -39,7 +44,7 @@ header #logo {
   background: #c9c9c9;
 }
 
-.nav2{
+.nav2 {
   flex: 1 1 100%;
   align-items: center;
   justify-content: flex-end;
@@ -49,6 +54,8 @@ header #logo {
   flex: 1 1 100px;
   height: 40px;
   background-color: #7070db;
+  flex-direction: column;
+  /* justify-content: space-around; */
 }
 
 nav a {
@@ -66,40 +73,46 @@ nav a {
   height: calc(100vh - 184px);
   flex-wrap: wrap;
   overflow: auto;
-  background-color:#ccffee;
+  background-color: #ccffee;
 }
 
 
-.aside { 
+.aside {
   flex: 1 1 100px;
-  background-color:#4d4dff;
+  background-color: #4d4dff;
 }
 
 .footer {
   flex: 1 1 100%;
   height: 80px;
-  background-color:#ff3333;
+  background-color: #ff3333;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #00ffd5;
 }
-@media screen and (max-width: 700px){
+
+@media screen and (max-width: 700px) {
   .nav {
     display: none;
   }
-  #openMenu, #closeMenu {
+
+  #openMenu,
+  #closeMenu {
     display: block;
   }
+
   #openMenu {
     margin-left: auto;
   }
-  #closeMenu{
+
+  #closeMenu {
     position: fixed;
     right: 15px;
     top: 15px;
   }
+
   .nav2 {
     position: fixed;
     flex-direction: column;
@@ -115,39 +128,50 @@ a {
 }
 
 @media screen and (min-width: 700.5px) {
-  #openMenu, #closeMenu {
+
+  #openMenu,
+  #closeMenu {
     display: none !important;
   }
+
   .main {
     flex: 20 1 300px;
     order: 2;
   }
+
   .aside {
     order: 3;
     flex: 1 1 100px;
   }
-  .nav2{
+
+  .nav2 {
     display: none !important;
   }
+
   .header {
     order: 0;
   }
+
   .nav {
     flex: 1 1 100px;
     order: 1;
   }
+
   .footer {
     flex: 1 1 100%;
     height: 44px;
     order: 4;
   }
-  .nav, .main {
-     height: calc(100vh - 124px);
+
+  .nav,
+  .main {
+    height: calc(100vh - 124px);
   }
+
   nav a {
     margin: 3%;
     font-size: 10pt;
     flex-direction: center;
-    aling-items: center;
+    align-items: center;
   }
 }
