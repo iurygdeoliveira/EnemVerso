@@ -1,0 +1,90 @@
+var radarOption = {
+  title: {
+    text: 'Conhecimento geografia'
+  },
+  legend: {
+    data: []
+  },
+  radar: {
+    indicator: [
+      { name: 'Demografia', max: 8000 },
+      { name: 'Geográfia física', max: 5000 },
+      { name: 'Geográfia Humana', max: 28000 },
+      { name: 'Geopolítica', max: 55000 },
+      { name: 'Geográfia do Brasil', max: 99000 },
+      { name: 'Sustentabilidade', max: 43000 }
+    ]
+  },
+  series: [
+    {
+      name: 'Budget vs spending',
+      type: 'radar',
+      data: [
+        {
+          value: [6500, 3000, 20000, 35000, 50000, 18000],
+          name: 'Allocated Budget'
+        },
+      ]
+    }
+  ]
+};
+
+var radarOption2 = {
+  title: {
+    text: 'Idade dos participantes'
+  },
+  legend: {
+    data: []
+  },
+  radar: {
+    indicator: [
+      { name: '16 a 17 ', max: 90 },
+      { name: '18 a 19 ', max: 300 },
+      { name: '20 a 21', max: 500 },
+      { name: '14 a 15', max: 1000 },
+      { name: '21+', max: 1000 }
+    ]
+  },
+  series: [
+    {
+      name: 'Valores',
+      type: 'radar',
+      data: [
+        {
+          value: [80, 90, 70, 85, 95],
+          name: 'Dados'
+        },
+      ]
+    }
+  ]
+};
+
+var radarOption3 = {
+  title: {
+    text: 'Quantas horas de estudo na disciplina ?'
+  },
+  legend: {
+    data: []
+  },
+  radar: {
+    indicator: [
+      { name: '1 a 3', max: 105 },
+      { name: '3 a 5', max: 190 },
+      { name: '5 a 7', max: 250 },
+      { name: '7 a 9', max: 400 },
+      { name: '9+', max: 1000 }
+    ]
+  },
+  series: [
+    {
+      name: 'Valores',
+      type: 'radar',
+      data: [
+        {
+          value: [80, 90, 70, 85, 95],
+          name: 'Dados'
+        },
+      ]
+    }
+  ]
+};
