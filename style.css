@@ -35,8 +35,21 @@ body {
 #article {
 
   background-color:cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   
-} 
+}
+.graph {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  width: 25vw;
+  
+}
+
 #ads {
 
   background-color: red;
@@ -93,11 +106,8 @@ body {
   }
   #article {
 
-    display: grid;
-    
     grid-column: 2/10;
     grid-row: 2/10;
-
 
   }
 
