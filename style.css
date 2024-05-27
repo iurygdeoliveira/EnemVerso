@@ -11,8 +11,10 @@
 .item3 {
   background-color: #FFFFFF;
   grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .item5 {
   background-color: #3c44b4;
   grid-area: footer;
