@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  height: 100%;
+  margin: 0;
+}
+/* Adicionando espaçamento entre os elementos */
+body > * {
+  margin-right: 10px;
+}

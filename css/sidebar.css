@@ -2,6 +2,7 @@
   grid-area: sidebar;
   background-color: #1E3231;
   display: grid;
+   height: 100vh;
   grid-template-rows: auto 1fr;
   align-items: center;
   justify-content: center;
