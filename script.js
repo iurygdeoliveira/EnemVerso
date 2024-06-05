@@ -6,20 +6,19 @@ function drawGrafico1 () {
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: 'Gráfico 3B'
     },
     legend: {
-      data: ['Allocated Budget', 'Actual Spending']
+      data: ['', '']
     },
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: 'Contemporânea', max: 6500 },
+        { name: 'Vanguardas Artísticas Europeias', max: 16000 },
+        { name: 'Modernismo', max: 30000 },
+        { name: 'História da Arte', max: 38000 },
+        { name: 'Arte Africana', max: 52000 }
       ]
     },
     series: [
@@ -49,20 +48,19 @@ function drawGrafico2 () {
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: 'Gráfico 3A'
     },
     legend: {
-      data: ['Allocated Budget', 'Actual Spending']
+      data: ['', '']
     },
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: 'Contemporânea', max: 6500 },
+        { name: 'Vanguardas Artísticas Europeias', max: 16000 },
+        { name: 'Modernismo', max: 30000 },
+        { name: 'História da Arte', max: 38000 },
+        { name: 'Arte Africana', max: 52000 }
       ]
     },
     series: [
@@ -92,20 +90,19 @@ function drawGrafico3 () {
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: 'Gráfico TADS'
     },
     legend: {
-      data: ['Allocated Budget', 'Actual Spending']
+      data: ['', '']
     },
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: 'Contemporânea', max: 6500 },
+        { name: 'Vanguardas Artísticas Europeias', max: 16000 },
+        { name: 'Modernismo', max: 30000 },
+        { name: 'História da Arte', max: 38000 },
+        { name: 'Arte Africana', max: 52000 }
       ]
     },
     series: [
