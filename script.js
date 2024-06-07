@@ -14,11 +14,11 @@ function drawGrafico1 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Contemporânea', max: 6500 },
-        { name: 'Vanguardas Artísticas Europeias', max: 16000 },
-        { name: 'Modernismo', max: 30000 },
-        { name: 'História da Arte', max: 38000 },
-        { name: 'Arte Africana', max: 52000 }
+        { name: 'Contemporânea', max: 5 },
+        { name: 'Vanguardas Artísticas Europeias', max: 5 },
+        { name: 'Modernismo', max: 5 },
+        { name: 'História da Arte', max: 5 },
+        { name: 'Arte Africana', max: 5 }
       ]
     },
     series: [
@@ -56,11 +56,11 @@ function drawGrafico2 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Contemporânea', max: 6500 },
-        { name: 'Vanguardas Artísticas Europeias', max: 16000 },
-        { name: 'Modernismo', max: 30000 },
-        { name: 'História da Arte', max: 38000 },
-        { name: 'Arte Africana', max: 52000 }
+        { name: 'Contemporânea', max: 5 },
+        { name: 'Vanguardas Artísticas Europeias', max: 5 },
+        { name: 'Modernismo', max: 5 },
+        { name: 'História da Arte', max: 5 },
+        { name: 'Arte Africana', max: 5 }
       ]
     },
     series: [
@@ -98,11 +98,11 @@ function drawGrafico3 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Contemporânea', max: 6500 },
-        { name: 'Vanguardas Artísticas Europeias', max: 16000 },
-        { name: 'Modernismo', max: 30000 },
-        { name: 'História da Arte', max: 38000 },
-        { name: 'Arte Africana', max: 52000 }
+        { name: 'Contemporânea', max: 5 },
+        { name: 'Vanguardas Artísticas Europeias', max: 5 },
+        { name: 'Modernismo', max: 5 },
+        { name: 'História da Arte', max: 5 },
+        { name: 'Arte Africana', max: 5 }
       ]
     },
     series: [
