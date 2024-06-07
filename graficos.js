@@ -91,64 +91,68 @@ function obterMediasDaTurma() {
     });
 }
 
+// função de gerar os gráficos
+function criarGrafico(elementId, valores, titulo) {
+  var dom = document.getElementById(elementId);
+  var myChart = echarts.init(dom, null, {
+    renderer: 'canvas',
+    useDirtyRect: false
+  });
+
+  var option = {
+    title: {
+      text: titulo,
+      left: 'center',
+      bottom: 0
+    },
+    legend: {
+      data: ['Língua Inglesa']
+    },
+    radar: {
+      indicator: [
+        { name: 'Interpretação', max: 5 },
+        { name: 'Gramática', max: 5 },
+        { name: 'Tempos Verbais', max: 5 },
+        { name: 'Voz Passiva e Ativa', max: 5 },
+        { name: 'Conectivos', max: 5 }
+      ],
+      center: ["50%", "50%"],
+      radius: ["0%", "50%"]
+    },
+    series: [{
+      name: 'Áreas da língua inglesa',
+      type: 'radar',
+      data: [{
+        value: valores,
+        name: 'Língua Inglesa'
+      }]
+    }]
+  };
+
+  if (option && typeof option === 'object') {
+    myChart.setOption(option);
+  }
+
+  window.addEventListener('resize', myChart.resize);
+}
+
+
+
 // Para usar a função e obter as médias da turma
 obterMediasDaTurma()
   .then(mediasDaTurma => {
-    medias = mediasDaTurma;
-
-    let interpretacao = medias['interpretação'];
-    let gramatica = medias['gramática'];
-    let temposVerbais = medias['tempos_verbais'];
-    let vozPassivaAtiva = medias['voz_passiva_ativa'];
-    let conectivos = medias['conectivos'];
-    
-    var dom = document.getElementById('graficos');
-    var myChart = echarts.init(dom, null, {
-        renderer: 'canvas',
-        useDirtyRect: false
-    });
-
-        var app = {};
-
-        var option;
-
-        option = {
-            title: {
-                text: 'TADS',
-                left: 'center',
-                bottom: 0
-            },
-            legend: {
-                data: ['Língua Inglesa']
-            },
-            radar: {
-                indicator: [
-                    { name: 'Interpretação', max: 5 },
-                    { name: 'Gramática', max: 5 },
-                    { name: 'Tempos Verbais', max: 5 },
-                    { name: 'Voz Passiva e Ativa', max: 5 },
-                    { name: 'Conectivos', max: 5 }
-                ],
-                center: ["50%", "50%"],
-                radius: ["0%", "50%"]
-            },
-            series: [{
-                name: 'Áreas da língua inglesa',
-                type: 'radar',
-                data: [{
-                        value: [interpretacao, gramatica, temposVerbais, vozPassivaAtiva, conectivos],
-                        name: 'Língua Inglesa'
-                    }
-                ]
-            }]
-        };
-
-        if (option && typeof option === 'object') {
-            myChart.setOption(option);
-        }
-
-        window.addEventListener('resize', myChart.resize);
-
+    if (mediasDaTurma) {
+      const valores = [
+        mediasDaTurma['interpretação'],
+        mediasDaTurma['gramática'],
+        mediasDaTurma['tempos_verbais'],
+        mediasDaTurma['voz_passiva_ativa'],
+        mediasDaTurma['conectivos']
+      ];
+      criarGrafico('graficos_3A', valores, '3A');
+      criarGrafico('graficos_3B', valores, '3B');
+      criarGrafico('graficos_TADS', valores, 'TADS');
+    }
   })
   .catch(error => {
     console.error('Erro ao obter as médias da turma:', error);
