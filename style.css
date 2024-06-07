@@ -35,8 +35,13 @@ body{
   grid-area: s;
 }
 
+#graficos{
+  display: flex;
+  justify-content: center;
+}
+
 #graficos_3A, #graficos_3B, #graficos_TADS {
-  width: 30vw;
+  width: 20vw;
   height: 40vh;
   margin: 0 auto
 }
