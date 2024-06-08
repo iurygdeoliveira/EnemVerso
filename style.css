@@ -3,7 +3,7 @@
 * {
 
     box-sizing: border-box;
-    font-family: Montserrat, Geneva,sans-serif;
+    font-family: Montserrat, Geneva, sans-serif;
 
 }
 
@@ -97,7 +97,48 @@ footer {
 
 }
 
+#sideBarButton {
+
+    display: none;
+
+}
+
 @media only screen and (max-width: 768px) {
+
+    h2 {
+
+        font-size: 1.2em;
+
+    }
+
+    #sideBarButton {
+
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+
+        justify-content: space-evenly;
+
+    }
+
+    .menuBars {
+
+        background-color: white;
+        height: 8px;
+
+        border-width: .5px;
+        border-color: gray;
+        border-style: solid;
+        border-radius: 5px;
+
+    }
     
     #logo {
 
