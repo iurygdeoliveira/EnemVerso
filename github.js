@@ -27,7 +27,7 @@ async function executeRequest(path) {
         method: "GET",
         url: '/repos/{owner}/{repo}/contents/{path}',
         headers: {
-            authorization: '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',
+            authorization: 'TOKEN',
         },
         owner: "victorferrazms",
         repo: "EnemVerso",
