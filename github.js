@@ -1,4 +1,4 @@
-let path = "TADS/tecnologiadainformacao.json";
+let path = "materia";
 
 exibirResultado();
 
