@@ -3,118 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Insere o favicon na aba da pagina -->
     <link rel="shortcut icon" href="imgs/EnemVerso.png" type="image/x-icon">
-    <!-- Importa as configurações CSS para a página -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Importing Jquery JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Importing Echarts Library -->
-    <script src="echarts.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- IMPORTANDO A BIBLIOTECA JQUERY VIA CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <!-- IMPORTANDO A BIBLIOTECA ECHARTS -->
+     <script src="./scripts/echarts.js"></script>
     <title>EnemVerso</title>
-
 </head>
 <body>
-    <script>
-        const link = document.getElementById('quimica');
-        if(link){
-            link.addEventListener('click', addClass)
-        }
-        function addClass(){
-            this.classList.add('noclick');
-        }
-    </script>
-    <!-- Linkando o JS -->
-    <script type="text/javascript" src="script.js"></script>
-    <div class="container">
-     <header class="header">
-        <img src="imgs/EnemVerso.png" alt="" width="150" height="150">
-        <div class="navbar">
-            <a href="#">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown 
-                    <i class="bi bi-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div> 
-            <a href="#contact">Contact</a>
-        </div>
-    </header>
-
-    <aside class="left">
-        <i class="bi bi-person-circle"></i>
-        <div class="navbar-left">
-            <div class="navbar-links">
-                <a style="cursor: pointer;" id="backButton">Home</a>
-                <a style="cursor: pointer;" onclick="loadContent('materias/quimica.html')" id="quimica">
-                    Quimica
-                </a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
+    <div class="container container-grid">
+        <!-- Cabeçalho da Pagina -->
+        <header class="header header-grid">
+            <span style="opacity: 0.09;">
+                EnemVerso
+            </span>
+            <!-- Navbar que fica oculta em telas maiores -->
+            <div class="navbar" id="hidden-navbar">
+                <a href="#">Home</a>
+                <a href="#">Materias</a>
+                <a href="#">Contatos</a>
             </div>
+        </header>
+
+        <!-- Menu lateral -->
+        <aside class="menu-left menu-left-grid">
+            <!-- Imagem na parte inicial do menu -->
+            <img src="imgs/EnemVerso.png" alt="Logo-EnemVerso" class="Logo-MenuLeft">
+            <!-- Lista de links para as matérias -->
+            <div class="menu-left-links" id="menu-left">
+
+            </div>
+        </aside>
+        
+        <!-- Conteudo da pagina -->
+        <main class="content content-grid">
+
+            <!-- Div que armazena o grafico -->
+            <div class="graphic-div">
+                <div id="graphic-ads" style="width: 300px; height: 300px; padding: 10px;"></div>
+                <div id="graphic-3a" style="width: 300px; height: 300px; padding: 10px;"></div>
+                <div id="graphic-3b" style="width: 300px; height: 300px; padding: 10px;"></div>
+            </div>
+            
+            <span>
+                Olá, seja bem-vindo ao EnemVerso!
+            </span>
+        </main>
+
+        <!-- Barra Lateral - Sem uso no momento -->
+        <div class="rightside-bar rightside-bar-grid">
+            <span style="opacity: 0.09;">
+                RightSide
+            </span>
         </div>
-    </aside>
-    <main id="content" class="main">
-        <div class="graphic-box">
-            <div id="graphic-1" style="width: 300px;height:300px; padding: 10px;"></div>
-            <div id="graphic-2" style="width: 300px;height:300px; padding: 10px;"></div>
-            <div id="graphic-3" style="width: 300px;height:300px; padding: 10px;"></div>
-        </div>
-        <h1>Home Page</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloribus odit dolores 
-            delectus cumque recusandae officiis, omnis, ad adipisci quisquam mollitia modi earum. 
-            Modi numquam maxime eos corrupti. Pariatur, quis?
-            <a href="#">Teste</a>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, facere cumque reprehenderit 
-            ducimus nesciunt nostrum quas magnam ullam eius doloribus alias asperiores eligendi 
-            nihil libero. Aut quo molestias necessitatibus voluptatibus.
-        </p>
-        <img src="imgs/EnemVerso.png" alt="" height="300px" width="300px">
-        <img src="imgs/EnemVerso.png" alt="" height="300px" width="300px">
-        <img src="imgs/EnemVerso.png" alt="" height="300px" width="300px">
-        <img src="imgs/EnemVerso.png" alt="" height="300px" width="300px">
-        <img src="imgs/EnemVerso.png" alt="" height="300px" width="300px">
-        <img src="imgs/EnemVerso.png" alt="" height="300px" width="300px">
-    </main>
-     <div class="right">Right Sidebar</div>
-     <footer class="footer">
-         <div class="footer-section">
-             <h3>Contatos</h3>
-             <p>Telefone: (123) 456-7890</p>
-             <p>Email: info@example.com</p>
-         </div>
-         <div class="footer-section">
-             <h3>Links Úteis</h3>
-             <ul>
-                 <li><a href="#about">Sobre nós</a></li>
-                 <li><a href="#services">Serviços</a></li>
-                 <li><a href="#privacy">Política de Privacidade</a></li>
-             </ul>
-         </div>
-         <div class="footer-section">
-             <h3>Redes Sociais</h3>
-             <div class="social-icons">
-                 <a href="#"><i class="bi bi-facebook"></i></a>
-                 <a href="#"><i class="bi bi-twitter"></i></a>
-                 <a href="#"><i class="bi bi-instagram"></i></a>
-             </div>
-         </div>
-         <div class="footer-section">
-             <h3>Newsletter</h3>
-             <form>
-                 <input type="email" id="email" name="email" placeholder="Your email address">
-                 <button type="submit">Enviar</button>
-             </form>
-         </div>
+
+        <!-- Rodape da pagina -->
+        <footer class="footer footer-grid">
+            <span>
+                EnemVerso 2022
+            </span>
         </footer>
     </div>
-    <script type="text/javascript" src="graphic.js"></script>
-    <script type="text/javascript" src="graphic-2.js"></script>
-    <script type="text/javascript" src="graphic-3.js"></script>
 </body>
+<!-- CHAMANDO O SCRIPT DOS GRAFICOS (ECHARTS) -->
+<script src="./scripts/echarts.js"></script>
+<script src="./scripts/graphic-1.js"></script>
+<script src="./scripts/graphic-2.js"></script>
+<script src="./scripts/graphic-3.js"></script>
+
+<!-- CHAMANDO O JS DA API DO GITHUB -->
+<script src="./scripts/github-api.js"></script>
+<!-- SCRIPT PARA CARREGAR O MENU DA PÁGINA -->
+<script>
+    $(function(){
+        $('#menu-left').load("./sidebar/menu-left.html").height($('#menu-left').innerHeight())
+    })
+    // $.get('./sidebar/menu-left.html', function(data){
+    //     $('#menu-left').html(data);
+    // })
+</script>
 </html>

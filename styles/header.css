@@ -1,0 +1,6 @@
+.header{
+    padding: 10px;
+}
+.header-grid .navbar{
+    display: none;
+}

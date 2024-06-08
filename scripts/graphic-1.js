@@ -1,13 +1,10 @@
-var chartDom = document.getElementById('graphic-2');
+var chartDom = document.getElementById('graphic-ads');
 var myChart = echarts.init(chartDom);
 var option;
 
 option = {
   title: {
-    text: '3B - Info'
-  },
-  legend: {
-    data: ['Allocated Budget', 'Actual Spending']
+    text: 'ADS'
   },
   radar: {
     shape: 'circle',

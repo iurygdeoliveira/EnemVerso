@@ -1,0 +1,43 @@
+.menu-left{
+    background: #1f5e2a;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+}
+.menu-list-container a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+.menu-left .Logo-MenuLeft{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 30%;
+}
+.menu-list svg{
+    width: 24px;
+    height: 24px;
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.menu-list:hover{
+    color: #71c761;
+}
+.menu-list svg:hover{
+    stroke: white;
+}
+.menu-icon{
+    margin-right: 10px;
+}
+.menu-left-links{
+    display: flex;
+    justify-content: center;
+}
+li.menu-list{
+    margin-top: 2px;
+}
