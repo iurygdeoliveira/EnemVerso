@@ -1,4 +1,7 @@
-function drawGrafico1 () {
+import { topicos } from "./data.js";
+import { dadosMateria } from "./dadosMateria.js";
+
+function drawGrafico1 (idMateria) {
 
   var chartDom = document.getElementById('grafico_3b');
   var myChart = echarts.init(chartDom);
@@ -6,20 +9,17 @@ function drawGrafico1 () {
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: '3º B'
     },
-    legend: {
-      data: ['Allocated Budget', 'Actual Spending']
-    },
+
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: topicos[idMateria][0], max: 5 },
+        { name: topicos[idMateria][1], max: 5 },
+        { name: topicos[idMateria][2], max: 5 },
+        { name: topicos[idMateria][3], max: 5 },
+        { name: topicos[idMateria][4], max: 5 }
       ]
     },
     series: [
@@ -28,7 +28,7 @@ function drawGrafico1 () {
         type: 'radar',
         data: [
           {
-            value: [4200, 3000, 20000, 35000, 50000, 18000],
+            value: [2, 3, 5, 2, 4, 4],
             name: 'Allocated Budget'
           }
         ]
@@ -41,7 +41,7 @@ function drawGrafico1 () {
 
 }
 
-function drawGrafico2 () {
+function drawGrafico2 (idMateria) {
 
   var chartDom = document.getElementById('grafico_3a');
   var myChart = echarts.init(chartDom);
@@ -49,20 +49,17 @@ function drawGrafico2 () {
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: '3º A'
     },
-    legend: {
-      data: ['Allocated Budget', 'Actual Spending']
-    },
+
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: topicos[idMateria][0], max: 5 },
+        { name: topicos[idMateria][1], max: 5 },
+        { name: topicos[idMateria][2], max: 5 },
+        { name: topicos[idMateria][3], max: 5 },
+        { name: topicos[idMateria][4], max: 5 }
       ]
     },
     series: [
@@ -71,7 +68,7 @@ function drawGrafico2 () {
         type: 'radar',
         data: [
           {
-            value: [4200, 3000, 20000, 35000, 50000, 18000],
+            value: dadosMateria(idMateria),
             name: 'Allocated Budget'
           }
         ]
@@ -84,7 +81,7 @@ function drawGrafico2 () {
 
 }
 
-function drawGrafico3 () {
+function drawGrafico3 (idMateria) {
 
   var chartDom = document.getElementById('grafico_tads');
   var myChart = echarts.init(chartDom);
@@ -92,20 +89,17 @@ function drawGrafico3 () {
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: 'TADS'
     },
-    legend: {
-      data: ['Allocated Budget', 'Actual Spending']
-    },
+
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: topicos[idMateria][0], max: 5 },
+        { name: topicos[idMateria][1], max: 5 },
+        { name: topicos[idMateria][2], max: 5 },
+        { name: topicos[idMateria][3], max: 5 },
+        { name: topicos[idMateria][4], max: 5 }
       ]
     },
     series: [
@@ -114,7 +108,7 @@ function drawGrafico3 () {
         type: 'radar',
         data: [
           {
-            value: [4200, 3000, 20000, 35000, 50000, 18000],
+            value: [2, 3, 5, 2, 4, 4],
             name: 'Allocated Budget'
           }
         ]
@@ -127,6 +121,18 @@ function drawGrafico3 () {
 
 }
 
-drawGrafico1()
-drawGrafico2()
-drawGrafico3()
+drawGrafico1('literatura')
+drawGrafico2('literatura')
+drawGrafico3('literatura')
+
+const botsMateria = document.getElementsByClassName('butMateria')
+
+for (let b = 0; b < botsMateria.length; b++) {
+
+  botsMateria.item(b).addEventListener('click', (event) => {
+
+    drawGrafico2(event.target.id)
+
+  })
+
+}
