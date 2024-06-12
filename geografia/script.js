@@ -16,11 +16,11 @@ function drawGrafico1 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'ÁLGEBRA', max: 5 },
-        { name: 'GEOMETRIA', max: 5 },
-        { name: 'FUNÇÕES E ANÁLISE GRÁFICA', max: 5 },
-        { name: 'ESTATÍSTICA E PROBABILIDADE', max: 5 },
-        { name: 'MATEMÁTICA FINANCEIRA', max: 5 }
+        { name: 'geografia física', max: 5 },
+        { name: 'geografia humana', max: 5 },
+        { name: 'geopolítica e relações internacionais ', max: 5 },
+        { name: 'geografia do Brasil', max: 5 },
+        { name: 'questões ambientais e sustentabilidade', max: 5 }
       ]
     },
     series: [

@@ -16,11 +16,11 @@ function drawGrafico1 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'ÁLGEBRA', max: 5 },
-        { name: 'GEOMETRIA', max: 5 },
-        { name: 'FUNÇÕES E ANÁLISE GRÁFICA', max: 5 },
-        { name: 'ESTATÍSTICA E PROBABILIDADE', max: 5 },
-        { name: 'MATEMÁTICA FINANCEIRA', max: 5 }
+        { name: 'compreensão de texto', max: 5 },
+        { name: 'gramática e uso da língua', max: 5 },
+        { name: 'semântica ', max: 5 },
+        { name: 'escrita', max: 5 },
+        { name: 'interpretação e análise crítica', max: 5 }
       ]
     },
     series: [

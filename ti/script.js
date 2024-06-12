@@ -16,11 +16,11 @@ function drawGrafico1 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'ÁLGEBRA', max: 5 },
-        { name: 'GEOMETRIA', max: 5 },
-        { name: 'FUNÇÕES E ANÁLISE GRÁFICA', max: 5 },
-        { name: 'ESTATÍSTICA E PROBABILIDADE', max: 5 },
-        { name: 'MATEMÁTICA FINANCEIRA', max: 5 }
+        { name: ' ética e uso político das TIC', max: 5 },
+        { name: 'sociedade da informação e impacto cultural', max: 5 },
+        { name: 'relação entre internet e consumo', max: 5 },
+        { name: 'impacto sociocultural das TIC', max: 5 },
+        { name: 'acesso às novas tecnologias e TIC no mercado de trabalho', max: 5 }
       ]
     },
     series: [
