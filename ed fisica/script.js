@@ -16,11 +16,11 @@ function drawGrafico1 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'ÁLGEBRA', max: 5 },
-        { name: 'GEOMETRIA', max: 5 },
-        { name: 'FUNÇÕES E ANÁLISE GRÁFICA', max: 5 },
-        { name: 'ESTATÍSTICA E PROBABILIDADE', max: 5 },
-        { name: 'MATEMÁTICA FINANCEIRA', max: 5 }
+        { name: '//1', max: 5 },
+        { name: 'função social das atividades físicas', max: 5 },
+        { name: 'educação física inclusiva', max: 5 },
+        { name: 'exercício físico e saúde', max: 5 },
+        { name: 'esportes práticas corporais', max: 5 }
       ]
     },
     series: [

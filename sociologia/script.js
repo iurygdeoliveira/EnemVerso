@@ -16,11 +16,11 @@ function drawGrafico1 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'ÁLGEBRA', max: 5 },
-        { name: 'GEOMETRIA', max: 5 },
-        { name: 'FUNÇÕES E ANÁLISE GRÁFICA', max: 5 },
-        { name: 'ESTATÍSTICA E PROBABILIDADE', max: 5 },
-        { name: 'MATEMÁTICA FINANCEIRA', max: 5 }
+        { name: 'fundamentos da sociologia', max: 5 },
+        { name: 'estrutura social e organização', max: 5 },
+        { name: 'mudança social e desenvolvimento', max: 5 },
+        { name: 'cultura e identidade', max: 5 },
+        { name: 'sociologia comtemporânea ', max: 5 }
       ]
     },
     series: [
