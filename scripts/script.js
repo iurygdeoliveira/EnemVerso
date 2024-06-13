@@ -12,6 +12,7 @@ document.querySelectorAll('.menu-list-link').forEach(link => {
 
 function openMateria(materia){
     let materiaURL = `./materias/${materia}.html`;
+    let pathGithub = `TADS/${materia}.html`;
 
     fetch(materiaURL)
         .then(Response => {
@@ -26,4 +27,5 @@ function openMateria(materia){
         .catch(error => {
             console.error('Ocorreu um problema no link informado:', error);
         });
+    return pathGithub
 }

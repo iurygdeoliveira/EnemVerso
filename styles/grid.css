@@ -57,6 +57,9 @@
     div.graphic-div{
         display: none;
     }
+    div.hidden-navbar{
+        display: inline;
+    }
 }
 
 .header-grid{

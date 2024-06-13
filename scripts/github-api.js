@@ -12,8 +12,11 @@ async function exibirResultado() {
         .then(
             res => res.json()
         );
-    
-    console.log(url, dados);
+        
+    let respondentes = Object.keys(dados).length
+
+    console.log("Total de respondentes: " + respondentes)
+    console.log(url, dados[1]);
 }
 
 async function getData(path){
@@ -35,7 +38,6 @@ async function executeRequest(path) {
         path: path
     })
 }
-
 async function consoleGetData(path){
     console.log( await getData(path))
 }
