@@ -1,7 +1,7 @@
 var chartDom = document.getElementById('grafico');
 var myChart = echarts.init(chartDom);
 
-fetch('./assets/charts/linguaportuguesa.json')
+fetch('https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/linguaportuguesa.json')
   .then(response => response.json())
   .then(data => {
     // Filtrar apenas as respostas relevantes para o gráfico e converter para array
@@ -47,7 +47,7 @@ fetch('./assets/charts/linguaportuguesa.json')
           { name: 'Gramática', max: 5 },
           { name: 'Vocabulário', max: 5 },
           { name: 'Coesão', max: 5 },
-          { name: 'Nao sabo', max: 5 },
+          { name: 'Análise Crítica', max: 5 },
         ]
       },
       series: [
