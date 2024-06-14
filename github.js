@@ -1,4 +1,4 @@
-let path = "materia";
+let path = "TADS/tecnologia.json";
 
 exibirResultado();
 
@@ -30,7 +30,7 @@ async function executeRequest(path) {
             authorization: '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',
         },
         owner: "victorferrazms",
-        repo: "EnemVerso",
+        repo: "EnemVerso-Data",
         path: path
     })
 }
