@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imgs/EnemVerso.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
-    
+    <!-- Importa o Echarts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+
     <!-- IMPORTANDO A BIBLIOTECA JQUERY VIA CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     
@@ -81,5 +83,17 @@
     // $.get('./sidebar/menu-left.html', function(data){
     //     $('#menu-left').html(data);
     // })
+</script>
+<script>
+    $(document).ready(function(){
+        $('#link-quimica').click(function(e){
+            e.preventDefault();
+            $('#main-content').load('./materias/quimica.html', function() {
+                console.log('Conteúdo de Química carregado com sucesso!');
+            });
+        });
+
+        // Adicione mais eventos de clique para outras disciplinas se necessário
+    });
 </script>
 </html>

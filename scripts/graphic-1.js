@@ -1,37 +1,35 @@
-var chartDom = document.getElementById('graphic-ads');
-var myChart = echarts.init(chartDom);
-var option;
+export function renderChartADS(mediaPonto1, mediaPonto2, mediaPonto3, mediaPonto4, mediaPonto5){
+  var chartDom = document.getElementById('graphic-ads');
+  var myChart = echarts.init(chartDom);
+    var option;
 
-option = {
-  title: {
-    text: 'ADS'
-  },
-  radar: {
-    shape: 'circle',
-    indicator: [
-      { name: 'Quimica Inorganica', max: 16000 },
-      { name: 'Quimica Organica', max: 16000 },
-      { name: 'Fisico-Quimica', max: 30000 },
-      { name: 'Quimica Analitica', max: 38000 },
-      { name: 'Bioquimica', max: 38000 }
-    ]
-  },
-  series: [
-    {
-      name: 'Budget vs spending',
-      type: 'radar',
-      data: [
-        {
-          value: [Math.random() * 12000, Math.random() * 12000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000],
-          name: 'Allocated Budget'
+    option = {
+        title: {
+            text: 'Médias Ponderadas das Respostas'
         },
-        {
-          value: [Math.random() * 10999, Math.random() * 10999, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000],
-          name: 'Actual Spending'
-        }
-      ]
-    }
-  ]
-};
+        tooltip: {},
+        legend: {
+            data: ['Média']
+        },
+        radar: {
+            shape: 'circle',
+            indicator: [
+                { name: 'Quimica Geral', max: 10 },
+                { name: 'Quimica Organica', max: 10 },
+                { name: 'Fisico-Quimica', max: 10 },
+                { name: 'Quimica Analitica', max: 10 },
+                { name: 'Quimica Ambiental', max: 10 }
+            ]
+        },
+        series: [{
+            name: 'Média',
+            type: 'radar',
+            data: [{
+                value: [mediaPonto1, mediaPonto2, mediaPonto3, mediaPonto4, mediaPonto5],
+                name: 'Média'
+            }]
+        }]
+    };
 
-option && myChart.setOption(option);
+    option && myChart.setOption(option);
+}

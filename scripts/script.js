@@ -22,7 +22,7 @@ function openMateria(materia){
             return Response.text();
         })
         .then(data => {
-            document.getElementById('main-content').innerHTML = data;
+            document.getElementById('main-content').load = data;
         })
         .catch(error => {
             console.error('Ocorreu um problema no link informado:', error);
