@@ -1,9 +1,9 @@
-import{mediaEixo1, mediaEixo2, mediaEixo3, mediaEixo4, mediaEixo5}from './calc.js';  
+  import { mediaEixo1, mediaEixo2, mediaEixo3, mediaEixo4, mediaEixo5 }from './calc.js';  
 function drawGrafico1 () {
 
   var chartDom = document.getElementById('graph1');
   var myChart = echarts.init(chartDom);
-  var option;
+  var option
     
 
   option = {
