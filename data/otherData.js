@@ -40,6 +40,26 @@ const subjects3b = {
 
 }
 
+const subjectsTADS = {
+
+    'artes': [8, undefined],
+    'biologia': [2, 17],
+    'edFisica': [7, undefined],
+    'espanhol': [7, undefined],
+    'filosofia': [8, undefined],
+    'fisica': [7, undefined],
+    'geografia': [7, undefined],
+    'historia': [7, 22],
+    'ingles': [8, undefined],
+    'linguaPortuguesa': [8, undefined],
+    'literatura': [8, undefined],
+    'matematica': [7, undefined],
+    'quimica': [8, undefined],
+    'sociologia': [8, undefined],
+    'ti': [8, undefined]
+
+}
+
 // Definição dos tópicos que serão exibidos nos gráficos.
 const topics = {
 
@@ -151,4 +171,4 @@ const topics = {
 
 }
 
-export { subjects3a, subjects3b, topics }
+export { subjects3a, subjects3b, subjectsTADS,topics }
