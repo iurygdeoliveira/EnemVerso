@@ -1,0 +1,59 @@
+@media only screen and (max-width: 768px) {
+
+    #logo {
+
+        width: 30%;
+        margin: 4% 0;
+
+    }
+
+    .grid-container {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .grid-container * {
+
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    header {
+
+        min-height: 10vh;
+
+
+    }
+
+    article {
+
+        display: flex;
+        flex-direction: column;
+        min-height: 70vh;
+
+    }
+
+    #ads {
+
+        position: sticky;
+        bottom: 0;
+
+    }
+
+    nav {
+
+        display: none;
+
+    }
+
+    .graph {
+
+        margin: 5% 0
+
+    }
+
+}
