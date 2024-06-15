@@ -1,11 +1,11 @@
-export function renderChartADS(mediaPonto1, mediaPonto2, mediaPonto3, mediaPonto4, mediaPonto5){
-  var chartDom = document.getElementById('graphic-ads');
-  var myChart = echarts.init(chartDom);
-    var option;
+function renderChartADS(mediaPonto1, mediaPonto2, mediaPonto3, mediaPonto4, mediaPonto5){
+  let chartDom = document.getElementById('graphic-ads');
+  let myChart = echarts.init(chartDom);
+  let option;
 
     option = {
         title: {
-            text: 'Médias Ponderadas das Respostas'
+            text: 'ADS'
         },
         tooltip: {},
         legend: {

@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <title>Quimica</title>
-</head>
-<body>
-    <div class="container-quimica">
+function returnQuimica(){
+    let htmlItem = `<div class="container-quimica">
         <!-- Div que armazena o grafico -->
         <div class="graphic-div">
             <div id="graphic-ads" style="width: 300px; height: 300px; padding: 10px;"></div>
@@ -18,6 +10,6 @@
         <div class="text-div">
             <h1>Bem vindo a materia de quimica</h1>
         </div>
-    </div>
-</body>
-</html>
+    </div>`;
+    return htmlItem;
+}

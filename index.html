@@ -6,16 +6,11 @@
     <link rel="shortcut icon" href="imgs/EnemVerso.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
     <!-- Importa o Echarts -->
-    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script> -->
 
     <!-- IMPORTANDO A BIBLIOTECA JQUERY VIA CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    
-    <!-- CHAMANDO O SCRIPT  -->
-    <script type="module" src="scripts/script.js"></script>
+   
 
-    <!-- IMPORTANDO A BIBLIOTECA ECHARTS -->
-     <script src="./scripts/echarts.js"></script>
     <title>EnemVerso</title>
 </head>
 <body>
@@ -44,7 +39,7 @@
         <!-- Conteudo da pagina -->
         <main class="content content-grid" id="main-content">            
             <span>
-                Olá, seja bem-vindo ao EnemVerso!
+                Bem-vindo ao EnemVerso!
             </span>
         </main>
 
@@ -62,38 +57,26 @@
             </span>
         </footer>
     </div>
-</body>
-<!-- CHAMANDO O SCRIPT  -->
-<script type="module" src="scripts/script.js"></script>
+    <!-- CHAMANDO O JQUERY  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<!-- CHAMANDO O SCRIPT DOS GRAFICOS (ECHARTS) -->
-<script src="./scripts/echarts.js"></script>
-<script src="./scripts/graphic-1.js"></script>
-<script src="./scripts/graphic-2.js"></script>
-<script src="./scripts/graphic-3.js"></script>
+    <!-- CHAMANDO O JS DO ECHARTS -->
+    <script src="./scripts/echarts.js"></script>
 
-<!-- CHAMANDO O JS DA API DO GITHUB -->
-<script type="module" src="./scripts/github-api.js"></script>
+    <script src="./scripts/materias.js"></script>
+    <!-- Chamando o Script que Visualiza o Click -->
+    <!-- <script src="./scripts/script.js"></script> -->
 
-<!-- SCRIPT PARA CARREGAR O MENU DA PÁGINA -->
-<script>
-    $(function(){
-        $('#menu-left').load("./sidebar/menu-left.html").height($('#menu-left').innerHeight())
-    })
-    // $.get('./sidebar/menu-left.html', function(data){
-    //     $('#menu-left').html(data);
-    // })
-</script>
-<script>
-    $(document).ready(function(){
-        $('#link-quimica').click(function(e){
-            e.preventDefault();
-            $('#main-content').load('./materias/quimica.html', function() {
-                console.log('Conteúdo de Química carregado com sucesso!');
-            });
+    <!-- CHAMANDO O JS DA API DO GITHUB -->
+    <script src="scripts/graphic-1.js"></script>
+    <script src="scripts/github-api.js"></script>
+
+    <!-- SCRIPT PARA CARREGAR O MENU DA PÁGINA -->
+    <script>
+        $(function(){
+            $('#menu-left').load("./sidebar/menu-left.html").height($('#menu-left').innerHeight())
         });
-
-        // Adicione mais eventos de clique para outras disciplinas se necessário
-    });
-</script>
+        
+    </script>
+</body>
 </html>
