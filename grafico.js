@@ -1,48 +1,59 @@
-var chartDom = document.getElementById('grafico');
+import {obterTodasMedias} from "./js/artes_github_data_service.js"
 
-var myChart = echarts.init(chartDom);
+inicializarGraficos();
 
-var option;
+function inicializarGraficos() {
+  obterTodasMedias().then(data => {
+    inicializarGrafico("graficoTads", "TADS", data["tads"]);
+    inicializarGrafico("grafico3A", "3A", data["3A"]);
+    inicializarGrafico("grafico3B", "3B", data["3B"]);
+  }); 
+}
 
-option = {
-  title: {
-    text: 'TADS'
-  },
-  legend: {
-    data: ['TADS', 'Ensino Médio'],
-    bottom: 0
-  },
-  radar: {
-    shape: 'circle',
-    center: ['50%', '50%'],
-    radius: 100,
-    axisName: {
-      color: "black"
+function inicializarGrafico(id, titulo, dados) {
+  var chartDom = document.getElementById(id);
+
+  var myChart = echarts.init(chartDom);
+  
+  var option;
+  
+  option = {
+    title: {
+      text: titulo,
     },
-    indicator: [
-      { name: 'Arte Contemporânea', max: 5 },
-      { name: 'Vanguardas Artísticas Europeias', max: 5 },
-      { name: 'Modernismo', max: 5 },
-      { name: 'História da Arte e Outros Assuntos', max: 5 },
-      { name: 'Arte de Origem Africana no Brasil e Tradições Indígenas', max: 5 },
-    ]
-  },
-  series: [
-    {
-      name: 'TADS vs Ensino Médio',
-      type: 'radar',
-      data: [
-        {
-          value: [3, 4, 2, 3, 5],
-          name: 'TADS'
-        },
-        {
-          value: [5, 4, 5, 3, 4],
-          name: 'Ensino Médio'
-        }
+    radar: {
+      shape: 'circle',
+      center: ['50%', '50%'],
+      radius: 100,
+      axisName: {
+        color: "black"
+      },
+      indicator: [
+        { name: 'Arte Contemporânea', max: 5 },
+        { name: 'Vanguardas Artísticas Europeias', max: 5 },
+        { name: 'Modernismo', max: 5 },
+        { name: 'História da Arte e Outros Assuntos', max: 5 },
+        { name: 'Arte de Origem Africana no Brasil e Tradições Indígenas', max: 5 },
       ]
-    }
-  ]
-};
-
-option && myChart.setOption(option);
+    },
+    series: [
+      {
+        type: 'radar',
+        data: [
+          {
+            value: [
+              dados["arteContemporanea"],
+              dados["vanguardasArtisticasEuropeias"],
+              dados["modernismo"],
+              dados["historiaArte"],
+              dados["arteBrasil"],
+            ],
+            name: titulo,
+          }
+        ]
+      }
+    ]
+  };
+  
+  option && myChart.setOption(option);
+}
