@@ -1,6 +1,8 @@
 .item2 {
   background-color: #FA9072;
   grid-area: nav;
+  display: flex;
+  flex-direction: column;
 }
 
 .item1 {
@@ -69,6 +71,20 @@ body {
   width:100px;
   height: 100px;
   padding:10px;
+
+}
+
+.botaoMateria {
+
+  height: 40px;
+  width: 40%;
+  padding: 0px 5px;
+  background-color: rgba(255, 36, 36, 0);
+  text-align: center;
+
+  border: none;
+  border-radius: 4px;
+  color: blue;
 
 }
 
