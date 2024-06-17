@@ -47,7 +47,8 @@ function drawChart1(idMateria) {
   
   option = {
     title: {
-      text: '3A INFO'
+      text: '3A INFO',
+      bottom: 10
     },
     legend: {
       data: ['Graficos']
@@ -88,7 +89,9 @@ function drawChart2(idMateria) {
 
   option = {
     title: {
-      text: '3B INFO'
+      text: '3B INFO',
+      bottom: 10
+      
     },
     legend: {
       data: ['Graficos']
@@ -130,7 +133,8 @@ function drawChart3(idMateria) {
 
   option = {
     title: {
-      text: 'TADS'
+      text: 'TADS',
+      bottom:10
     },
     legend: {
       data: ['Graficos']
