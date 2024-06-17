@@ -2,53 +2,68 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>FILOSOFIA</title>
-  <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filosofia</title>
+    <script type="module" src="echarts.min.js" defer></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 
-<body class="container col-sm col-md col-lg">
-  <nav class="item2">
-    <a href="#" id="logo1">L</a>
-    <p><a href="https://www.portugues.com.br/">FILOSOFIA</a< /p>
-        <p>
-          <a
-            href="https://brasilescola.uol.com.br/matematica#:~:text=Matem%C3%A1tica%20%C3%A9%20uma%20ci%C3%AAncia%20que%20utiliza%20conceitos%20e%20t%C3%A9cnicas%20para,%2C%20racioc%C3%ADnio%20l%C3%B3gico%2C%20entre%20outros.">Matemática</a>
-        </p>
-       
+<body>
 
-  </nav>
-  <header class="item1">
-    header
-  </header>
+    <div class="grid-container">
 
+        <header>
 
-  <main class="item3">
+            <h2 id="subject">Header</h2>
 
-    <div id="grafico" style = "width: 200px; height: 200px;">
-    </div>
-    <div id="grafico2" style = "width: 200px; height: 200px;">
-      </div>
-      <div id="grafico3" style = "width: 200px; height: 200px;">
+        </header>
+
+        <nav>
+
+           
+
+            <button class="subject" id="linguaPortuguesa">LÍNGUA PORTUGUESA</button>
+            <button class="subject" id='literatura'>LITERATURA</button>
+            <button class="subject" id='matematica'>MATEMÁTICA</button>
+            <button class="subject" id='fisica'>FÍSICA</button>
+            <button class="subject" id='quimica'>QUÍMICA</button>
+            <button class="subject" id='biologia'>BIOLOGIA</button>
+            <button class="subject" id='historia'>HISTÓRIA</button>
+            <button class="subject" id='geografia'>GEOGRAFIA</button>
+            <button class="subject" id='ingles'>INGLÊS</button>
+            <button class="subject" id='espanhol'>ESPANHOL</button>
+            <button class="subject" id='artes'>ARTES</button>
+            <button class="subject" id='sociologia'>SOCIOLOGIA</button>
+            <button class="subject" id='filosofia'>FILOSOFIA</button>
+            <button class="subject" id='edFisica'>EDUCAÇÃO FÍSICA</button>
+            <button class="subject" id='ti'>TECNOLOGIA DA INFORMAÇÃO </button>
+
+        </nav>
+
+        <article>
+
+            <div class="graph" id="grafico_3b"></div>
+            <div class="graph" id="grafico_3a"></div>
+            <div class="graph" id="grafico_tads"></div>
+
+        </article>
+
+        <div id="ads">
+
+            <h2>Aside</h2>
+
         </div>
-  </main>
 
-  <aside class="item4">
-    <p>
-      aside
-    </p>
-  </aside>
+        <footer>
 
+            <h2>Footer</h2>
 
-  <footer class="item5">
-    Footer
-  </footer>
+        </footer>
 
-<script src="echarts.min.js"></script>
-<script src="script.js"></script>
+    </div>
+
 </body>
 
 </html>
