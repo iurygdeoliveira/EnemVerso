@@ -1,47 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<link rel="stylesheet"  href="style.css">
-  <title>Química</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EnemVerso</title>
+    <script type="module" src="echarts.min.js" defer></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
 
+    <div class="grid-container">
 
-<div class="grid-container">
-  <div class="item1">Header</div>
-  <div class="item2">
+        <header>
 
-  <img src=" https://static.mundoeducacao.uol.com.br/mundoeducacao/2023/01/mona-lisa-a-obra-mais-famosa-de-leonardo-da-vinci.jpg" width="100" height="100">
-
-<ul class="materias">
- <li>Arte</li>
-   <li>Geografia</li>
-   <li>Ingles</li>
-   <li>História</li>
-</ul>
+            <h2 id="subject">Língua Portuguesa</h2>
     
+        </header>
+    
+        <nav>
 
-    <br>
+            <img id="logo" src="/logo.png" alt="logo">
 
-  </div>
-  <div class="item3">
-      <div class=titulo>  <h1>Arte</h1> </div>
+            <button class="subject" id="linguaPortuguesa">Língua Portuguesa</button>
+            <button class="subject" id='literatura'>Literatura</button>
+            <button class="subject" id='matematica'>Matemática</button>
+            <button class="subject" id='fisica'>Física</button>
+            <button class="subject" id='quimica'>Química</button>
+            <button class="subject" id='biologia'>Biologia</button>
+            <button class="subject" id='historia'>História</button>
+            <button class="subject" id='geografia'>Geografia</button>
+            <button class="subject" id='ingles'>Inglês</button>
+            <button class="subject" id='espanhol'>Espanhol</button>
+            <button class="subject" id='artes'>Artes</button>
+            <button class="subject" id='sociologia'>Sociologia</button>
+            <button class="subject" id='filosofia'>Filosofia</button>
+            <button class="subject" id='edFisica'>Educação Física</button>
+            <button class="subject" id='ti'>Tecnologia da Informação</button>
 
-          <br> 
-          <div class=textocurto >
-          <p>A arte e uma diciplina onde ele mostra sesaçoes e sentimentos e descobrta como por exemplo:<br>
-
-            .Podemos cita a pintura como arte pois nela demostra a produçao de imagem de representaçao seja de figura ou abstrata
-            .Tem a Dança que tem como objetivo a manifestação artistica pelo o uso do corpo por realiza movimento ritmados
-            .Musica por tramistir efeitos sonoros harmonioso esticamente valiados<br>
-
-            </p>
+        </nav>
+    
+        <article>
+    
+            <div class="graph" id="grafico_3b"></div>
+            <div class="graph" id="grafico_3a"></div>
+            <div class="graph" id="grafico_tads"></div>
+    
+        </article>
+    
+        <div id="ads">
+    
+            <h2>Ads</h2>
+    
         </div>
+    
+        <footer>
+    
+            <h2>Footer</h2>
+    
+        </footer>
 
-  </div>
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div>
-</div>
+    </div>
+    
 </body>
 </html>
-
