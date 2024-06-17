@@ -2,44 +2,45 @@ body {
 
 
   min-height: 100vh;
-  
+
 }
 
 #container {
 
 
   height: 100vh;
-  
+
 }
 
 #head {
 
-  background-color: deeppink;
-  
+  background-color: #ec9f5f;
+
 }
 
 #navbar {
 
-  background-color: green;
-  
+  background-color: #785130;
+
 }
 
 #logo {
 
-  height: 17%;
+  height: 50%;
   border-radius: 50%;
   margin: 7% auto;
-  
+
 }
 
 #article {
 
-  background-color:cadetblue;
+  background-color: #bb7a44;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
+
 }
+
 .graph {
 
   display: flex;
@@ -47,17 +48,40 @@ body {
   justify-content: center;
   height: 30vh;
   width: 25vw;
+
+}
+
+.botaoMat {
+
+  height: 40px;
+  width: 70%;
+  background-color: transparent;
+  align-items: center;
+  text-align: start;
+  padding: 0px 10px;
+  border: none;
+
+  transition: background 400ms ease-out, width 500ms ease-out, border-radius 600ms ease-out;
+  
+}
+
+.botaoMat:hover {
+
+  background-color: rgb(255, 255, 255, 0.096);
+  width: 85%;
+  border-radius: 0% 20px 20px 0%;
   
 }
 
 #ads {
 
-  background-color: red;
-  
-  
+  background-color: #785130;
+
+
 }
+
 #footer {
-  background-color: yellow;
+  background-color: #ec9f5f;
 }
 
 @media only screen and (max-width: 768px) {
@@ -73,7 +97,7 @@ body {
   #navbar {
 
     display: none;
-    
+
   }
 
 }
@@ -102,8 +126,9 @@ body {
     display: grid;
     grid-column: 1;
     grid-row: 1/11;
-    
+
   }
+
   #article {
 
     grid-column: 2/10;
@@ -111,20 +136,21 @@ body {
 
   }
 
-  #footer{
+  #footer {
 
     display: grid;
-   
+
     grid-column: 2/11;
     grid-row: 10;
   }
-  #ads{
+
+  #ads {
     display: grid;
-    
+
     grid-column: 10;
     grid-row: 2/10;
 
   }
 
-  
+
 }

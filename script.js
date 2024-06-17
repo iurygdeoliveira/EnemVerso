@@ -1,25 +1,27 @@
-function createGrafico1 () {
-
+//3A
+function createGrafico1(idMateria) {
+  
   var chartDom = document.getElementById('grafico_1');
   var myChart = echarts.init(chartDom);
   var option;
+  
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: '3º A'
     },
     legend: {
       data: ['Allocated Budget', 'Actual Spending']
+
     },
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: topicos[idMateria][0], max: 5},
+        { name: topicos[idMateria][1], max: 5},
+        { name: topicos[idMateria][2], max: 5 },
+        { name: topicos[idMateria][3], max: 5 },
+        { name: topicos[idMateria][4], max: 5 }
       ]
     },
     series: [
@@ -28,8 +30,7 @@ function createGrafico1 () {
         type: 'radar',
         data: [
           {
-            value: [2345, 3047, 1025, 6789, 2789, 8000],
-            name: 'Allocated Budget'
+            value: calcularMédiasGerais(idMateria, '3A')
           }
         ]
       }
@@ -37,10 +38,12 @@ function createGrafico1 () {
   };
 
   option && myChart.setOption(option);
-  
+
 }
 
-function createGrafico2 () {
+
+// TADS
+function createGrafico2(idMateria) {
 
   var chartDom = document.getElementById('grafico_2');
   var myChart = echarts.init(chartDom);
@@ -48,7 +51,7 @@ function createGrafico2 () {
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: 'TADS'
     },
     legend: {
       data: ['Allocated Budget', 'Actual Spending']
@@ -56,12 +59,11 @@ function createGrafico2 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: topicos[idMateria][0], max: 5},
+        { name: topicos[idMateria][1], max: 5},
+        { name: topicos[idMateria][2], max: 5 },
+        { name: topicos[idMateria][3], max: 5 },
+        { name: topicos[idMateria][4], max: 5 }
       ]
     },
     series: [
@@ -70,8 +72,7 @@ function createGrafico2 () {
         type: 'radar',
         data: [
           {
-            value: [2345, 3047, 1025, 6789, 2789, 8000],
-            name: 'Allocated Budget'
+            value: calcularMédiasGerais(idMateria, 'TADS')
           }
         ]
       }
@@ -82,7 +83,8 @@ function createGrafico2 () {
 
 }
 
-function createGrafico3 () {
+//3B
+function createGrafico3(idMateria) {
 
   var chartDom = document.getElementById('grafico_3');
   var myChart = echarts.init(chartDom);
@@ -90,7 +92,7 @@ function createGrafico3 () {
 
   option = {
     title: {
-      text: 'Basic Radar Chart'
+      text: '3º B'
     },
     legend: {
       data: ['Allocated Budget', 'Actual Spending']
@@ -98,12 +100,11 @@ function createGrafico3 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'Sales', max: 6500 },
-        { name: 'Administration', max: 16000 },
-        { name: 'Information Technology', max: 30000 },
-        { name: 'Customer Support', max: 38000 },
-        { name: 'Development', max: 52000 },
-        { name: 'Marketing', max: 25000 }
+        { name: topicos[idMateria][0], max: 5},
+        { name: topicos[idMateria][1], max: 5},
+        { name: topicos[idMateria][2], max: 5 },
+        { name: topicos[idMateria][3], max: 5 },
+        { name: topicos[idMateria][4], max: 5 }
       ]
     },
     series: [
@@ -112,8 +113,7 @@ function createGrafico3 () {
         type: 'radar',
         data: [
           {
-            value: [2345, 3047, 1025, 6789, 2789, 8000],
-            name: 'Allocated Budget'
+            value: calcularMédiasGerais(idMateria, '3B')
           }
         ]
       }
@@ -124,6 +124,20 @@ function createGrafico3 () {
 
 }
 
-createGrafico1();
-createGrafico2();
-createGrafico3();
+createGrafico1('literatura');
+createGrafico2('literatura');
+createGrafico3('literatura');
+
+const botoesMat = document.getElementsByClassName('botaoMat')
+
+for (let b = 0; b < botoesMat.length; b++) {
+
+  botoesMat.item(b).addEventListener('click', (event) => {
+
+    createGrafico1(event.target.id)
+    createGrafico2(event.target.id)
+    createGrafico3(event.target.id)
+
+  })
+
+}
