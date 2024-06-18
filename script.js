@@ -39,7 +39,8 @@ let navState = true
 menuButton.addEventListener('click', (event) => {
 
     const nav = document.getElementsByTagName('nav').item(0)
-    nav.style.display = navState ? 'block' : 'none'
+    nav.style.height = navState ? '120vh' : '0px'
+    nav.style.borderWidth = navState ? '2px' : '0px'
     
     navState = !navState
 

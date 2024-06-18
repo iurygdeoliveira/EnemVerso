@@ -61,7 +61,7 @@ nav {
     border: none;
     border-radius: 4px;
 
-    transition: background 500ms ease-out;
+    transition: background 200ms ease-out;
 
 }
 
@@ -133,7 +133,7 @@ footer {
         background-color: white;
         height: 8px;
 
-        border-width: .5px;
+        border-width: 0.5px;
         border-color: gray;
         border-style: solid;
         border-radius: 5px;
@@ -142,7 +142,8 @@ footer {
     
     #logo {
 
-        width: 30%;
+        width: auto;
+        height: 13%;
         margin: 4% 0;
 
     }
@@ -186,9 +187,18 @@ footer {
 
     nav {
 
-        display: none;
+        border: 0px solid rgb(235, 36, 36);
+        height: 0px;
+
+        transition-property: height, border-width;
+        transition-duration: 400ms, 150ms;
+        transition-timing-function: ease-out;
+
+        overflow-y: hidden;
 
     }
+
+
 
     .graph {
 
