@@ -32,10 +32,30 @@ const Ponto4 = [q1_p4, q2_p4, q3_p4];
 
 const Ponto5 = [q1_p5, q2_p5, q3_p5];
 
-let path = "TADS/quimica.json";
+async function loadDataMateria(materia){
+    async function renderDataADS(materia) {
+        let url = `TADS/${materia}.json`;
+        let resultado = await exibirResultado(url);
 
-exibirResultado();
-async function exibirResultado() {
+        renderChartADS(resultado[0], resultado[1], resultado[2], resultado[3], resultado[4]);
+    }
+    async function renderData3A(materia){
+        let url = `3A/${materia}.json`;
+        let resultado = await exibirResultado(url);
+
+        renderDataADS(resultado[0], resultado[1], resultado[2], resultado[3], resultado[4]);
+    }
+    async function renderData3B(materia){
+        let url = `3B/${materia}.json`;
+        let resultado = await exibirResultado(url);
+
+        renderDataADS(resultado[0], resultado[1], resultado[2], resultado[3], resultado[4]);
+    }
+    renderDataADS(materia);
+    renderData3A(materia);
+    renderData3B(materia);
+}
+async function exibirResultado(path) {
     let resultado = await getData(path);
 
     let url = resultado.data.download_url;
@@ -72,8 +92,7 @@ async function exibirResultado() {
     console.log("Média Geral Ponto 4:", mediaPonto4);
     console.log("Média Geral Ponto 5:", mediaPonto5);
 
-    let medias = [mediaPonto1, mediaPonto2, mediaPonto3, mediaPonto4, mediaPonto5];
-    return await medias;
+    return [mediaPonto1, mediaPonto2, mediaPonto3, mediaPonto4, mediaPonto5];
 }
 
 function contarRespostas(dados, ponto) {
