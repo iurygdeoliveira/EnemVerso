@@ -1,0 +1,266 @@
+{
+    "materias": [
+      {
+        "nome": "Língua Portuguesa",
+      "turma": "TADS",
+      "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/linguaportuguesa.json",
+      "perguntas": [
+        "Consigo entender o tema principal de um texto complexo ?",
+        "Sou capaz de identificar ideias secundárias em um texto ?",
+        "Consigo reconhecer a intenção do Autor e o tom usado em diferentes tipos de texto (informativo, persuasivo, literário, etc.) ?",
+        "Sinto-me confiante na utilização correta da gramática da língua portuguesa ?",
+        "Posso identificar e corrigir erros gramaticais em textos ?",
+        "Sou capaz de aplicar regras de concordância verbal e nominal de forma correta em minhas redações e na correção de textos ?",
+        "Tenho um bom vocabulário em língua portuguesa ?",
+        "Consigo entender o significado de palavras desconhecidas pelo contexto ?",
+        "Tenho habilidade para utilizar sinônimos e antônimos adequadamente para enriquecer meus textos e evitar repetições ?",
+        "Consigo expressar ideias de forma clara e organizada por escrito ?",
+        "Sou capaz de escrever textos com diferentes propósitos (narrar, descrever, argumentar) ?",
+        "Consigo manter a coerência e a coesão ao desenvolver parágrafos e ao conectar ideias em um texto ?",
+        "Consigo interpretar o subtexto e as nuances em diferentes gêneros textuais ?",
+        "Sou capaz de fazer uma análise crítica de textos, identificando argumentos e pontos de vista ?",
+        "Sou capaz de identificar e avaliar a eficácia dos recursos estilísticos utilizados pelo autor em diferentes tipos de texto ?"
+      ],
+      "indicadores": [
+        {"nome": "Interpretação", "max": 5},
+        {"nome": "Gramática", "max": 5},
+        {"nome": "Vocabulário", "max": 5},
+        {"nome": "Coesão", "max": 5},
+        {"nome": "Análise Crítica", "max": 5}
+      ]
+      },
+      {
+        "nome": "Filosofia",
+        "turma": "TADS",
+        "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/Filosofia.json",
+        "perguntas": [
+          "Sinto que compreendo bem os principais conceitos e filósofos da Filosofia Antiga, como Sócrates, Platão e Aristóteles ?",
+          "Consigo aplicar os ensinamentos da Filosofia Antiga para entender questões contemporâneas ?",
+          "Acho desafiador relacionar as ideias da Filosofia Antiga com o contexto atual ?",
+          "Tenho um bom entendimento das ideias dos filósofos modernos, como Descartes, Kant e Nietzsche ?",
+          "Consigo identificar como a Filosofia Moderna influencia o pensamento e a sociedade atuais.",
+          "Sinto dificuldade em compreender as complexidades e os conceitos da Filosofia Moderna.",
+          "Entendo bem os conceitos de ética e moral e posso aplicá-los em diferentes situações da vida ?",
+          "Consigo discutir questões de Filosofia Política e entender suas implicações no mundo contemporâneo ?",
+          "Acho complicado conectar teorias éticas e políticas com questões práticas do dia a dia.",
+          "Sinto-me confortável ao utilizar conceitos de lógica e epistemologia para avaliar argumentos e ideias ?",
+          "Consigo aplicar o pensamento crítico e lógico em diversas áreas do conhecimento e na vida cotidiana ?",
+          "Tenho dificuldades para entender e aplicar os conceitos de lógica e teoria do conhecimento ?",
+          "Compreendo os conceitos de estética e os aplico ao avaliar diferentes formas de arte e beleza ?",
+          "Consigo relacionar a Filosofia da Arte com a análise e apreciação das manifestações artísticas atuais ?",
+          "Sinto que preciso de mais conhecimento para entender plenamente a relação entre filosofia e arte ?"
+        ],
+        "indicadores": [
+          {"nome": "Antiga", "max": 5},
+          {"nome": "Moderna", "max": 5},
+          {"nome": "Política", "max": 5},
+          {"nome": "Lógica", "max": 5},
+          {"nome": "Filosofia e Arte", "max": 5}
+      ]
+      },
+      {
+        "nome": "Física",
+        "turma": "TADS",
+        "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/Fisica.json",
+        "perguntas": [
+          "Sinto-me confiante em resolver problemas que envolvem potência elétrica e circuitos elétricos ?",
+          "Consigo aplicar corretamente os conceitos de resistência elétrica em diferentes contextos ?",
+          "Tenho habilidade para interpretar e analisar graficos e tabelas em experimentos práticos ?",
+          "Sou capaz de compreender e aplicar conceitos de calor e temperatura em diferentes experimentos práticos?",
+          "Entendo a relação entre a transferência de calor e mudanças de estado físico dos materiais ?",
+          "Sinto-me seguro(a) ao trabalhar com escalas termométricas em geral?",
+          "Consigo identificar e explicar fenômenos ondulatórios como reflexão, refração e difração ?",
+          "Tenho facilidade em entender e usar o conceito de frequência e comprimento de onda em problemas ?",
+          "Consigo aplicar os princípios de acústica e ondas eletromagnéticas em contextos reais e teóricos ?",
+          "Sinto-me confortável ao analisar e interpretar gráficos de movimento, como os de posição-tempo e velocidade-tempo?",
+          "Tenho facilidade em aplicar as equações de movimento em problemas de física ?",
+          "Consigo entender conceitos de velocidade, aceleração e movimento uniformemente variado em diferentes contextos ?",
+          "Entendo bem os fenômenos de reflexão e refração da luz e posso aplicá-los em situações práticas ?",
+          "Sou capaz de explicar sucintamente a diferença na formação de imagens de lentes e espelhos?",
+          "Tenho habilidade para relacionar conceitos de óptica (principios e fenômenos) com aplicações no cotidiano?"
+        ],
+        "indicadores": [
+          {"nome": "Elétrica", "max": 5},
+          {"nome": "Calorimetria", "max": 5},
+          {"nome": "Partículas e Ondas", "max": 5},
+          {"nome": "Cinemática", "max": 5},
+          {"nome": "Óptica", "max": 5}
+      ]
+      },
+      {
+        "nome": "Geografia",
+        "turma": "TADS",
+        "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/Geografia.json",
+        "perguntas": [
+          "Sinto-me confiante ao explicar os conceitos de Geografia F\u00edsica, como clima, relevo e hidrografia ?",
+          "Consigo relacionar facilmente os fen\u00f4menos naturais estudados em Geografia F\u00edsica com o ambiente ao meu redor ?",
+          "Acho desafiador entender como os diferentes sistemas da Terra interagem e afetam a vida humana.",
+          "Tenho um bom entendimento sobre os temas de Geografia Humana, como urbaniza\u00e7\u00e3o, migra\u00e7\u00f5es e demografia.",
+          "\nConsigo analisar criticamente os problemas sociais e econ\u00f4micos das cidades com base nos conceitos de Geografia Humana.",
+          "Sinto dificuldade em compreender a rela\u00e7\u00e3o entre a distribui\u00e7\u00e3o da popula\u00e7\u00e3o e os aspectos econ\u00f4micos e culturais nas diversas regi\u00f5es do mundo.",
+          "Entendo bem o papel da Geopol\u00edtica e das Rela\u00e7\u00f5es Internacionais no cen\u00e1rio mundial atual ?",
+          "Consigo identificar como os conflitos geopol\u00edticos e as rela\u00e7\u00f5es internacionais influenciam as pol\u00edticas internas dos pa\u00edses ?",
+          "Acho complicado acompanhar e entender as mudan\u00e7as nas rela\u00e7\u00f5es internacionais e seus  impactos em escala local e global.",
+          "Sinto-me seguro ao analisar a diversidade geogr\u00e1fica e os desafios ambientais do Brasil ? ",
+          "Consigo relacionar os aspectos geogr\u00e1ficos do Brasil com as quest\u00f5es sociais e econ\u00f4micas atuais do pa\u00eds ?",
+          "Tenho dificuldade em entender como as caracter\u00edsticas geogr\u00e1ficas do Brasil influenciam seu desenvolvimento econ\u00f4mico e social ?",
+          "Compreendo a import\u00e2ncia e os desafios das quest\u00f5es ambientais e da sustentabilidade no mundo contempor\u00e2neo ?",
+          "Consigo relacionar os conceitos de sustentabilidade com a\u00e7\u00f5es pr\u00e1ticas no meu cotidiano e na comunidade ?",
+          "Sinto que o tema de sustentabilidade \u00e9 complexo e requer uma compreens\u00e3o mais aprofundada dos impactos humanos no ambiente."
+        ],
+        "indicadores": [
+          {"nome": "Física", "max": 5},
+          {"nome": "Humana", "max": 5},
+          {"nome": "Geopolítica", "max": 5},
+          {"nome": "Economia/Social", "max": 5},
+          {"nome": "Sustentabilidade", "max": 5}
+      ]
+      },
+      {
+        "nome": "Inglês",
+        "turma": "TADS",
+        "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/Ingles.json",
+        "perguntas": [
+          "Consigo compreender o significado geral e os detalhes específicos de textos em inglês, independentemente do formato ou do tema?",
+          "Tenho habilidade para identificar a ideia principal e os argumentos secundários em um texto em inglês?",
+          "Sinto-me confiante na minha capacidade de interpretar textos em inglês que abordam temas econômicos, políticos e socioculturais?​",
+          "Entendo as regras básicas da gramática inglesa, incluindo tempos verbais, uso de pronomes e diferenças de palavras entre inglês e português?",
+          "Consigo aplicar corretamente as estruturas gramaticais do inglês em diferentes contextos?",
+          "Sinto-me seguro(a) ao usar a gramática inglesa para aprimorar minha compreensão de textos?",
+          "Tenho facilidade em identificar e usar corretamente diferentes tempos verbais em inglês, como o passado simples, presente simples e futuro simples ?",
+          "Consigo compreender e aplicar o present perfect em contextos adequados?",
+          "Entendo como os tempos verbais em inglês influenciam o sentido de uma frase ou texto?",
+          "Compreendo a estrutura e o uso da voz passiva em inglês e consigo identificá-la em diferentes textos?",
+          "Sou capaz de transformar frases da voz ativa para a voz passiva em inglês?",
+          "Entendo a função e o efeito da voz passiva no contexto de uma frase ou texto em inglês?",
+          "Sinto-me confortável utilizando conectivos (linking words) em inglês para estabelecer relações lógicas em textos?",
+          "Consigo identificar e empregar corretamente adjuntos adverbiais em inglês para especificar tempo, lugar, modo, razão, entre outros?",
+          "Entendo como os conectivos e adjuntos adverbiais contribuem para a coesão e a coerência de um texto em inglês?"
+        ],
+        "indicadores": [
+          {"nome": "Interpretação", "max": 5},
+          {"nome": "Gramática", "max": 5},
+          {"nome": "Verbos", "max": 5},
+          {"nome": "Voz ativa/passiva", "max": 5},
+          {"nome": "Conectivos", "max": 5}
+      ]
+      },
+      {
+        "nome": "Artes",
+        "turma": "TADS",
+        "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/artes.json",
+        "perguntas": [
+          "Consigo identificar e entender as principais características e conceitos da arte contemporânea, como body art e arte digital?",
+          "Sinto-me capaz de analisar e interpretar obras de arte contemporâneas, considerando seu contexto e mensagem?",
+          "Tenho habilidade para relacionar as formas de expressão da arte contemporânea, como performances e instalações, com questões sociais e culturais atuais?",
+          "Entendo as principais características e influências das vanguardas artísticas europeias, como o expressionismo, cubismo e surrealismo?",
+          "Sou capaz de identificar as diferenças entre as várias vanguardas artísticas e explicar suas propostas de inovação na arte?",
+          "Consigo relacionar obras e artistas específicos às suas respectivas vanguardas artísticas?",
+          "Tenho conhecimento sobre o modernismo, especialmente no contexto brasileiro, e suas principais características e representantes?",
+          "Consigo compreender como o modernismo brasileiro foi influenciado pelas vanguardas europeias e ainda assim desenvolveu uma identidade própria?",
+          "Sinto-me confiante ao analisar obras modernistas, como as de Tarsila do Amaral, considerando seu contexto histórico e temático?",
+          "Tenho conhecimento sobre a história da arte em geral e posso identificar diferentes estilos e períodos artísticos?",
+          "Sinto-me confortável ao analisar e interpretar diferentes formas de arte, como fotografia, ópera do século XIX e xilogravura nordestina?",
+          "Consigo apreciar e entender a importância cultural de expressões artísticas como a cerâmica marajoara e a colagem?",
+          "Tenho conhecimento sobre a influência e as características da arte de origem africana no Brasil e das tradições indígenas?",
+          "Consigo reconhecer e valorizar a contribuição dessas culturas para a diversidade e riqueza da arte brasileira?",
+          "Sinto-me capaz de identificar e interpretar elementos culturais africanos e indígenas em diversas formas de expressão artística no Brasil?"
+        ],
+        "indicadores": [
+          {"nome": "Contemporânea", "max": 5},
+          {"nome": "Vanguardas", "max": 5},
+          {"nome": "Modernismo", "max": 5},
+          {"nome": "Cultura", "max": 5},
+          {"nome": "Arte Brasileira", "max": 5}
+      ]
+      },
+      {
+        "nome": "Espanhol",
+        "turma": "TADS",
+        "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/espanhol.json",
+        "perguntas": [
+          "\"Sinto-me confiante ao interpretar diferentes formatos de textos na língua espanhola",
+          " como parágrafos",
+          " quadrinhos ou comerciais?\"",
+          "\"Consigo entender o significado geral e detalhes específicos em textos na língua espanhola",
+          " independentemente",
+          " do tema?\"",
+          "Tenho habilidade para associar o vocabulário e as expressões na língua espanhola ao contexto dos textos que leio?",
+          "Entendo como usar diferentes estruturas gramaticais da língua espanhola de maneira apropriada em diferentes contextos?",
+          "Consigo reconhecer e evitar confusões com falsos cognatos (falsos amigos) entre a língua espanhola e a língua portuguesa?",
+          "Sou capaz de identificar e de compreender a diversidade cultural e linguística representada em textos na língua espanhola?",
+          "Sinto-me seguro(a) ao utilizar diferentes tipos de conjunções na língua espanhola para relacionar ideias em orações?",
+          "Entendo o papel das conjunções em coordenar ou subordinar as partes das orações na língua espanhola?",
+          "\"Consigo identificar e empregar",
+          " corretamente",
+          " as conjunções consecutivas"
+        ],
+        "indicadores": [
+          {"nome": "Interpretação", "max": 5},
+          {"nome": "Vocabulário", "max": 5},
+          {"nome": "Conectivos", "max": 5},
+          {"nome": "Advérbios", "max": 5},
+          {"nome": "Verbos", "max": 5}
+      ]
+      },
+      {
+        "nome": "Literatura",
+        "turma": "TADS",
+        "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/literatura.json",
+        "perguntas": [
+          "Sinto-me confortável identificando e diferenciando as características das principais Escolas Literárias (como Barroco, Romantismo, Modernismo)?",
+          "Tenho habilidade para associar autores e suas obras às respectivas Escolas Literárias?",
+          "Consigo compreender o contexto histórico e cultural que influenciou as diferentes Escolas Literárias?",
+          "Consigo perceber com facilidade as mensagens implícitas nas obras brasileiras?",
+          "Sou capaz de analisar e interpretar textos literários considerando o contexto histórico da época em que foram escritos?",
+          "Consigo associar os estilos literários aos períodos específicos das obras? Por exemplo, consigo identificar o realismo nas obras do século XIX, como nos romances de Machado de Assis?",
+          "Tenho habilidade para identificar diferentes figuras de linguagem em textos literários?",
+          "Entendo como as figuras de linguagem contribuem para o significado e a estética de um texto?",
+          "Consigo perceber o uso e o efeito das figuras de linguagem em minhas leituras cotidianas?",
+          "Sinto-me seguro(a) ao identificar as diversas funções de linguagem (como referencial, emotiva, poética) em textos literários?",
+          "Consigo entender a finalidade específica de um texto literário com base em sua função de linguagem?",
+          "Tenho facilidade em analisar como as funções de linguagem influenciam a interpretação de um texto?",
+          "Consigo diferenciar e identificar os principais gêneros literários (como lírico, épico, dramático) em diferentes textos?",
+          "Entendo as características específicas dos gêneros literários e como elas se manifestam nas obras?",
+          "Tenho habilidade para interpretar textos considerando seu gênero literário e as convenções associadas a ele?"
+        ],
+        "indicadores": [
+          {"nome": "Escolas Literárias", "max": 5},
+          {"nome": "Interpretação", "max": 5},
+          {"nome": "Figuras de Linguagem", "max": 5},
+          {"nome": "Funções de Linguagem", "max": 5},
+          {"nome": "Gêneros Literários", "max": 5}
+      ]
+      },
+      {
+        "nome": "Química",
+        "turma": "TADS",
+        "path": "https://raw.githubusercontent.com/Theo-Magno/EnemVerso-Data/main/TADS/quimica.json",
+        "perguntas": [
+          "Sinto-me confiante ao entender e aplicar os conceitos b\u00e1sicos da Qu\u00edmica Geral, como tabela peri\u00f3dica e liga\u00e7\u00f5es qu\u00edmicas ?",
+          "Consigo relacionar os conceitos de Qu\u00edmica Inorg\u00e2nica com fen\u00f4menos do cotidiano e processos industriais ?",
+          "Acho desafiador entender as teorias at\u00f4micas e suas implica\u00e7\u00f5es para a compreens\u00e3o da mat\u00e9ria ?",
+          "Tenho um bom entendimento sobre a estrutura, propriedades e rea\u00e7\u00f5es dos compostos org\u00e2nicos ?",
+          "Consigo identificar a presen\u00e7a e a import\u00e2ncia dos compostos org\u00e2nicos em contextos biol\u00f3gicos e industriais.",
+          "Sinto dificuldade em compreender as diferentes fun\u00e7\u00f5es org\u00e2nicas e sua nomenclatura.",
+          "Compreendo conceitos de F\u00edsico-Qu\u00edmica, como termodin\u00e2mica, cin\u00e9tica qu\u00edmica e equil\u00edbrio qu\u00edmico ?",
+          "Consigo aplicar os princ\u00edpios da F\u00edsico-Qu\u00edmica para resolver problemas pr\u00e1ticos e te\u00f3ricos ?",
+          "Tenho dificuldades com os c\u00e1lculos e as aplica\u00e7\u00f5es matem\u00e1ticas em F\u00edsico-Qu\u00edmica.",
+          "Entendo os princ\u00edpios e as t\u00e9cnicas de Qu\u00edmica Anal\u00edtica, incluindo an\u00e1lises qualitativas e quantitativas.",
+          "Consigo perceber a import\u00e2ncia da Qu\u00edmica Anal\u00edtica em \u00e1reas como sa\u00fade, meio ambiente e ind\u00fastria.",
+          "Acho desafiador interpretar os resultados de an\u00e1lises qu\u00edmicas e entender seus m\u00e9todos ?",
+          "Compreendo a import\u00e2ncia da Qu\u00edmica Ambiental e seu impacto na polui\u00e7\u00e3o e na conserva\u00e7\u00e3o ambiental ?",
+          "Consigo relacionar conceitos de Qu\u00edmica Ambiental com quest\u00f5es de sustentabilidade e gest\u00e3o de recursos ?",
+          "Tenho dificuldade em entender como os processos qu\u00edmicos afetam o meio ambiente e a sa\u00fade humana ?"
+        ],
+        "indicadores": [
+          {"nome": "Geral e Inorgânica", "max": 5},
+          {"nome": "Orgânica", "max": 5},
+          {"nome": "Físico-Química", "max": 5},
+          {"nome": "Química Analítica", "max": 5},
+          {"nome": "Química Ambiental", "max": 5}
+      ]
+      }
+    ]
+  }
+  
