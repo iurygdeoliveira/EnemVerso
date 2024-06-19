@@ -4,7 +4,7 @@ var option;
 
 option = {
     title: {
-        text: '3A',
+        text: '3B',
         top: '3%',
     },
     legend: {
