@@ -32,9 +32,9 @@ const arteBrasil_questao3Key = "Sinto-me capaz de identificar e interpretar elem
 //#endregion 
 
 async function obterTodasMedias() {
-    let medias3A = await obterMediasPorTurma(tadsPath);
-    let medias3B = await obterMediasPorTurma(em3APath);
-    let mediasTads = await obterMediasPorTurma(em3BPath); 
+    let medias3A = await obterMediasPorTurma(em3APath);
+    let medias3B = await obterMediasPorTurma(em3BPath);
+    let mediasTads = await obterMediasPorTurma(tadsPath); 
 
     return {
         '3A': medias3A,
