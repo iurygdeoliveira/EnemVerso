@@ -43,13 +43,13 @@ async function loadDataMateria(materia){
         let url = `3A/${materia}.json`;
         let resultado = await exibirResultado(url);
 
-        renderDataADS(resultado[0], resultado[1], resultado[2], resultado[3], resultado[4]);
+        renderChart3A(resultado[0], resultado[1], resultado[2], resultado[3], resultado[4]);
     }
     async function renderData3B(materia){
         let url = `3B/${materia}.json`;
         let resultado = await exibirResultado(url);
 
-        renderDataADS(resultado[0], resultado[1], resultado[2], resultado[3], resultado[4]);
+        renderChart3B(resultado[0], resultado[1], resultado[2], resultado[3], resultado[4]);
     }
     renderDataADS(materia);
     renderData3A(materia);
