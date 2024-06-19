@@ -1,6 +1,3 @@
-// Importa os arrays com as questões
-// import { Ponto1, Ponto2, Ponto3, Ponto4, Ponto5 } from './github_data/qmc_questions.js';
-
 const q1_p1 = "Sinto-me confiante ao entender e aplicar os conceitos básicos da Química Geral, como tabela periódica e ligações químicas ?";
 const q2_p1 = "Consigo relacionar os conceitos de Química Inorgânica com fenômenos do cotidiano e processos industriais ?";
 const q3_p1 = "Acho desafiador entender as teorias atômicas e suas implicações para a compreensão da matéria ?";
@@ -25,15 +22,15 @@ const q1_p5 = "Compreendo a importância da Química Ambiental e seu impacto na 
 const q2_p5 = "Consigo relacionar conceitos de Química Ambiental com questões de sustentabilidade e gestão de recursos ?";
 const q3_p5 = "Tenho dificuldade em entender como os processos químicos afetam o meio ambiente e a saúde humana ?";
 
- const Ponto1 = [q1_p1, q2_p1, q3_p1];
+const Ponto1 = [q1_p1, q2_p1, q3_p1];
 
- const Ponto2 = [q1_p2, q2_p2, q3_p2];
+const Ponto2 = [q1_p2, q2_p2, q3_p2];
 
- const Ponto3 = [q1_p3, q2_p3, q3_p3];
+const Ponto3 = [q1_p3, q2_p3, q3_p3];
 
- const Ponto4 = [q1_p4, q2_p4, q3_p4];
+const Ponto4 = [q1_p4, q2_p4, q3_p4];
 
- const Ponto5 = [q1_p5, q2_p5, q3_p5];
+const Ponto5 = [q1_p5, q2_p5, q3_p5];
 
 let path = "TADS/quimica.json";
 
@@ -75,7 +72,8 @@ async function exibirResultado() {
     console.log("Média Geral Ponto 4:", mediaPonto4);
     console.log("Média Geral Ponto 5:", mediaPonto5);
 
-    renderChartADS(mediaPonto1, mediaPonto2, mediaPonto3, mediaPonto4, mediaPonto5);
+    let medias = [mediaPonto1, mediaPonto2, mediaPonto3, mediaPonto4, mediaPonto5];
+    return await medias;
 }
 
 function contarRespostas(dados, ponto) {
