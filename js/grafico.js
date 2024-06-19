@@ -1,4 +1,4 @@
-import {obterTodasMedias} from "./js/artes_github_data_service.js"
+import {obterTodasMedias} from "./artes_github_data_service.js"
 
 inicializarGraficos();
 
@@ -26,7 +26,7 @@ function inicializarGrafico(id, titulo, dados) {
       center: ['50%', '50%'],
       radius: 100,
       axisName: {
-        color: "black"
+        color: "black",
       },
       indicator: [
         { name: 'Arte Contemporânea', max: 5 },

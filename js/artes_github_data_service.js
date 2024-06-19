@@ -1,4 +1,6 @@
 let tadsPath = "TADS/artes.json";
+let em3APath = "3A/artes.json";
+let em3BPath = "3B/artes.json";
 
 //#region Nome das chaves das questões
 
@@ -31,8 +33,8 @@ const arteBrasil_questao3Key = "Sinto-me capaz de identificar e interpretar elem
 
 async function obterTodasMedias() {
     let medias3A = await obterMediasPorTurma(tadsPath);
-    let medias3B = await obterMediasPorTurma(tadsPath);
-    let mediasTads = await obterMediasPorTurma(tadsPath); 
+    let medias3B = await obterMediasPorTurma(em3APath);
+    let mediasTads = await obterMediasPorTurma(em3BPath); 
 
     return {
         '3A': medias3A,
