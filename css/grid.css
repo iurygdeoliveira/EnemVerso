@@ -6,8 +6,8 @@
     width: 100%; /* Largura total da grid */
     height: 100vh; /* Altura total da grid */
     grid-template-areas:
-        "sidebar header header"
-        "sidebar content extra"
+        "sidebar content content"
+        "sidebar content content"
         "sidebar footer footer";
 }
 

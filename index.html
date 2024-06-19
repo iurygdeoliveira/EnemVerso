@@ -5,22 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>EnemVerso</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link href="css/header.css" rel="stylesheet" type="text/css">
-  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
-  <link href="css/content.css" rel="stylesheet" type="text/css">
-  <link href="css/extra.css" rel="stylesheet" type="text/css">
-  <link href="css/footer.css" rel="stylesheet" type="text/css">
-  <link href="css/grid.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+  <link href="css/header.css" rel="stylesheet" type="text/css"/>
+  <link href="css/sidebar.css" rel="stylesheet" type="text/css"/>
+  <link href="css/content.css" rel="stylesheet" type="text/css"/>
+  <link href="css/extra.css" rel="stylesheet" type="text/css"/>
+  <link href="css/footer.css" rel="stylesheet" type="text/css"/>
+  <link href="css/grid.css" rel="stylesheet" type="text/css"/>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
+  
 <body>
   <div class="grid-container">
     <div class="header"></div>
     <div class="content">
-      <div id="grafico" style="width: 400px; height: 400px;">
-
+      <div class="GRAFICOS">
+          <div id="graficoTads" style="width: 1000px; height: 400px;"> </div>
+          <div id="grafico3A" style="width: 1000px; height: 400px;"></div>
+          <div id="grafico3B" style="width: 1000px; height: 400px;"></div>
       </div>
     </div>
     <div class="sidebar">
@@ -33,8 +37,11 @@
   </div>
   <script src="sidebar/menu.js"> </script>
   <script src="echarts.min.js"></script>
-  <script src="script.js"> </script>
-  <script src="grafico.js"> </script>
+  <script type="module" src="./js/artes_github_data_service.js"></script>
+  <script type="module" src="./js/grafico.js"></script>
 </body>
 
-</html>
+</html> 
+
+
+
