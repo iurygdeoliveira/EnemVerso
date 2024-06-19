@@ -1,0 +1,122 @@
+[
+    {
+        "Materia" : "Artes",
+        "Turma" : "TADS",
+        "Path" : "TADS/artes.json",
+        "Eixo1" : "Arte Contemporânea",
+        "Eixo2" : "Vanguardas",
+        "Eixo3" : "Modernismo (Brasil)",
+        "Eixo4" : "História",
+        "Eixo5" : "Indígena/Africano"
+    },
+    {
+        "Materia" : "Espanhol",
+        "Turma" : "TADS",
+        "Path" : "TADS/espanhol.json",
+        "Eixo1" : "Interpretação",
+        "Eixo2" : "Gramática",
+        "Eixo3" : "Conjunções",
+        "Eixo4" : "Advérbios",
+        "Eixo5" : "Verbos"
+    },
+    {
+        "Materia" : "Filosofia",
+        "Turma" : "TADS",
+        "Path" : "TADS/Filosofia.json",
+        "Eixo1" : "Antiga",
+        "Eixo2" : "Moderna",
+        "Eixo3" : "Ética/Política",
+        "Eixo4" : "Lógica",
+        "Eixo5" : "Arte"
+    },
+    {
+        "Materia" : "Física",
+        "Turma" : "TADS",
+        "Path" : "TADS/Fisica.json",
+        "Eixo1" : "Elétrica",
+        "Eixo2" : "Termodinâmica",
+        "Eixo3" : "Frequência",
+        "Eixo4" : "Mecânica",
+        "Eixo5" : "Óptica"
+    },
+    {
+        "Materia" : "Geografia",
+        "Turma" : "TADS",
+        "Path" : "TADS/Geografia.json",
+        "Eixo1" : "Física",
+        "Eixo2" : "Humana",
+        "Eixo3" : "Geopolítica",
+        "Eixo4" : "Economia/Social",
+        "Eixo5" : "Sustentabilidade"
+    },
+    {
+        "Materia" : "Inglês",
+        "Turma" : "TADS",
+        "Path" : "TADS/Ingles.json",
+        "Eixo1" : "Interpretação",
+        "Eixo2" : "Gramática",
+        "Eixo3" : "Tempos Verbais",
+        "Eixo4" : "Voz Passiva/Ativa",
+        "Eixo5" : "Conectivos"
+    },
+    {
+        "Materia" : "Língua Portuguesa",
+        "Turma" : "TADS",
+        "Path" : "TADS/linguaportuguesa.json",
+        "Eixo1" : "Interpretação",
+        "Eixo2" : "Gramática",
+        "Eixo3" : "Vocabulário",
+        "Eixo4" : "Coesão/Coerência",
+        "Eixo5" : "Análise Crítica"
+    },
+    {
+        "Materia" : "Literatura",
+        "Turma" : "TADS",
+        "Path" : "TADS/literatura.json",
+        "Eixo1" : "Escolas Literárias",
+        "Eixo2" : "Contexto",
+        "Eixo3" : "Figura de Linguagem",
+        "Eixo4" : "Função de Linguagem",
+        "Eixo5" : "Gêneros Literários"
+    },
+    {
+        "Materia" : "Química",
+        "Turma" : "TADS",
+        "Path" : "TADS/quimica.json",
+        "Eixo1" : "Geral",
+        "Eixo2" : "Orgânica",
+        "Eixo3" : "Físico-Química",
+        "Eixo4" : "Analítica",
+        "Eixo5" : "Ambiental"
+    },
+    {
+        "Materia" : "Inglês",
+        "Turma" : "3ºA",
+        "Path" : "3A/ingles_3A.json",
+        "Eixo1" : "Interpretação",
+        "Eixo2" : "Gramática",
+        "Eixo3" : "Tempos Verbais",
+        "Eixo4" : "Voz Passiva/Ativa",
+        "Eixo5" : "Conectivos"
+    },
+    {
+        "Materia" : "Inglês",
+        "Turma" : "3ºB",
+        "Path" : "3B/ingles_3B.json",
+        "Eixo1" : "Interpretação",
+        "Eixo2" : "Gramática",
+        "Eixo3" : "Tempos Verbais",
+        "Eixo4" : "Voz Passiva/Ativa",
+        "Eixo5" : "Conectivos"
+    },
+    {
+        "Materia" : "Filosofia",
+        "Turma" : "3ºA",
+        "Path" : "3A/filosofia.json",
+        "Eixo1" : "Antiga",
+        "Eixo2" : "Moderna",
+        "Eixo3" : "Ética/Política",
+        "Eixo4" : "Lógica",
+        "Eixo5" : "Arte"
+    }
+]
