@@ -157,7 +157,7 @@ body {
 
 #FOOTER {
   grid-area: FOOTER;
-  background-color: #34495e;
+  background-color: #34495a;
   color: var(--cor-texto);
   padding: 20px 10px;
   text-align: center;

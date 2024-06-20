@@ -210,7 +210,6 @@ export async function obterDados() {
         if (!data.content || typeof data.content !== 'string') {
             throw new Error('Formato de dados inválido: content não é uma string válida');
         }
-
         let decodedData = JSON.parse(atob(data.content));
         return decodedData;
     } catch (error) {
