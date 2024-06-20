@@ -1,10 +1,10 @@
-var chartDom = document.getElementById('grafico');
+var chartDom = document.getElementById('grafico2');
 var myChart = echarts.init(chartDom);
 var option;
 
 option = {
     title: {
-        text: 'ADS',
+        text: '3A',
         top: '3%',
     },
     legend: {
@@ -28,11 +28,11 @@ option = {
             type: 'radar',
             data: [
                 {
-                    value: [4, 4, 3, 4, 5],
+                    value: [5, 3, 5, 5, 5, 5, 5],
                     name: 'SUPERIOR'
                 },
                 {
-                    value: [1, 2, 1, 5, 5],
+                    value: [5, 5, 1, 5, 5, 5, 5],
                     name: 'E.MÉDIO'
                 },
             ]
