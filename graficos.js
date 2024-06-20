@@ -141,8 +141,6 @@ async function enviarMateria(materia){
           mediasDaTurma[i][3],
           mediasDaTurma[i][4]
         ];
-        console.log(valores);
-        console.log(`grafico${i + 1}`);
         criarGrafico(`grafico${i + 1}`, valores, info_materia[i]["Turma"]);
       }
     }
