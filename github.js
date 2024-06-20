@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { request } from 'https://cdn.skypack.dev/@octokit/request';
 
 let path = "TADS/Geografira.json";
@@ -42,7 +43,7 @@ async function executeRequest(path) {
 
         let response = await request('GET /repos/{owner}/{repo}/contents/{path}', {
             headers: {
-                authorization: 'Bearer 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'
+                authorization: `Bearer ${process.env.GITHUB_TOKEN}`
             },
             owner: "Jeozadaqueoliveira",
             repo: "EnemVerso-Data",
@@ -105,7 +106,7 @@ function processarDados(dados) {
         let resposta2_eixo5 = parseInt(entry["Consigo relacionar os conceitos de sustentabilidade com a\u00e7\u00f5es pr\u00e1ticas no meu cotidiano e na comunidade ?"]); 
         let resposta3_eixo5 = parseInt(entry["Sinto que o tema de sustentabilidade \u00e9 complexo e requer uma compreens\u00e3o mais aprofundada dos impactos humanos no ambiente."]);
 
-        
+
 //eixo1
         if (contagemQuestao1_eixo1[resposta1_eixo1] !== undefined) {
             contagemQuestao1_eixo1[resposta1_eixo1]++;
@@ -158,7 +159,7 @@ function processarDados(dados) {
         }
     }
 
-   
+
     function formatarContagem(contagem) {
         return Object.values(contagem).join(', ');
     }
