@@ -15,3 +15,10 @@ body {
   background-color: #D4DED6; /* Adicionando cor de fundo em toda a página */
 }
 
+#graficos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
