@@ -1,10 +1,14 @@
-function enviarMateria(materia){
+async function enviarMateria(materia){
   function calcularMediasDaTurma(jsonData) {
     const totais = Array(5).fill(0); // Array para armazenar os totais de cada categoria
     const contadores = Array(5).fill(0); // Array para contar o número de elementos em cada categoria
 
     jsonData.forEach(entrada => {
-        const valores = Object.values(entrada).slice(8); // Pega os valores das perguntas a partir da 9ª chave
+        const slice_start = (Object.keys(entrada).indexOf(info_materia["1_Perg"]));
+        const slice_end = (Object.keys(entrada).indexOf(info_materia["1_Perg"])) + 15;
+        const valores = Object.values(entrada).slice(slice_start, slice_end); // Pega os valores das perguntas a partir da 9ª chave
+
+        console.log(valores);
 
         for (let i = 0; i < valores.length; i += 3) {
             const categoriaIndex = Math.floor(i / 3);
@@ -21,7 +25,22 @@ function enviarMateria(materia){
     return medias;
   }
 
-  let path = "TADS/Ingles.json";
+  async function getJSON(arquivo){
+    const resultado = await fetch(arquivo);
+    return await resultado.json();
+  }
+
+  const info_materias = await getJSON("materias.json");
+
+  function buscarInfoMateria(materia){
+    const resultado = info_materias.filter(item => item.Materia === materia);
+    console.log(resultado);
+    return resultado;
+  }
+
+  let info_materia = buscarInfoMateria(materia);
+
+  let path = info_materia["Path"];
 
   async function obterMediasDaTurma() {
     let resultado = await getByPath(path);
@@ -34,7 +53,6 @@ function enviarMateria(materia){
         );
 
     const mediasDaTurma = calcularMediasDaTurma(Object.values(dados));
-    console.log(mediasDaTurma);
     return mediasDaTurma;
 
   }
@@ -71,15 +89,15 @@ function enviarMateria(materia){
       bottom: 0
     },
     legend: {
-      data: ['Língua Inglesa']
+      data: [info_materia["Materia"]]
     },
     radar: {
       indicator: [
-        { name: 'Interpretação', max: 5 },
-        { name: 'Gramática', max: 5 },
-        { name: 'Tempos Verbais', max: 5 },
-        { name: 'Voz Passiva e Ativa', max: 5 },
-        { name: 'Conectivos', max: 5 }
+        { name: info_materia["Eixo1"], max: 5 },
+        { name: info_materia["Eixo2"], max: 5 },
+        { name: info_materia["Eixo3"], max: 5 },
+        { name: info_materia["Eixo4"], max: 5 },
+        { name: info_materia["Eixo5"], max: 5 }
       ],
       center: ["50%", "50%"],
       radius: ["0%", "50%"]
@@ -89,7 +107,7 @@ function enviarMateria(materia){
       type: 'radar',
       data: [{
         value: valores,
-        name: 'Língua Inglesa'
+        name: info_materia["Materia"]
       }]
     }]
   };
