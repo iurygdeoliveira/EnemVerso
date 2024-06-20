@@ -284,11 +284,11 @@ document.addEventListener("DOMContentLoaded", function () {
           ]
       };
     var radarDataGeografiaTADS = {
-          labels: ['Subtema 01', 'Subtema 02', 'Subtema 03', 'Subtema 04', 'Subtema 05'],
+          labels: ['Eixo 01', 'Eixo 02', 'Eixo 03', 'Eixo 04', 'Eixo 05'],
           datasets: [
               {
                   label: 'Geografia',
-                      data: [20, 5, 10, 15, 30],
+                      data: [3, 3, 3, 3, 4],
                       backgroundColor: 'rgba(144, 238, 144, 0.2)',
                       borderColor: 'rgba(144, 238, 144, 1)',
                       pointBackgroundColor: 'rgba(144, 238, 144, 1)',
@@ -304,7 +304,7 @@ document.addEventListener("DOMContentLoaded", function () {
           datasets: [
               {
                   label: 'Geografia',
-                      data: [15, 20, 25, 10, 5],
+                      data: [15, 15, 15, 15, 15],
                       backgroundColor: 'rgba(144, 238, 144, 0.2)',
                       borderColor: 'rgba(144, 238, 144, 1)',
                       pointBackgroundColor: 'rgba(144, 238, 144, 1)',
