@@ -40,10 +40,11 @@ body{
   justify-content: center;
 }
 
-#graficos_3A, #graficos_3B, #graficos_TADS {
+#grafico1, #grafico2, #grafico3 {
   width: 20vw;
   height: 40vh;
-  margin: 0 auto
+  margin: 0 auto;
+  display : none;
 }
 
 #disciplinas{
@@ -102,10 +103,11 @@ a, p{
       "f";
   }
 
-  #graficos_3A, #graficos_3B, #graficos_TADS {
+  #grafico1, #grafico2, #grafico3 {
     width: 100%;
     height: 40vh;
-    margin: 0 auto
+    margin: 0 auto;
+    display : none;
   }
 
 }
