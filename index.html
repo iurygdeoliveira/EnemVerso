@@ -5,36 +5,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>EnemVerso</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link href="css/header.css" rel="stylesheet" type="text/css">
-  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
-  <link href="css/content.css" rel="stylesheet" type="text/css">
-  <link href="css/extra.css" rel="stylesheet" type="text/css">
-  <link href="css/footer.css" rel="stylesheet" type="text/css">
-  <link href="css/grid.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="grid-container">
-    <div class="header"></div>
-    <div class="content">
-      <div id="grafico" style="width: 400px; height: 400px;">
 
-      </div>
+  <aside id="sidebar">
+    <img src="./assets/images/EnemVerso.png" id="logo">
+    
+    <a class="subject-link" id="linguaportuguesa" data-subject="língua portuguesa">Português</a>
+    <a class="subject-link" id="literatura" data-subject="literatura">Literatura</a>
+    
+    <a class="subject-link" id="historia" data-subject="historia">História</a>
+    <a class="subject-link" id="geografia" data-subject="geografia">Geografia</a>
+    <a class="subject-link" id="filosofia" data-subject="filosofia">Filosofia</a>
+    <a class="subject-link" id="sociologia" data-subject="sociologia">Sociologia</a>
+    <a class="subject-link" id="artes" data-subject="artes">Artes</a>
+    
+    <a class="subject-link" id="matematica" data-subject="matematica">Matemática</a>
+    <a class="subject-link" id="fisica" data-subject="física">Física</a>
+    <a class="subject-link" id="quimica" data-subject="química">Química</a>
+    <a class="subject-link" id="biologia" data-subject="biologia">Biologia</a>
+
+    <a class="subject-link" id="ingles" data-subject="inglês">Inglês</a>
+    <a class="subject-link" id="espanhol" data-subject="espanhol">Espanhol</a>
+    
+  </aside>
+  <main>
+    <header> HEADER </header>
+    <div id="content-and-extra">
+      <article>
+        <div id="figures">
+            <div id="grafico" style="width: 400px; height: 400px;"></div>
+        </div>
+        <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+        <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+        <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+      </article>
+      <aside id="extra"> EXTRA </aside>
     </div>
-    <div class="sidebar">
-      <img src="EnemVerso.png" alt="Logo" class="logo">
-      <ul class="menu" id="menu">
-      </ul>
-    </div>
-    <div class="extra"></div>
-    <div class="footer"></div>
-  </div>
-  <script src="sidebar/menu.js"> </script>
-  <script src="echarts.min.js"></script>
-  <script src="script.js"> </script>
-  <script src="grafico.js"> </script>
+    <footer> FOOTER </footer>
+  </main>
+  <script src="assets/charts/echarts.min.js"></script>
+  <script src="assets/charts/grafico.js" type="module"></script>
+  <script src="script.js" type="module"></script>
 </body>
 
 </html>
