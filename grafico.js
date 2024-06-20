@@ -1,42 +1,49 @@
-  var chartDom = document.getElementById('grafico');
+function gerarGrafico(
+  nomeGrafico,
+  eixo1,
+  eixo2,
+  eixo3,
+  eixo4,
+  eixo5,
+  disciplina,
+  media1,
+  media2,
+  media3,
+  media4,
+  media5) {
+
+  var chartDom = document.getElementById(nomeGrafico);
   var myChart = echarts.init(chartDom);
   var option;
   option = {
+    tooltip: {},
     title: {
-      text: 'Espanhol - TADS',
-      bottom: 0
+      text: disciplina
     },
     legend: {
-      data: ['Interpretação Texto', 'Diversidade Linguistica', 'Conjunções']
+      data: ['TADS', 'Ensino Médio'],
+      bottom: 0
     },
     radar: {
       shape: 'circle',
       center: ['50%', '50%'],
       radius: 100,
       indicator: [
-        { name: 'Entendo', max: 100 },
-        { name: 'Discutivel', max: 100 },
-        { name: 'Conhecido', max: 100 },
-        { name: 'Complicado', max: 100 },
-        { name: 'Não conheço', max: 100 },
+        { name: eixo1, max: 5 },
+        { name: eixo2, max: 5 },
+        { name: eixo3, max: 5 },
+        { name: eixo4, max: 5 },
+        { name: eixo5, max: 5 },
       ]
     },
     series: [
       {
-        name: 'TADS vs 3',
+        name: disciplina,
         type: 'radar',
         data: [
           {
-            value: [62, 50, 40, 55, 70],
-            name: 'Interpretação Texto'
-          },
-          {
-            value: [40, 44, 48, 46, 62],
-            name: 'Diversidade Linguistica'
-          },
-          {
-            value: [40, 44, 38, 56, 62],
-            name: 'Conjunções'
+            value: [media1, media2, media3, media4, media5],
+            name: 'Ensino Médio'
           }
         ]
       }
@@ -44,3 +51,5 @@
   };
 
   option && myChart.setOption(option);
+}
+

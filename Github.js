@@ -1,4 +1,4 @@
-let path = "TADS/espanhol.json";
+let path = "TADS/Espanhol.json";
 
 exibirResultado();  
 
@@ -20,8 +20,6 @@ async function getByPath(path) {
     return await executeRequest(path);
 }
 
-//console.log(await executeRequest('TADS/espanhol.json'));
-
 async function executeRequest(path) {
 
     let github = await import('https://cdn.skypack.dev/@octokit/request');
@@ -32,7 +30,7 @@ async function executeRequest(path) {
         headers: {
             authorization: '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',
         },
-        owner: "DCarthur",
+        owner: "DCArthur",
         repo: "EnemVerso_Data",
         path: path
     })
