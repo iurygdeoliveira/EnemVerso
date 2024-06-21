@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>EnemVerso</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link href="css/header.css" rel="stylesheet" type="text/css">
-  <link href="css/sidebar.css" rel="stylesheet" type="text/css">
-  <link href="css/content.css" rel="stylesheet" type="text/css">
-  <link href="css/extra.css" rel="stylesheet" type="text/css">
-  <link href="css/footer.css" rel="stylesheet" type="text/css">
-  <link href="css/grid.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EnemVerso</title>
+    <script type="module" src="echarts.min.js" defer></script>
+    <script type="module" src="script.js" defer></script>
 </head>
-
 <body>
-  <div class="grid-container">
-    <div class="header"></div>
-    <div class="content">
-      <div id="grafico" style="width: 400px; height: 400px;">
-
-      </div>
+    <div class="grid-container">
+    <header>
+        <h2 id="subject">Língua Portuguesa</h2>
+    </header>
+    <nav>
+        <img id="logo" src="/logo.png" alt="logo">
+        <ul>
+            <li>
+                <button class="subject" id="linguaPortuguesa">Língua Portuguesa</button></li>
+            <li>
+                <button class="subject" id='literatura'>Literatura</button></li>
+            <li>
+                <button class="subject" id='matematica'>Matemática</button></li>
+            <li>
+                <button class="subject" id='fisica'>Física</button></li>
+            <li>
+                    <button class="subject" id='quimica'>Química</button></li>
+            <li>
+                        <button class="subject" id='biologia'>Biologia</button></li>
+            <li>
+                <button class="subject" id='historia'>História</button></li>
+            <li>
+                <button class="subject" id='geografia'>Geografia</button></li>
+            <li>
+                <button class="subject" id='ingles'>Inglês</button></li>
+            <li>
+                <button class="subject" id='espanhol'>Espanhol</button></li>
+            <li>
+                <button class="subject" id='artes'>Artes</button></li>
+            <li>
+                <button class="subject" id='sociologia'>Sociologia</button></li>
+            <li>
+                <button class="subject" id='filosofia'>Filosofia</button></li><li>
+                    <button class="subject" id='edFisica'>Educação Física</button></li>
+            <li>
+                <button class="subject" id='ti'>Tecnologia da Informação</button></li>
+            </ul>
+    </nav>
+        <article>
+            <div class="graph" id="grafico_3b"></div>
+            <div class="graph" id="grafico_3a"></div>
+            <div class="graph" id="grafico_tads"></div>
+        </article>
+        <div id="ads"></div>
+        <footer></footer>
     </div>
-    <div class="sidebar">
-      <img src="EnemVerso.png" alt="Logo" class="logo">
-      <ul class="menu" id="menu">
-      </ul>
-    </div>
-    <div class="extra"></div>
-    <div class="footer"></div>
-  </div>
-  <script src="sidebar/menu.js"> </script>
-  <script src="echarts.min.js"></script>
-  <script src="script.js"> </script>
-  <script src="grafico.js"> </script>
 </body>
-
 </html>
