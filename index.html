@@ -1,80 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<style>
-.item1 { 
-  grid-area: header;
-   background-color: #e6f9ff;
-}
-.item2 { 
-  grid-area: sidebar;
-background-color: #ffe6e6;
-}
-.item3 { grid-area: literatura; }
-.item4 { 
-  grid-area: extra;
-background-color: #FAEBD7;
-}
-.item5 {
-  grid-area: footer;
-  background-color: #d6f5d6;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'sidebar header header header header header'
-    'sidebar literatura literatura literatura literatura extra'
-    'sidebar footer footer footer footer footer';
-  height: 100vh;
-  gap: 1px;
-  padding: 1%;
-
-}
-
-/* .grid-container > div {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* text-align: center;
-  padding: 30% 0;
-  font-size: 30px;
-  
-} */
-
-@media (max-width: 600px) {
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        'header'
-        'literatura'
-        'extra'
-        'footer';
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 4fr 1fr 1fr;
-      gap: 1px;
-      padding: 1%;
-      height: 100vh;
-    }
-
-  .item2{
-    display: none;
-  }
-}
-  
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EnemVerso</title>
+    <script type="module" src="echarts.min.js" defer></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
 
-<div class="grid-container">
-  <div class="item1">Header</div>
-  <div class="item2">
-    <img src="https://g3i5r4x7.rocketcdn.me/wp-content/uploads/2021/01/o-que-e-literatura-origem-funcao-e-generos-literarios.jpg" width="100" height="100">
-    Literatura</div>
-  <div class="item3">literatura:  A literatura (do latim littera, que significa “letra”) é uma das manifestações artísticas do ser humano, ao lado da música, dança, teatro, escultura, arquitetura, dentre outras. Ela representa comunicação, linguagem e criatividade, sendo considerada a arte das palavras.</div>  
-  <div class="item4">extra</div>
-  <div class="item5">Footer</div>
-</div>
+    <div class="grid-container">
 
+        <header>
+
+            <button id="sideBarButton">
+                <div class="menuBars"></div>
+                <div class="menuBars"></div>
+                <div class="menuBars"></div>
+            </button>
+            
+            <h2 id="subject">Língua Portuguesa</h2>
+    
+        </header>
+    
+        <nav>
+
+            <img id="logo" src="/logo.png" alt="logo">
+
+            <button class="subject" id="linguaPortuguesa">Língua Portuguesa</button>
+            <button class="subject" id='literatura'>Literatura</button>
+            <button class="subject" id='matematica'>Matemática</button>
+            <button class="subject" id='fisica'>Física</button>
+            <button class="subject" id='quimica'>Química</button>
+            <button class="subject" id='biologia'>Biologia</button>
+            <button class="subject" id='historia'>História</button>
+            <button class="subject" id='geografia'>Geografia</button>
+            <button class="subject" id='ingles'>Inglês</button>
+            <button class="subject" id='espanhol'>Espanhol</button>
+            <button class="subject" id='artes'>Artes</button>
+            <button class="subject" id='sociologia'>Sociologia</button>
+            <button class="subject" id='filosofia'>Filosofia</button>
+            <button class="subject" id='edFisica'>Educação Física</button>
+            <button class="subject" id='ti'>Tecnologia da Informação</button>
+
+        </nav>
+    
+        <article>
+    
+            <div class="graph" id="grafico_3b"></div>
+            <div class="graph" id="grafico_3a"></div>
+            <div class="graph" id="grafico_tads"></div>
+    
+        </article>
+    
+        <div id="ads">
+    
+            <h2>Ads</h2>
+    
+        </div>
+    
+        <footer>
+    
+            <h2>Footer</h2>
+    
+        </footer>
+
+    </div>
+    
 </body>
 </html>
-
-,
