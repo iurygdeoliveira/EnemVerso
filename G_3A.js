@@ -1,9 +1,9 @@
-var chartDom3 = document.getElementById('grafico3');
-var myChart3 = echarts.init(chartDom3);
-var option3;
-option3 = {
+var chartDom2 = document.getElementById('G_3A');
+var myChart2 = echarts.init(chartDom2);
+var option2;
+option2 = {
   title: {
-    text: '3°B',
+    text: '3°A',
     left: 115
   },
   legend: {
@@ -39,4 +39,5 @@ option3 = {
     }
   ]
 };
-option3 && myChart3.setOption(option3);
+
+option2 && myChart2.setOption(option2);

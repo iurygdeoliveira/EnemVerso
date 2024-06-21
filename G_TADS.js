@@ -1,4 +1,4 @@
-  var chartDom = document.getElementById('grafico');
+  var chartDom = document.getElementById('G_TADS');
   var myChart = echarts.init(chartDom);
   var option;
   option = {
