@@ -16,11 +16,11 @@ function drawGrafico1 () {
     radar: {
       // shape: 'circle',
       indicator: [
-        { name: 'ÁLGEBRA', max: 5 },
-        { name: 'GEOMETRIA', max: 5 },
-        { name: 'FUNÇÕES E ANÁLISE GRÁFICA', max: 5 },
-        { name: 'ESTATÍSTICA E PROBABILIDADE', max: 5 },
-        { name: 'MATEMÁTICA FINANCEIRA', max: 5 }
+        { name: 'biologia celular e molecular', max: 5 },
+        { name: 'ecologia e meio ambiente', max: 5 },
+        { name: 'funções genética e evolução', max: 5 },
+        { name: 'anatomia e fisiologia humana', max: 5 },
+        { name: 'química ambiental', max: 5 }
       ]
     },
     series: [
