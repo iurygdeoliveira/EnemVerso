@@ -32,3 +32,15 @@ for (let b = 0; b < subButtons.length; b++) {
     })
 
 }
+
+const menuButton = document.getElementById('sideBarButton')
+let navState = true
+
+menuButton.addEventListener('click', (event) => {
+
+    const nav = document.getElementsByTagName('nav').item(0)
+    nav.style.display = navState ? 'block' : 'none'
+    
+    navState = !navState
+
+})
