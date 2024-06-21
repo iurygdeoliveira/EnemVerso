@@ -5,29 +5,29 @@ let em3BPath = "3B/Biologia.json";
 //#region Nome das chaves das questões
 
 // Bloco "BIOLOGIA CELULAR E MOLECULAR" - Nome das chaves
-const arteContemporanea_questao1Key = "Sinto-me confiante ao entender e explicar a estrutura e função das células e moléculas biológicas ?";
-const arteContemporanea_questao2Key = "Consigo relacionar os conceitos de Biologia Celular e Molecular com processos do cotidiano e doenças ?";
-const arteContemporanea_questao3Key = "Acho desafiador compreender os processos moleculares complexos, como a replicação do DNA e a síntese proteica ??";
+const bioCelularMolecular_questao1Key = "Sinto-me confiante ao entender e explicar a estrutura e função das células e moléculas biológicas ?";
+const bioCelularMolecular_questao2Key = "Consigo relacionar os conceitos de Biologia Celular e Molecular com processos do cotidiano e doenças ?";
+const bioCelularMolecular_questao3Key = "Acho desafiador compreender os processos moleculares complexos, como a replicação do DNA e a síntese proteica ??";
 
 // Bloco "ECOLOGIA E MEIO AMBIENTE" - Nome das chaves
-const vanguardasArtisticasEuropeias_questao1Key = "Tenho um bom entendimento sobre ecossistemas, biodiversidade e questões ambientais ?";
-const vanguardasArtisticasEuropeias_questao2Key = "Consigo identificar a relação entre os conceitos ecológicos e os desafios ambientais atuais, como as mudanças climáticas ?";
-const vanguardasArtisticasEuropeias_questao3Key = "Sinto dificuldade em compreender a complexidade das interações ecológicas e sua importância para a conservação ambiental ?";
+const ecoMeioAmbiente_questao1Key = "Tenho um bom entendimento sobre ecossistemas, biodiversidade e questões ambientais ?";
+const ecoMeioAmbiente_questao2Key = "Consigo identificar a relação entre os conceitos ecológicos e os desafios ambientais atuais, como as mudanças climáticas ?";
+const ecoMeioAmbiente_questao3Key = "Sinto dificuldade em compreender a complexidade das interações ecológicas e sua importância para a conservação ambiental ?";
 
 // Bloco "GENÉTICA E EVOLUÇÃO" - Nome das chaves
-const modernismo_questao1Key = "Compreendo os princípios básicos da genética e da teoria evolutiva ?";
-const modernismo_questao2Key = "Consigo aplicar o conhecimento genético e evolutivo para entender a variabilidade e a hereditariedade em organismos ?";
-const modernismo_questao3Key = "Tenho dificuldades para entender conceitos como herança genética, mutações e seleção natural ?";
+const geneticaEvolucao_questao1Key = "Compreendo os princípios básicos da genética e da teoria evolutiva ?";
+const geneticaEvolucao_questao2Key = "Consigo aplicar o conhecimento genético e evolutivo para entender a variabilidade e a hereditariedade em organismos ?";
+const geneticaEvolucao_questao3Key = "Tenho dificuldades para entender conceitos como herança genética, mutações e seleção natural ?";
 
 // Bloco "ANATOMIA E FISIOLOGIA HUMANA" - Nome das chaves
-const historiaArte_questao1Key = "Entendo a estrutura e o funcionamento do corpo humano, incluindo seus sistemas orgânicos ?";
-const historiaArte_questao2Key = "Consigo fazer a comparação da anatomia e fisiologia humana a saúde de forma integrativa ?";
-const historiaArte_questao3Key = "A compreensão e memorização das diversas estruturas e funções do corpo humano apresentam-se como um desafio ?";
+const anatomiaFisioHumana_questao1Key = "Entendo a estrutura e o funcionamento do corpo humano, incluindo seus sistemas orgânicos ?";
+const anatomiaFisioHumana_questao2Key = "Consigo fazer a comparação da anatomia e fisiologia humana a saúde de forma integrativa ?";
+const anatomiaFisioHumana_questao3Key = "A compreensão e memorização das diversas estruturas e funções do corpo humano apresentam-se como um desafio ?";
 
 // Bloco "QUÍMICA AMBIENTAL" - Nome das chaves
-const arteBrasil_questao1Key = "Compreendo a diversidade e a biologia das plantas (botânica) e dos animais (zoologia) ?";
-const arteBrasil_questao2Key = "Você consegue reconhecer que o estudo das plantas e dos animais é de uma suma importância para compreender a vida na Terra  ?";
-const arteBrasil_questao3Key = " Conceitos como herança genética, as mutações e a seleção natural são difíceis de entender ?";
+const quimicaAmbiental_questao1Key = "Compreendo a diversidade e a biologia das plantas (botânica) e dos animais (zoologia) ?";
+const quimicaAmbiental_questao2Key = "Você consegue reconhecer que o estudo das plantas e dos animais é de uma suma importância para compreender a vida na Terra  ?";
+const quimicaAmbiental_questao3Key = " Conceitos como herança genética, as mutações e a seleção natural são difíceis de entender ?";
 
 //#endregion 
 
@@ -49,107 +49,107 @@ async function obterMediasPorTurma(urlPath) {
 
     //#region Iniciando arrays de cada questão, de cada bloco 
 
-    let arteContemporanea_qntdRespostasP1 = [0, 0, 0, 0, 0];
-    let arteContemporanea_qntdRespostasP2 = [0, 0, 0, 0, 0];
-    let arteContemporanea_qntdRespostasP3 = [0, 0, 0, 0, 0];
+    let bioCelularMolecular_qntdRespostasP1 = [0, 0, 0, 0, 0];
+    let bioCelularMolecular_qntdRespostasP2 = [0, 0, 0, 0, 0];
+    let bioCelularMolecular_qntdRespostasP3 = [0, 0, 0, 0, 0];
 
-    let vanguardasArtisticasEuropeias_qntdRespostasP1 = [0, 0, 0, 0, 0];
-    let vanguardasArtisticasEuropeias_qntdRespostasP2 = [0, 0, 0, 0, 0];
-    let vanguardasArtisticasEuropeias_qntdRespostasP3 = [0, 0, 0, 0, 0];
+    let ecoMeioAmbiente_qntdRespostasP1 = [0, 0, 0, 0, 0];
+    let ecoMeioAmbiente_qntdRespostasP2 = [0, 0, 0, 0, 0];
+    let ecoMeioAmbiente_qntdRespostasP3 = [0, 0, 0, 0, 0];
 
-    let modernismo_qntdRespostasP1 = [0, 0, 0, 0, 0];
-    let modernismo_qntdRespostasP2 = [0, 0, 0, 0, 0];
-    let modernismo_qntdRespostasP3 = [0, 0, 0, 0, 0];
+    let geneticaEvolucao_qntdRespostasP1 = [0, 0, 0, 0, 0];
+    let geneticaEvolucao_qntdRespostasP2 = [0, 0, 0, 0, 0];
+    let geneticaEvolucao_qntdRespostasP3 = [0, 0, 0, 0, 0];
 
-    let historiaArte_qntdRespostasP1 = [0, 0, 0, 0, 0];
-    let historiaArte_qntdRespostasP2 = [0, 0, 0, 0, 0];
-    let historiaArte_qntdRespostasP3 = [0, 0, 0, 0, 0];
+    let anatomiaFisioHumana_qntdRespostasP1 = [0, 0, 0, 0, 0];
+    let anatomiaFisioHumana_qntdRespostasP2 = [0, 0, 0, 0, 0];
+    let anatomiaFisioHumana_qntdRespostasP3 = [0, 0, 0, 0, 0];
 
-    let arteBrasil_qntdRespostasP1 = [0, 0, 0, 0, 0];
-    let arteBrasil_qntdRespostasP2 = [0, 0, 0, 0, 0];
-    let arteBrasil_qntdRespostasP3 = [0, 0, 0, 0, 0];
+    let quimicaAmbiental_qntdRespostasP1 = [0, 0, 0, 0, 0];
+    let quimicaAmbiental_qntdRespostasP2 = [0, 0, 0, 0, 0];
+    let quimicaAmbiental_qntdRespostasP3 = [0, 0, 0, 0, 0];
 
     //#endregion
 
     //#region Iterando os dados, e adicionando nos arrays.
 
     data.forEach(respostas => {
-        //#region Arte contemporânea
+        //#region BIOLOGIA CELULAR E MOLECULAR
 
-        arteContemporanea_qntdRespostasP1[
-            respostas[arteContemporanea_questao1Key] - 1
+        bioCelularMolecular_qntdRespostasP1[
+            respostas[bioCelularMolecular_questao1Key] - 1
         ]++;
 
-        arteContemporanea_qntdRespostasP2[
-            respostas[arteContemporanea_questao2Key] - 1
+        bioCelularMolecular_qntdRespostasP2[
+            respostas[bioCelularMolecular_questao2Key] - 1
         ]++;
 
-        arteContemporanea_qntdRespostasP3[
-            respostas[arteContemporanea_questao3Key] - 1
-        ]++;
-
-        //#endregion
-
-        //#region Vanguardas Artísticas Europeias
-
-        vanguardasArtisticasEuropeias_qntdRespostasP1[
-            respostas[vanguardasArtisticasEuropeias_questao1Key] - 1
-        ]++;
-
-        vanguardasArtisticasEuropeias_qntdRespostasP2[
-            respostas[vanguardasArtisticasEuropeias_questao2Key] - 1
-        ]++;
-
-        vanguardasArtisticasEuropeias_qntdRespostasP3[
-            respostas[vanguardasArtisticasEuropeias_questao3Key] - 1
+        bioCelularMolecular_qntdRespostasP3[
+            respostas[bioCelularMolecular_questao3Key] - 1
         ]++;
 
         //#endregion
 
-        //#region Modernismo
+        //#region ECOLOGIA E MEIO AMBIENTE
 
-        modernismo_qntdRespostasP1[
-            respostas[modernismo_questao1Key] - 1
+        ecoMeioAmbiente_qntdRespostasP1[
+            respostas[ecoMeioAmbiente_questao1Key] - 1
         ]++;
 
-        modernismo_qntdRespostasP2[
-            respostas[modernismo_questao2Key] - 1
+        ecoMeioAmbiente_qntdRespostasP2[
+            respostas[ecoMeioAmbiente_questao2Key] - 1
         ]++;
 
-        modernismo_qntdRespostasP3[
-            respostas[modernismo_questao3Key] - 1
-        ]++;
-
-        //#endregion
-
-        //#region História da Arte
-
-        historiaArte_qntdRespostasP1[
-            respostas[historiaArte_questao1Key] - 1
-        ]++;
-
-        historiaArte_qntdRespostasP2[
-            respostas[historiaArte_questao2Key] - 1
-        ]++;
-
-        historiaArte_qntdRespostasP3[
-            respostas[historiaArte_questao3Key] - 1
+        ecoMeioAmbiente_qntdRespostasP3[
+            respostas[ecoMeioAmbiente_questao3Key] - 1
         ]++;
 
         //#endregion
 
-        //#region Arte no Brasil
+        //#region GENÉTICA E EVOLUÇÃO
 
-        arteBrasil_qntdRespostasP1[
-            respostas[arteBrasil_questao1Key] - 1
+        geneticaEvolucao_qntdRespostasP1[
+            respostas[geneticaEvolucao_questao1Key] - 1
         ]++;
 
-        arteBrasil_qntdRespostasP2[
-            respostas[arteBrasil_questao2Key] - 1
+        geneticaEvolucao_qntdRespostasP2[
+            respostas[geneticaEvolucao_questao2Key] - 1
         ]++;
 
-        arteBrasil_qntdRespostasP3[
-            respostas[arteBrasil_questao3Key] - 1
+        geneticaEvolucao_qntdRespostasP3[
+            respostas[geneticaEvolucao_questao3Key] - 1
+        ]++;
+
+        //#endregion
+
+        //#region ANATOMIA E FISIOLOGIA HUMANA
+
+        anatomiaFisioHumana_qntdRespostasP1[
+            respostas[anatomiaFisioHumana_questao1Key] - 1
+        ]++;
+
+        anatomiaFisioHumana_qntdRespostasP2[
+            respostas[anatomiaFisioHumana_questao2Key] - 1
+        ]++;
+
+        anatomiaFisioHumana_qntdRespostasP3[
+            respostas[anatomiaFisioHumana_questao3Key] - 1
+        ]++;
+
+        //#endregion
+
+        //#region QUIMICA AMBIENTAL
+
+        quimicaAmbiental_qntdRespostasP1[
+            respostas[quimicaAmbiental_questao1Key] - 1
+        ]++;
+
+        quimicaAmbiental_qntdRespostasP2[
+            respostas[quimicaAmbiental_questao2Key] - 1
+        ]++;
+
+        quimicaAmbiental_qntdRespostasP3[
+            respostas[quimicaAmbiental_questao3Key] - 1
         ]++;
 
         //#endregion
@@ -163,57 +163,57 @@ async function obterMediasPorTurma(urlPath) {
 
     let qntdRespostas = data.length;
 
-    let arteContemporanea_media = obterMediaPorBlocos(
+    let bioCelularMolecular_media = obterMediaPorBlocos(
         [
-            arteContemporanea_qntdRespostasP1,
-            arteContemporanea_qntdRespostasP2,
-            arteContemporanea_qntdRespostasP3,
+            bioCelularMolecular_qntdRespostasP1,
+            bioCelularMolecular_qntdRespostasP2,
+            bioCelularMolecular_qntdRespostasP3,
         ],
         qntdRespostas
     );
 
-    let vanguardasArtisticasEuropeias_media = obterMediaPorBlocos(
+    let ecoMeioAmbiente_media = obterMediaPorBlocos(
         [
-            vanguardasArtisticasEuropeias_qntdRespostasP1,
-            vanguardasArtisticasEuropeias_qntdRespostasP2,
-            vanguardasArtisticasEuropeias_qntdRespostasP3,
+            ecoMeioAmbiente_qntdRespostasP1,
+            ecoMeioAmbiente_qntdRespostasP2,
+            ecoMeioAmbiente_qntdRespostasP3,
         ],
         qntdRespostas
     );
 
-    let modernismo_media = obterMediaPorBlocos(
+    let geneticaEvolucao_media = obterMediaPorBlocos(
         [
-            modernismo_qntdRespostasP1,
-            modernismo_qntdRespostasP2,
-            modernismo_qntdRespostasP3,
+            geneticaEvolucao_qntdRespostasP1,
+            geneticaEvolucao_qntdRespostasP2,
+            geneticaEvolucao_qntdRespostasP3,
         ],
         qntdRespostas
     );
 
-    let historiaArte_media = obterMediaPorBlocos(
+    let anatomiaFisioHumana_media = obterMediaPorBlocos(
         [
-            historiaArte_qntdRespostasP1,
-            historiaArte_qntdRespostasP2,
-            historiaArte_qntdRespostasP3,
+            anatomiaFisioHumana_qntdRespostasP1,
+            anatomiaFisioHumana_qntdRespostasP2,
+            anatomiaFisioHumana_qntdRespostasP3,
         ],
         qntdRespostas
     );
 
-    let arteBrasil_media = obterMediaPorBlocos(
+    let quimicaAmbiental_media = obterMediaPorBlocos(
         [
-            arteBrasil_qntdRespostasP1,
-            arteBrasil_qntdRespostasP2,
-            arteBrasil_qntdRespostasP3,
+            quimicaAmbiental_qntdRespostasP1,
+            quimicaAmbiental_qntdRespostasP2,
+            quimicaAmbiental_qntdRespostasP3,
         ],
         qntdRespostas
     );
 
     return {
-        "arteContemporanea": arteContemporanea_media,
-        "vanguardasArtisticasEuropeias": vanguardasArtisticasEuropeias_media,
-        "modernismo": modernismo_media,
-        "historiaArte": historiaArte_media,
-        "arteBrasil": arteBrasil_media,
+        "bioCelularMolecular": bioCelularMolecular_media,
+        "ecoMeioAmbiente": ecoMeioAmbiente_media,
+        "geneticaEvolucao": geneticaEvolucao_media,
+        "anatomiaFisioHumana": anatomiaFisioHumana_media,
+        "quimicaAmbiental": quimicaAmbiental_media,
     };
 }
 
@@ -270,9 +270,9 @@ async function executeRequest(path) {
         method: "GET",
         url: '/repos/{owner}/{repo}/contents/{path}',
         headers: {
-            authorization: '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',
+            authorization: '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',
         },
-        owner: "vilaJJ",
+        owner: "Aarao3007",
         repo: "EnemVerso-Data",
         path: path
     });
