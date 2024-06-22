@@ -4,36 +4,39 @@ var option;
 
 option = {
   title: {
-    text: '3B '
+      text: 'ADS',
+      top: '3%',
   },
   legend: {
-    data: ['Allocated Budget', 'Actual Spending']
+      data: ['TADS', 'ENSINO MEDIO']
   },
   radar: {
-    shape: 'circle',
-    indicator: [
-      { name: 'Quimica Inorganica', max: 16000 },
-      { name: 'Quimica Organica', max: 16000 },
-      { name: 'Fisico-Quimica', max: 30000 },
-      { name: 'Quimica Analitica', max: 38000 },
-      { name: 'Bioquimica', max: 38000 }
-    ]
+      shape: 'circle',
+      center: ['50%', '50%'],
+      radius: 100,
+      indicator: [
+          { name: 'QUESTÃO 1', max: 5 },
+          { name: 'QUESTÃO 2', max: 5 },
+          { name: 'QUESTÃO 3', max: 5 },
+          { name: 'QUESTÃO 4', max: 5 },
+          { name: 'QUESTÃO 5', max: 5 },
+      ]
   },
   series: [
-    {
-      name: 'Budget vs spending',
-      type: 'radar',
-      data: [
-        {
-          value: [Math.random() * 12000, Math.random() * 12000, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000],
-          name: 'Allocated Budget'
-        },
-        {
-          value: [Math.random() * 10999, Math.random() * 10999, Math.random() * 10000, Math.random() * 10000, Math.random() * 10000],
-          name: 'Actual Spending'
-        }
-      ]
-    }
+      {
+          name: 'Nível de Competência',
+          type: 'radar',
+          data: [
+              {
+                  value: [4, 4, 3, 4, 5],
+                  name: 'TADS'
+              },
+              {
+                  value: [1, 2, 1, 5, 5],
+                  name: 'ENSINO MEDIO'
+              },
+          ]
+      }
   ]
 };
 
