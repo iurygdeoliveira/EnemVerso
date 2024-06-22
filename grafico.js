@@ -43,7 +43,7 @@ function gerarGrafico(
         data: [
           {
             value: [media1, media2, media3, media4, media5],
-            name: 'Ensino Médio'
+            //name: 'Ensino Médio'
           }
         ]
       }

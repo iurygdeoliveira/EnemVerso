@@ -8,3 +8,13 @@ html {
   flex-direction: row;
   justify-content: center;
 }
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Caso haja muitos gráficos e eles precisem de uma nova linha */
+}
+
+.content > div {
+  margin: 10px; /* Espaço entre os gráficos */
+}
