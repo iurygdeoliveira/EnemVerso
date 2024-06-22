@@ -1,37 +1,49 @@
-  var chartDom = document.getElementById('grafico');
+function gerarGrafico(
+  nomeGrafico,
+  eixo1,
+  eixo2,
+  eixo3,
+  eixo4,
+  eixo5,
+  disciplina,
+  media1,
+  media2,
+  media3,
+  media4,
+  media5) {
+
+  var chartDom = document.getElementById(nomeGrafico);
   var myChart = echarts.init(chartDom);
   var option;
   option = {
+    tooltip: {},
     title: {
-      text: 'Basic Radar Chart'
+      text: disciplina
     },
     legend: {
-      data: ['Allocated Budget', 'Actual Spending']
+      data: ['TADS', 'Ensino Médio'],
+      bottom: 0
     },
     radar: {
       shape: 'circle',
       center: ['50%', '50%'],
       radius: 100,
       indicator: [
-        { name: 'Eixo 1', max: 100 },
-        { name: 'Eixo 2', max: 100 },
-        { name: 'Eixo 3', max: 100 },
-        { name: 'Eixo 4', max: 100 },
-        { name: 'Eixo 5', max: 100 },
+        { name: eixo1, max: 5 },
+        { name: eixo2, max: 5 },
+        { name: eixo3, max: 5 },
+        { name: eixo4, max: 5 },
+        { name: eixo5, max: 5 },
       ]
     },
     series: [
       {
-        name: 'Budget vs spending',
+        name: disciplina,
         type: 'radar',
         data: [
           {
-            value: [42, 30, 20, 35, 50],
-            name: 'Allocated Budget'
-          },
-          {
-            value: [50, 14, 28, 26, 42],
-            name: 'Actual Spending'
+            value: [media1, media2, media3, media4, media5],
+            //name: 'Ensino Médio'
           }
         ]
       }
@@ -39,3 +51,5 @@
   };
 
   option && myChart.setOption(option);
+}
+
