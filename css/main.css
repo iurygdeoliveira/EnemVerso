@@ -10,8 +10,14 @@
   margin: 0px;
   padding: 0px;
 }
-
 body {
   background-color: #D4DED6; /* Adicionando cor de fundo em toda a página */
 }
 
+.GRAFICOS{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}

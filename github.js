@@ -12,7 +12,7 @@ async function exibirResultado() {
             res => res.json()
         );
 
-    console.log(url, dados);
+    console.log(url, dados [27] "Sinto que preciso de mais conhecimento para entender plenamente a relação entre filosofia e arte ?");
 
 }
 
