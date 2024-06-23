@@ -1,10 +1,10 @@
-var chartDom = document.getElementById('grafico');
+var chartDom = document.getElementById('grafico2');
 var myChart = echarts.init(chartDom);
 var option;
 
 option = {
   title: {
-      text: 'ADS',
+      text: '3A',
       top: '3%',
   },
   legend: {
